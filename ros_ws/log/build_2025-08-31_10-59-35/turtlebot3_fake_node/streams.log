@@ -1,0 +1,72 @@
+[0.023s] Invoking command in '/root/ros_ws/build/turtlebot3_fake_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /root/ros_ws/src/turtlebot3_simulations/turtlebot3_fake_node -DCMAKE_INSTALL_PREFIX=/root/ros_ws/install/turtlebot3_fake_node
+[0.135s] -- The C compiler identification is GNU 13.3.0
+[0.236s] -- The CXX compiler identification is GNU 13.3.0
+[0.263s] -- Detecting C compiler ABI info
+[0.432s] -- Detecting C compiler ABI info - done
+[0.457s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.459s] -- Detecting C compile features
+[0.460s] -- Detecting C compile features - done
+[0.478s] -- Detecting CXX compiler ABI info
+[0.684s] -- Detecting CXX compiler ABI info - done
+[0.693s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.693s] -- Detecting CXX compile features
+[0.694s] -- Detecting CXX compile features - done
+[0.705s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.926s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.126s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[1.268s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.313s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.371s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.421s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.526s] -- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[1.590s] -- Found rclcpp: 28.1.10 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.681s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.689s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.855s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.879s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.911s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.045s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[2.087s] -- Found tf2: 0.36.12 (/opt/ros/jazzy/share/tf2/cmake)
+[2.100s] -- Found tf2_msgs: 0.36.12 (/opt/ros/jazzy/share/tf2_msgs/cmake)
+[2.210s] -- Found turtlebot3_msgs: 2.4.0 (/opt/ros/jazzy/share/turtlebot3_msgs/cmake)
+[2.396s] -- Configuring done (2.3s)
+[2.428s] -- Generating done (0.0s)
+[2.436s] -- Build files have been written to: /root/ros_ws/build/turtlebot3_fake_node
+[2.453s] Invoked command in '/root/ros_ws/build/turtlebot3_fake_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /root/ros_ws/src/turtlebot3_simulations/turtlebot3_fake_node -DCMAKE_INSTALL_PREFIX=/root/ros_ws/install/turtlebot3_fake_node
+[2.455s] Invoking command in '/root/ros_ws/build/turtlebot3_fake_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /root/ros_ws/build/turtlebot3_fake_node -- -j12 -l12
+[2.560s] [ 50%] [32mBuilding CXX object CMakeFiles/turtlebot3_fake_node.dir/src/turtlebot3_fake_node.cpp.o[0m
+[16.113s] [100%] [32m[1mLinking CXX executable turtlebot3_fake_node[0m
+[16.862s] [100%] Built target turtlebot3_fake_node
+[16.887s] Invoked command in '/root/ros_ws/build/turtlebot3_fake_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /root/ros_ws/build/turtlebot3_fake_node -- -j12 -l12
+[16.908s] Invoking command in '/root/ros_ws/build/turtlebot3_fake_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /root/ros_ws/build/turtlebot3_fake_node
+[16.924s] -- Install configuration: ""
+[16.925s] -- Installing: /root/ros_ws/install/turtlebot3_fake_node/lib/turtlebot3_fake_node/turtlebot3_fake_node
+[16.941s] -- Set non-toolchain portion of runtime path of "/root/ros_ws/install/turtlebot3_fake_node/lib/turtlebot3_fake_node/turtlebot3_fake_node" to ""
+[16.941s] -- Installing: /root/ros_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/launch
+[16.943s] -- Installing: /root/ros_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/launch/rviz2.launch.py
+[16.943s] -- Installing: /root/ros_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/launch/turtlebot3_fake_node.launch.py
+[16.944s] -- Installing: /root/ros_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param
+[16.944s] -- Installing: /root/ros_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param/burger.yaml
+[16.945s] -- Installing: /root/ros_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param/waffle.yaml
+[16.945s] -- Installing: /root/ros_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param/waffle_pi.yaml
+[16.946s] -- Installing: /root/ros_ws/install/turtlebot3_fake_node/include/
+[16.946s] -- Installing: /root/ros_ws/install/turtlebot3_fake_node/include//turtlebot3_fake_node
+[16.947s] -- Installing: /root/ros_ws/install/turtlebot3_fake_node/include//turtlebot3_fake_node/turtlebot3_fake_node.hpp
+[16.949s] -- Installing: /root/ros_ws/install/turtlebot3_fake_node/share/ament_index/resource_index/package_run_dependencies/turtlebot3_fake_node
+[16.950s] -- Installing: /root/ros_ws/install/turtlebot3_fake_node/share/ament_index/resource_index/parent_prefix_path/turtlebot3_fake_node
+[16.950s] -- Installing: /root/ros_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/environment/ament_prefix_path.sh
+[16.951s] -- Installing: /root/ros_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/environment/ament_prefix_path.dsv
+[16.951s] -- Installing: /root/ros_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/environment/path.sh
+[16.951s] -- Installing: /root/ros_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/environment/path.dsv
+[16.952s] -- Installing: /root/ros_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/local_setup.bash
+[16.952s] -- Installing: /root/ros_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/local_setup.sh
+[16.952s] -- Installing: /root/ros_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/local_setup.zsh
+[16.953s] -- Installing: /root/ros_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/local_setup.dsv
+[16.953s] -- Installing: /root/ros_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.dsv
+[16.954s] -- Installing: /root/ros_ws/install/turtlebot3_fake_node/share/ament_index/resource_index/packages/turtlebot3_fake_node
+[16.955s] -- Installing: /root/ros_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/cmake/ament_cmake_export_include_directories-extras.cmake
+[16.955s] -- Installing: /root/ros_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/cmake/ament_cmake_export_dependencies-extras.cmake
+[16.955s] -- Installing: /root/ros_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/cmake/turtlebot3_fake_nodeConfig.cmake
+[16.956s] -- Installing: /root/ros_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/cmake/turtlebot3_fake_nodeConfig-version.cmake
+[16.956s] -- Installing: /root/ros_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.xml
+[16.960s] Invoked command in '/root/ros_ws/build/turtlebot3_fake_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /root/ros_ws/build/turtlebot3_fake_node

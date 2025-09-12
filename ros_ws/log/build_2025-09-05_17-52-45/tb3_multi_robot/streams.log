@@ -1,0 +1,79 @@
+[0.861s] Invoking command in '/root/ros_ws/src/tb3_multi_robot': CMAKE_PREFIX_PATH=/root/ros_ws/install/turtlebot3_navigation2:/root/ros_ws/install/turtlebot3_gazebo:/root/ros_ws/install/turtlebot3:/root/ros_ws/install/turtlebot3_simulations:/root/ros_ws/install/turtlebot3_bringup:/root/ros_ws/install/turtlebot3_node:/root/ros_ws/install/turtlebot3_fake_node:/root/ros_ws/install/turtlebot3_description:/root/ros_ws/install/turtlebot3_cartographer:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor PYTHONPATH=/root/ros_ws/build/tb3_multi_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros_ws/install/tb3_multi_robot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tb3_multi_robot build --build-base /root/ros_ws/build/tb3_multi_robot/build install --record /root/ros_ws/build/tb3_multi_robot/install.log --single-version-externally-managed install_data
+[1.183s] running egg_info
+[1.183s] creating ../../build/tb3_multi_robot/tb3_multi_robot.egg-info
+[1.219s] writing ../../build/tb3_multi_robot/tb3_multi_robot.egg-info/PKG-INFO
+[1.220s] writing dependency_links to ../../build/tb3_multi_robot/tb3_multi_robot.egg-info/dependency_links.txt
+[1.220s] writing entry points to ../../build/tb3_multi_robot/tb3_multi_robot.egg-info/entry_points.txt
+[1.221s] writing requirements to ../../build/tb3_multi_robot/tb3_multi_robot.egg-info/requires.txt
+[1.221s] writing top-level names to ../../build/tb3_multi_robot/tb3_multi_robot.egg-info/top_level.txt
+[1.222s] writing manifest file '../../build/tb3_multi_robot/tb3_multi_robot.egg-info/SOURCES.txt'
+[1.265s] reading manifest file '../../build/tb3_multi_robot/tb3_multi_robot.egg-info/SOURCES.txt'
+[1.266s] writing manifest file '../../build/tb3_multi_robot/tb3_multi_robot.egg-info/SOURCES.txt'
+[1.267s] running build
+[1.267s] running build_py
+[1.267s] creating /root/ros_ws/build/tb3_multi_robot/build
+[1.267s] creating /root/ros_ws/build/tb3_multi_robot/build/lib
+[1.268s] creating /root/ros_ws/build/tb3_multi_robot/build/lib/multi_robot_scripts
+[1.268s] copying ./multi_robot_scripts/turtlebot3_drive.py -> /root/ros_ws/build/tb3_multi_robot/build/lib/multi_robot_scripts
+[1.269s] copying ./multi_robot_scripts/utils.py -> /root/ros_ws/build/tb3_multi_robot/build/lib/multi_robot_scripts
+[1.269s] copying ./multi_robot_scripts/__init__.py -> /root/ros_ws/build/tb3_multi_robot/build/lib/multi_robot_scripts
+[1.269s] running install
+[1.274s] running install_lib
+[1.289s] creating /root/ros_ws/install/tb3_multi_robot/lib/python3.12/site-packages/multi_robot_scripts
+[1.290s] copying /root/ros_ws/build/tb3_multi_robot/build/lib/multi_robot_scripts/turtlebot3_drive.py -> /root/ros_ws/install/tb3_multi_robot/lib/python3.12/site-packages/multi_robot_scripts
+[1.290s] copying /root/ros_ws/build/tb3_multi_robot/build/lib/multi_robot_scripts/utils.py -> /root/ros_ws/install/tb3_multi_robot/lib/python3.12/site-packages/multi_robot_scripts
+[1.290s] copying /root/ros_ws/build/tb3_multi_robot/build/lib/multi_robot_scripts/__init__.py -> /root/ros_ws/install/tb3_multi_robot/lib/python3.12/site-packages/multi_robot_scripts
+[1.291s] byte-compiling /root/ros_ws/install/tb3_multi_robot/lib/python3.12/site-packages/multi_robot_scripts/turtlebot3_drive.py to turtlebot3_drive.cpython-312.pyc
+[1.293s] byte-compiling /root/ros_ws/install/tb3_multi_robot/lib/python3.12/site-packages/multi_robot_scripts/utils.py to utils.cpython-312.pyc
+[1.293s] byte-compiling /root/ros_ws/install/tb3_multi_robot/lib/python3.12/site-packages/multi_robot_scripts/__init__.py to __init__.cpython-312.pyc
+[1.294s] running install_data
+[1.294s] copying package.xml -> /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot
+[1.294s] creating /root/ros_ws/install/tb3_multi_robot/share/ament_index
+[1.294s] creating /root/ros_ws/install/tb3_multi_robot/share/ament_index/resource_index
+[1.295s] creating /root/ros_ws/install/tb3_multi_robot/share/ament_index/resource_index/packages
+[1.295s] copying resource/tb3_multi_robot -> /root/ros_ws/install/tb3_multi_robot/share/ament_index/resource_index/packages
+[1.296s] creating /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/launch
+[1.296s] copying launch/tb3_nav2.launch.py -> /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/launch
+[1.297s] copying launch/tb3_world.launch.py -> /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/launch
+[1.297s] copying launch/drive.launch.py -> /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/launch
+[1.297s] creating /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/launch/nav2_bringup
+[1.298s] creating /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/params
+[1.298s] copying params/burger_cam_nav2_params.yaml -> /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/params
+[1.298s] copying params/waffle_nav2_params.yaml -> /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/params
+[1.299s] copying params/burger_cam_bridge.yaml -> /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/params
+[1.299s] copying params/burger_bridge.yaml -> /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/params
+[1.299s] copying params/waffle_bridge.yaml -> /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/params
+[1.299s] copying params/burger_nav2_params.yaml -> /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/params
+[1.300s] copying params/waffle_pi_bridge.yaml -> /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/params
+[1.300s] copying params/waffle_pi.yaml -> /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/params
+[1.300s] creating /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/rviz
+[1.301s] copying rviz/tb3_navigation2.rviz -> /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/rviz
+[1.301s] creating /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/worlds
+[1.302s] copying worlds/tb3_world.world -> /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/worlds
+[1.302s] creating /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/models
+[1.302s] creating /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/models/turtlebot3_burger
+[1.303s] copying models/turtlebot3_burger/model-1_4.sdf -> /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/models/turtlebot3_burger
+[1.303s] copying models/turtlebot3_burger/model.config -> /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/models/turtlebot3_burger
+[1.303s] copying models/turtlebot3_burger/model.sdf -> /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/models/turtlebot3_burger
+[1.304s] creating /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/models/turtlebot3_waffle
+[1.304s] copying models/turtlebot3_waffle/model-1_4.sdf -> /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/models/turtlebot3_waffle
+[1.304s] copying models/turtlebot3_waffle/model.config -> /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/models/turtlebot3_waffle
+[1.305s] copying models/turtlebot3_waffle/model.sdf -> /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/models/turtlebot3_waffle
+[1.305s] creating /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/models/turtlebot3_waffle_pi
+[1.306s] creating /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/config
+[1.306s] copying config/robots.yaml -> /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/config
+[1.307s] creating /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/urdf
+[1.307s] copying urdf/common_properties.urdf -> /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/urdf
+[1.307s] copying urdf/turtlebot3_burger_cam.urdf -> /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/urdf
+[1.308s] copying urdf/turtlebot3_waffle_pi.urdf -> /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/urdf
+[1.308s] copying urdf/turtlebot3_waffle.urdf -> /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/urdf
+[1.308s] copying urdf/turtlebot3_burger.urdf -> /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/urdf
+[1.309s] creating /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/map
+[1.309s] copying map/map.pgm -> /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/map
+[1.310s] copying map/map.yaml -> /root/ros_ws/install/tb3_multi_robot/share/tb3_multi_robot/map
+[1.310s] running install_egg_info
+[1.331s] Copying ../../build/tb3_multi_robot/tb3_multi_robot.egg-info to /root/ros_ws/install/tb3_multi_robot/lib/python3.12/site-packages/tb3_multi_robot-1.0.0-py3.12.egg-info
+[1.333s] running install_scripts
+[1.522s] Installing turtlebot3_drive script to /root/ros_ws/install/tb3_multi_robot/bin
+[1.523s] writing list of installed files to '/root/ros_ws/build/tb3_multi_robot/install.log'
+[1.553s] Invoked command in '/root/ros_ws/src/tb3_multi_robot' returned '0': CMAKE_PREFIX_PATH=/root/ros_ws/install/turtlebot3_navigation2:/root/ros_ws/install/turtlebot3_gazebo:/root/ros_ws/install/turtlebot3:/root/ros_ws/install/turtlebot3_simulations:/root/ros_ws/install/turtlebot3_bringup:/root/ros_ws/install/turtlebot3_node:/root/ros_ws/install/turtlebot3_fake_node:/root/ros_ws/install/turtlebot3_description:/root/ros_ws/install/turtlebot3_cartographer:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor PYTHONPATH=/root/ros_ws/build/tb3_multi_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros_ws/install/tb3_multi_robot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tb3_multi_robot build --build-base /root/ros_ws/build/tb3_multi_robot/build install --record /root/ros_ws/build/tb3_multi_robot/install.log --single-version-externally-managed install_data

@@ -1,0 +1,33 @@
+FROM ros:jazzy
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Osnovni alati + colcon (za kasnije, kad dodaš svoj kod)
+RUN apt update && apt install -y \
+    git curl wget nano build-essential \
+    python3-colcon-common-extensions \
+    && apt clean
+
+# TB3 + Gazebo (Harmonic) + RViz2 + ros_gz bridge
+RUN apt update && apt install -y \
+    ros-jazzy-turtlebot3-gazebo \
+    ros-jazzy-turtlebot3-msgs \
+    ros-jazzy-rviz2 \
+    ros-jazzy-ros-gz \
+    ros-jazzy-ros-gz-sim \
+    ros-jazzy-ros-gz-bridge \
+    ros-jazzy-dynamixel-sdk \ 
+    && apt clean
+
+# 
+ENV TURTLEBOT3_MODEL=burger_cam
+
+# Workspace
+WORKDIR /root/ros_ws
+RUN mkdir -p src
+
+# Entrypoint
+COPY ros_entrypoint.sh /ros_entrypoint.sh
+RUN chmod +x /ros_entrypoint.sh
+ENTRYPOINT ["/ros_entrypoint.sh"]
+CMD ["bash"]

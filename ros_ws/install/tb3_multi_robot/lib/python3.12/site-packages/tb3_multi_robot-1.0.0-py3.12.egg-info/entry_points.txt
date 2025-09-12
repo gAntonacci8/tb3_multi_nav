@@ -1,0 +1,2 @@
+[console_scripts]
+turtlebot3_drive = multi_robot_scripts.turtlebot3_drive:main
