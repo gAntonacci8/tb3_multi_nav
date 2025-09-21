@@ -1,0 +1,2 @@
+[console_scripts]
+map_republisher = tb3_multi_nav.map_republisher:main

@@ -9,22 +9,32 @@ RUN apt update && apt install -y \
     && apt clean
 
 # TB3 + Gazebo (Harmonic) + RViz2 + ros_gz bridge
-RUN apt update && apt install -y \
+RUN apt-get update && apt install -y \
     ros-jazzy-turtlebot3-gazebo \
     ros-jazzy-turtlebot3-msgs \
     ros-jazzy-rviz2 \
     ros-jazzy-ros-gz \
     ros-jazzy-ros-gz-sim \
     ros-jazzy-ros-gz-bridge \
-    ros-jazzy-dynamixel-sdk \ 
+    ros-jazzy-dynamixel-sdk \
+    ros-jazzy-navigation2 \
+    ros-jazzy-nav2-bringup \
+    ros-jazzy-turtlebot3-bringup \
+    ros-jazzy-turtlebot3-navigation2 \
+    ros-jazzy-ros-gz-image \
+    ros-jazzy-tf2-tools \
+    ros-jazzy-diagnostics \
+    ros-jazzy-slam-toolbox \
+    ros-jazzy-nav2-rviz-plugins \
     && apt clean
 
-# 
-ENV TURTLEBOT3_MODEL=burger_cam
+ENV TURTLEBOT3_MODEL=waffle
 
 # Workspace
 WORKDIR /root/ros_ws
 RUN mkdir -p src
+#Source for ros2 ready in other terminals
+RUN echo "source /root/ros_ws/install/setup.bash" >> ~/.bashrc
 
 # Entrypoint
 COPY ros_entrypoint.sh /ros_entrypoint.sh

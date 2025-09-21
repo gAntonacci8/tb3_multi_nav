@@ -10,7 +10,7 @@ docker run -it --rm \
   --privileged \
   -e DISPLAY=$DISPLAY \
   -e QT_X11_NO_MITSHM=1 \
-  -e TURTLEBOT3_MODEL=burger \
+  -e TURTLEBOT3_MODEL=waffle \
   -v /tmp/.X11-unix:/tmp/.X11-unix \
   -v "$PWD/ros_ws":/root/ros_ws \
   -v "$PWD/launch":/root/launch \

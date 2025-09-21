@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/tb3_multi_nav/tb3_multi_nav.egg-info/PKG-INFO
+writing dependency_links to ../../build/tb3_multi_nav/tb3_multi_nav.egg-info/dependency_links.txt
+writing entry points to ../../build/tb3_multi_nav/tb3_multi_nav.egg-info/entry_points.txt
+writing requirements to ../../build/tb3_multi_nav/tb3_multi_nav.egg-info/requires.txt
+writing top-level names to ../../build/tb3_multi_nav/tb3_multi_nav.egg-info/top_level.txt
+reading manifest file '../../build/tb3_multi_nav/tb3_multi_nav.egg-info/SOURCES.txt'
+writing manifest file '../../build/tb3_multi_nav/tb3_multi_nav.egg-info/SOURCES.txt'
+running build
+running build_py
+copying tb3_multi_nav/map_republisher.py -> /root/ros_ws/build/tb3_multi_nav/build/lib/tb3_multi_nav
+running install
+running install_lib
+copying /root/ros_ws/build/tb3_multi_nav/build/lib/tb3_multi_nav/map_republisher.py -> /root/ros_ws/install/tb3_multi_nav/lib/python3.12/site-packages/tb3_multi_nav
+byte-compiling /root/ros_ws/install/tb3_multi_nav/lib/python3.12/site-packages/tb3_multi_nav/map_republisher.py to map_republisher.cpython-312.pyc
+running install_data
+running install_egg_info
+removing '/root/ros_ws/install/tb3_multi_nav/lib/python3.12/site-packages/tb3_multi_nav-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/tb3_multi_nav/tb3_multi_nav.egg-info to /root/ros_ws/install/tb3_multi_nav/lib/python3.12/site-packages/tb3_multi_nav-0.0.0-py3.12.egg-info
+running install_scripts
+Installing map_republisher script to /root/ros_ws/install/tb3_multi_nav/lib/tb3_multi_nav
+writing list of installed files to '/root/ros_ws/build/tb3_multi_nav/install.log'

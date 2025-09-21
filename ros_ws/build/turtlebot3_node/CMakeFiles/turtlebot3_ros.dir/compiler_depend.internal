@@ -503,7 +503,8 @@ CMakeFiles/turtlebot3_ros.dir/src/node_main.cpp.o
  /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/tf_message.hpp
  /opt/ros/jazzy/include/tf2_ros/tf2_ros/qos.hpp
  /opt/ros/jazzy/include/tf2_ros/tf2_ros/transform_broadcaster.h
- /opt/ros/jazzy/include/tf2_ros/tf2_ros/visibility_control.h
+ /opt/ros/jazzy/include/tf2_ros/tf2_ros/transform_broadcaster.hpp
+ /opt/ros/jazzy/include/tf2_ros/tf2_ros/visibility_control.hpp
  /opt/ros/jazzy/include/tracetools/tracetools/config.h
  /opt/ros/jazzy/include/tracetools/tracetools/tracetools.h
  /opt/ros/jazzy/include/tracetools/tracetools/utils.hpp

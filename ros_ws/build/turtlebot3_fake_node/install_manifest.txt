@@ -1,9 +1,9 @@
 /root/ros_ws/install/turtlebot3_fake_node/lib/turtlebot3_fake_node/turtlebot3_fake_node
-/root/ros_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/launch/rviz2.launch.py
 /root/ros_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/launch/turtlebot3_fake_node.launch.py
-/root/ros_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param/burger.yaml
-/root/ros_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param/waffle.yaml
+/root/ros_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/launch/rviz2.launch.py
 /root/ros_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param/waffle_pi.yaml
+/root/ros_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param/waffle.yaml
+/root/ros_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param/burger.yaml
 /root/ros_ws/install/turtlebot3_fake_node/include//turtlebot3_fake_node/turtlebot3_fake_node.hpp
 /root/ros_ws/install/turtlebot3_fake_node/share/ament_index/resource_index/package_run_dependencies/turtlebot3_fake_node
 /root/ros_ws/install/turtlebot3_fake_node/share/ament_index/resource_index/parent_prefix_path/turtlebot3_fake_node
