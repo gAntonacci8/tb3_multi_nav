@@ -33,16 +33,16 @@
   gz_type_name: "gz.msgs.Pose_V"
   direction: BIDIRECTIONAL
 
-
-- topic_name: "/tf_static" #TESTING WITHOUT NAMESPACE
-  ros_type_name: "tf2_msgs/msg/TFMessage"
-  gz_type_name: "gz.msgs.Pose_V"
-  direction: BIDIRECTIONAL
-  history: KEEP_LAST
-  DEPTH: 10
-  reliabilty: RELIABLE
-  qos_profile:
-    durability: TRANSIENT_LOCAL  #DOESN'T SEEM TO WORK. tf_static has this as only publisher, needs qos compatible.
+#TESTING WITHOUT BRIDGE-- Only robot_state_publishers manage tf_static
+# - topic_name: "/tf_static" #TESTING WITHOUT NAMESPACE
+#   ros_type_name: "tf2_msgs/msg/TFMessage"
+#   gz_type_name: "gz.msgs.Pose_V"
+#   direction: BIDIRECTIONAL
+#   history: KEEP_LAST
+#   DEPTH: 10
+#   reliabilty: RELIABLE
+#   qos_profile:
+#     durability: TRANSIENT_LOCAL  #DOESN'T SEEM TO WORK. tf_static has this as only publisher, needs qos compatible.
 
 - topic_name: "/robot1/initialpose"
   ros_type_name: "geometry_msgs/msg/PoseWithCovarianceStamped"
