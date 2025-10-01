@@ -1,4 +1,6 @@
-Tb3 multi nav tag-game
+Tb3 multi nav tag-game \
+
+BACKUP BRANCH -- reference for nav2 bringup and launchers approach.
 
 STATUS: NOT WORKING \
 University project utilizing 2 turtlebot3 waffle robots for a simulated tag game. \
