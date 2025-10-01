@@ -28,7 +28,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'map_republisher = tb3_multi_nav.map_republisher:main',  
+            'tfs_republisher = tb3_multi_nav.tfs_republisher:main',  
         ],
     },
 )
