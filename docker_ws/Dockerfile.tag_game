@@ -26,6 +26,8 @@ RUN apt-get update && apt install -y \
     ros-jazzy-diagnostics \
     ros-jazzy-slam-toolbox \
     ros-jazzy-nav2-rviz-plugins \
+    ros-jazzy-cartographer-ros \
+    ros-jazzy-cartographer-ros-msgs \
     && apt clean
 
 ENV TURTLEBOT3_MODEL=waffle
