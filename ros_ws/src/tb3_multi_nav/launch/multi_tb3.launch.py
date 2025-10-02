@@ -3,7 +3,7 @@ Main launcher for multi robot tag-game (2 robots).
 
 Namespaces: robot1, robot2
 
-Tentativa approach to modular navigation2 nodes, manually configuring namespaces.
+Tentative approach to modular navigation2 nodes, manually configuring namespaces.
 '''
 from launch import LaunchDescription
 from launch.actions import ExecuteProcess,TimerAction, IncludeLaunchDescription, GroupAction
