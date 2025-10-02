@@ -1,4 +1,6 @@
-Tb3 multi nav tag-game
+Tb3 multi nav tag-game \
+
+PROTO_SCRATCH BRANCH -- Testing creation of Nav2 launcher and nodes upbringing from scratch. 
 
 STATUS: NOT WORKING \
 University project utilizing 2 turtlebot3 waffle robots for a simulated tag game. \
