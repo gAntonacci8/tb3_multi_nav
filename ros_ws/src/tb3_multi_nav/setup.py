@@ -10,14 +10,6 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        ('share/' + package_name + '/config', ['config/robot1_bridge.yaml']),
-        ('share/' + package_name + '/config', ['config/robot2_bridge.yaml']),
-        ('share/' + package_name + '/config', ['config/nav2_waffle_robot1.yaml']),
-        ('share/' + package_name + '/config', ['config/nav2_waffle_robot2.yaml']),
-        ('share/' + package_name + '/config', ['config/nav2_waffle.yaml']),
-        ('share/' + package_name + '/config', ['config/map.yaml']),
-        ('share/' + package_name + '/config', ['config/multi_nav.rviz']),
-        ('share/' + package_name + '/launch', ['launch/multi_tb3.launch.py']),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -28,7 +20,6 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'tfs_republisher = tb3_multi_nav.tfs_republisher:main',  
         ],
     },
 )
