@@ -8,10 +8,19 @@ University project utilizing 2 turtlebot3 waffle robots for a simulated tag game
 
 Setup: \
 ROS2 Distro - Jazzy \
-Gazebo Version - Harmonic
+Gazebo Version - Harmonic \
+Rviz2 
+
+External Repositories (used partially or entirely):
+
+- turtlebot3_gazebo (ROBOTIS): https://github.com/ROBOTIS-GIT/turtlebot3_simulations/tree/jazzy 
+- turtlebot3-jazzy  (ROBOTIS): https://github.com/ROBOTIS-GIT/turtlebot3/tree/jazzy 
+
 
 Currently working on:
 
+Modular launcher for multi robot nav2 stack
+Mapping an uknown map for .yaml and .pgm map file to Rviz2
 Gazebo <--> ROS <--> Rviz2 integration \
 Rviz2 multi robot configuration \
 Data categorization with namespaces \
