@@ -19,12 +19,16 @@ def generate_launch_description():
     #------------ Open Gazebo and spawn two (2) turtlebot3 waffle
     #--- Coordinates: Robot1 (-0.5 0 0.01 0 0 0), Robot2 (-0.5 -1 0 0 0 0.01) 
 
-    tb3_world = os.path.join(                               #get turtlebot3 world for gazebo
+    #get STANDARD turtlebot3 world for gazebo
+    tb3_world = os.path.join(                               
         get_package_share_directory('turtlebot3_gazebo'),
         'worlds', 'turtlebot3_world.world'
     )
-    model_folder="turtlebot3_waffle"                        
-    sdf_path = os.path.join(                                #sdf path to waffle robot file
+    #get custom maze worldfor gazebo
+    custom_world= "/root/ros_ws/src/tb3_multi_nav/utils/maze_world.world" 
+    model_folder="turtlebot3_waffle"    
+    #sdf path to waffle robot file                    
+    sdf_path = os.path.join(                                
     get_package_share_directory('turtlebot3_gazebo'),
     'models',
     model_folder,
@@ -35,6 +39,6 @@ def generate_launch_description():
             PythonLaunchDescriptionSource(
                 os.path.join(get_package_share_directory('ros_gz_sim'), 'launch', 'gz_sim.launch.py')
             ),
-            launch_arguments={'gz_args': f'-r {tb3_world}'}.items() #maybe 'use_sim_time':'true' ?
+            launch_arguments={'gz_args': f'-r {custom_word}'}.items() #maybe 'use_sim_time':'true' ? 
     )
 
