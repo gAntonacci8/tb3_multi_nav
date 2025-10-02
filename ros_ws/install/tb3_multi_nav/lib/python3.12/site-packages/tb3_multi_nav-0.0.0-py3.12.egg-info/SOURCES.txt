@@ -19,6 +19,7 @@ launch/multi_tb3.launch.py
 resource/tb3_multi_nav
 tb3_multi_nav/__init__.py
 tb3_multi_nav/map_republisher.py
+tb3_multi_nav/tfs_republisher.py
 test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py

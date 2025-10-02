@@ -38,7 +38,7 @@ def generate_launch_description():
         PythonLaunchDescriptionSource(
             os.path.join(get_package_share_directory('ros_gz_sim'), 'launch', 'gz_sim.launch.py')
         ),
-        launch_arguments={'gz_args': f'-r {tb3_world}'}.items()
+        launch_arguments={'gz_args': f'-r {tb3_world}'}.items() #maybe 'use_sim_time':'true' ?
     )
     # Spawn robot1
     spawn_robot1 = Node(
@@ -180,6 +180,7 @@ def generate_launch_description():
 		                'map': os.path.join(get_package_share_directory('nav2_bringup'), 'maps', 'turtlebot3_world.yaml'),
 		                #'params_file': os.path.join(get_package_share_directory('nav2_bringup'), 'params', 'nav2_params.yaml') #file nav2 multirobot, 1st robot
 		            	'params_file': nav2_waffle_yaml1
+
 					}.items()
 		        )
 		    ])
@@ -239,11 +240,18 @@ def generate_launch_description():
 	
 	#To sync main map topic with 2 robots
     map_republisher=Node(
-			package="tb3_multi_nav",
-			executable="map_republisher",
-			name="map_republisher",
-			namespace="",
-			output="screen"
+		package="tb3_multi_nav",
+		executable="map_republisher",
+		name="map_republisher",
+		namespace="",
+		output="screen"
+	)
+    tfs_republisher=Node(
+		package="tb3_multi_nav",
+		executable="tfs_republisher",
+		name="tfs_republisher",
+		namespace="",
+		output="screen"
 	)
     # RViz2 configuration
     rviz_config = os.path.join(get_package_share_directory('nav2_bringup'), 'rviz', 'nav2_default_view.rviz')
@@ -300,6 +308,7 @@ def generate_launch_description():
         nav2_robot2,
 		init_pose_robot1,
 		init_pose_robot2,
+		tfs_republisher,
         rviz_node1
 		#,rviz_node2
     ])

@@ -33,20 +33,12 @@ def generate_launch_description():
     nav2_waffle_yaml1='/root/ros_ws/src/tb3_multi_nav/config/nav2_waffle_robot1.yaml'
     nav2_waffle_yaml2='/root/ros_ws/src/tb3_multi_nav/config/nav2_waffle_robot2.yaml'
 
-
-    #Fake clock to publish sim time 
-    fake_clock_node = Node(
-    	package='tb3_multi_nav',  
-    	executable='fake_clock',
-    	name='fake_clock',
-    	output='screen'
-    )
     # Open gazebo
     gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(get_package_share_directory('ros_gz_sim'), 'launch', 'gz_sim.launch.py')
         ),
-        launch_arguments={'gz_args': f'-r {tb3_world}'}.items()
+        launch_arguments={'gz_args': f'-r {tb3_world}'}.items() #maybe 'use_sim_time':'true' ?
     )
     # Spawn robot1
     spawn_robot1 = Node(
@@ -67,12 +59,13 @@ def generate_launch_description():
     )
     # TEST to get Rviz2 work -- NEEDS URDF NOT SDF
     robot1_state_publisher = TimerAction(
-	period=2.0, #wait 2 sec for clock	
+	period=2.0, #2.0 ----wait 2 sec for clock	
 	actions=[Node(
 	        	package='robot_state_publisher',
 	        	executable='robot_state_publisher',
 	        	namespace='robot1',
 	        	output='screen',
+				    #remappings=[('tf', '/tf'), ('tf_static', '/tf_static')],
 			parameters=[{
 			                'use_sim_time': True,
 			                'robot_description': Command([
@@ -85,12 +78,13 @@ def generate_launch_description():
 		)]
     )
     robot2_state_publisher =TimerAction(
-	period=2.0, #wait 2 sec for clock 
+	period=2.0, #2.0 --- wait 2 sec for clock 
 	actions=[Node(
 		        package='robot_state_publisher',
 		        executable='robot_state_publisher',
 		        namespace='robot2',
 		        output='screen',
+				    #remappings=[('tf', '/tf'), ('tf_static', '/tf_static')],
 			parameters=[{
 			                'use_sim_time': True,
 			                'robot_description': Command([
@@ -102,86 +96,7 @@ def generate_launch_description():
 			            }]
 		 )]
     )
-	# Static TF map -> odom for robot1
-    map_to_odom_robot1 =TimerAction(
-	period=2.0, #wait 2 sec for clock 
-	actions=[ GroupAction([
-		        Node(
-		            package='tf2_ros',
-		            executable='static_transform_publisher',
-		            #name='map_to_odom1',
-					name='transformer1',
-		            output='screen',
-		            arguments=['-0', '0', '0', '0', '0', '0', 'robot1/base_footprint', 'robot1/base_link']
-		        )])
-    	]
-    )
-    # Static TF map -> odom per robot2
-    map_to_odom_robot2 =TimerAction(
-	period=2.0, #wait 2 sec for clock 
-	actions=[ GroupAction([
-		        Node(
-		            package='tf2_ros',
-		            executable='static_transform_publisher',
-		            #name='map_to_odom2',
-		            name='transformer2',
-					output='screen',
-		            arguments=['-0', '0', '0', '0', '0', '0', 'robot2/base_footprint', 'robot2/base_link']
-		        )
-		    ])
-		]
-    )
 
-
-
-    #Link TF from Odom to Base_footprint of each robot
-    odom_to_base_robot1=TimerAction(
-	period=2.0, #wait 2 sec for clock 
-	actions=[ GroupAction([
-		        Node(
-		            package='tf2_ros',
-		            executable='static_transform_publisher',
-		            name='odom_to_base_footprint_robot1',
-		            output='screen',
-		            arguments=['0', '0', '0', '0', '0', '0', 'robot1/odom', 'robot1/base_footprint']
-		        )
-		    ])
-		]
-    )
-    odom_to_base_robot2=TimerAction(
-	period=2.0, #wait 2 sec for clock 
-	actions=[ GroupAction([
-		        Node(
-		            package='tf2_ros',
-		            executable='static_transform_publisher',
-		            name='odom_to_base_footprint_robot2',
-		            output='screen',
-		            arguments=['0', '0', '0', '0', '0', '0', 'robot2/odom', 'robot2/base_footprint']
-		        )
-		    ])
-		]
-    )
-
-    broadcaster_odom_robot1=TimerAction(
-		period=2.0, #wait 2 sec for clock 
-		actions=[Node(
-					package='tb3_multi_nav',
-					executable='broadcaster_odom',
-					name='odom_tf_broadcaster1',
-					namespace='robot1',
-					output='screen'
-		)]
-	)
-    broadcaster_odom_robot2=TimerAction(
-		period=2.0, #wait 2 sec for clock 
-		actions=[Node(
-					package='tb3_multi_nav',
-					executable='broadcaster_odom',
-					name='odom_tf_broadcaster2',
-					namespace='robot2',
-					output='screen'
-		)]
-	)
 
     # load config files YAML for both robots
     robot1_bridge_yaml = os.path.join(
@@ -198,7 +113,7 @@ def generate_launch_description():
 	package='ros_gz_bridge',
 	executable='parameter_bridge',
     	name='ros_gz_bridge1',
-		namespace='robot1',
+		#namespace='robot1',
 	arguments=['--ros-args', '-p', f'config_file:={robot1_bridge_yaml}'],
     	output='screen'
     )
@@ -206,7 +121,7 @@ def generate_launch_description():
     bridge_robot2 = Node(
         package='ros_gz_bridge',
         executable='parameter_bridge',
-		namespace='robot2',
+		#namespace='robot2',
 	name='ros_gz_bridge2',
     	arguments=['--ros-args', '-p', f'config_file:={robot2_bridge_yaml}'],
         output='screen'
@@ -229,37 +144,7 @@ def generate_launch_description():
         	}
 		}]
     )
-    # Map server for Rviz2 and Nav2 -- GENERAL, LIFECYCLE NODE.  Needs activiation
-    map_server1 = LifecycleNode(
-	    package='nav2_map_server',
-	    executable='map_server',
-	    name='map_server',
-	    namespace='robot1',
-	    output='screen',
-	    parameters=[{
-			'yaml_filename': map_yaml_file, 
-			'use_sim_time': True,
-			'map_qos_profile': {
-				'durability': 'transient_local',
-				'depth': 1
-        	}
-		}]
-    )
-    map_server2 = LifecycleNode(
-		package='nav2_map_server',
-		executable='map_server',
-		name='map_server',
-		namespace='robot2',
-		output='screen',
-		parameters=[{
-			'yaml_filename': map_yaml_file, 
-			'use_sim_time': True,
-			'map_qos_profile': {
-				'durability': 'transient_local',
-				'depth': 1
-			}
-		}]
-    )
+
 	#configures and activates lifecycle node for map
     lifecycle_manager_map = Node(
 	    package='nav2_lifecycle_manager',
@@ -285,15 +170,17 @@ def generate_launch_description():
 		        IncludeLaunchDescription(
 		            PythonLaunchDescriptionSource(
 		                os.path.join(get_package_share_directory('nav2_bringup'), 'launch', 'bringup_launch.py')
+					#	os.path.join(get_package_share_directory('nav2_bringup'), 'launch', 'navigation_launch.py')
 		            ),
 		            launch_arguments={
 		                'use_sim_time': 'true', 
 						'namespace':'robot1',   #WORKS BETTER
-						'use_namespace':'true', 
+						'use_namespace':'true', #comment for navigation_launch.py
 						'autostart':'true',     #configures lifecycle nodes inside bringup
 		                'map': os.path.join(get_package_share_directory('nav2_bringup'), 'maps', 'turtlebot3_world.yaml'),
 		                #'params_file': os.path.join(get_package_share_directory('nav2_bringup'), 'params', 'nav2_params.yaml') #file nav2 multirobot, 1st robot
 		            	'params_file': nav2_waffle_yaml1
+
 					}.items()
 		        )
 		    ])
@@ -307,17 +194,19 @@ def generate_launch_description():
 	        IncludeLaunchDescription(
 	            PythonLaunchDescriptionSource(
 	                os.path.join(get_package_share_directory('nav2_bringup'), 'launch', 'bringup_launch.py')
+				#	os.path.join(get_package_share_directory('nav2_bringup'), 'launch', 'navigation_launch.py')
 	            ),
 	            launch_arguments={
 	                'use_sim_time': 'true',
 					'namespace':'robot2',
-					'use_namespace':'true',
+					'use_namespace':'true', #comment for navigation_launch.py
 					'autostart':'true',		#configures lifecycle nodes inside bringup
 	                'map': os.path.join(get_package_share_directory('nav2_bringup'), 'maps', 'turtlebot3_world.yaml'),
 	                #'params_file': os.path.join(get_package_share_directory('nav2_bringup'), 'params', 'nav2_params.yaml') #file multirobot nav2, 2nd robot
 					'params_file': nav2_waffle_yaml2 #file multirobot nav2, 2nd robot
 
 				}.items()
+
 	        )
 	    ])]
     )
@@ -351,14 +240,22 @@ def generate_launch_description():
 	
 	#To sync main map topic with 2 robots
     map_republisher=Node(
-			package="tb3_multi_nav",
-			executable="map_republisher",
-			name="map_republisher",
-			namespace="",
-			output="screen"
+		package="tb3_multi_nav",
+		executable="map_republisher",
+		name="map_republisher",
+		namespace="",
+		output="screen"
+	)
+    tfs_republisher=Node(
+		package="tb3_multi_nav",
+		executable="tfs_republisher",
+		name="tfs_republisher",
+		namespace="",
+		output="screen"
 	)
     # RViz2 configuration
     rviz_config = os.path.join(get_package_share_directory('nav2_bringup'), 'rviz', 'nav2_default_view.rviz')
+    #rviz_config="/root/ros_ws/src/tb3_multi_nav/config/nav2_default_view.rviz" #freezes rviz, maybe too clogged
     '''
     rviz_config = os.path.join(
         get_package_share_directory('tb3_multi_nav'),
@@ -371,11 +268,13 @@ def generate_launch_description():
 			Node(
 		        package='rviz2',
 		        executable='rviz2',
+				name="rviz_multi",
 		        arguments=['-d', rviz_config],
 		        output='screen',
 		        parameters=[{'use_sim_time':True}]
     		)]
     )
+
     cloned_robots=ExecuteProcess(
 			cmd=[
 				'ros2', 'launch',  'nav2_bringup',
@@ -392,8 +291,8 @@ def generate_launch_description():
 		bridge_robot1,
 		bridge_robot2,
 		map_server,
-		map_server1,  		#test qui
-		map_server2,
+		#map_server1,  		#test qui
+		#map_server2,
 		lifecycle_manager_map,
 		#map_republisher,    #test republisher map
 		robot1_state_publisher,
@@ -409,5 +308,7 @@ def generate_launch_description():
         nav2_robot2,
 		init_pose_robot1,
 		init_pose_robot2,
+		tfs_republisher,
         rviz_node1
+		#,rviz_node2
     ])

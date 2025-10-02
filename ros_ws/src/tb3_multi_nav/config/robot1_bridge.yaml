@@ -8,6 +8,11 @@
   gz_type_name: "gz.msgs.LaserScan"
   direction: BIDIRECTIONAL
 
+#TEST for bridging the other scan topic found in GZ
+#- topic_name: "/robot1/scan/points"
+
+
+
 - topic_name: "/robot1/joint_states"
   ros_type_name: "sensor_msgs/msg/JointState"
   gz_type_name: "gz.msgs.Model"

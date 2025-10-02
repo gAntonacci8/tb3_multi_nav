@@ -1,5 +1,7 @@
+/root/ros_ws/install/tb3_multi_nav/lib/python3.12/site-packages/tb3_multi_nav/tfs_republisher.py
 /root/ros_ws/install/tb3_multi_nav/lib/python3.12/site-packages/tb3_multi_nav/map_republisher.py
 /root/ros_ws/install/tb3_multi_nav/lib/python3.12/site-packages/tb3_multi_nav/__init__.py
+/root/ros_ws/install/tb3_multi_nav/lib/python3.12/site-packages/tb3_multi_nav/__pycache__/tfs_republisher.cpython-312.pyc
 /root/ros_ws/install/tb3_multi_nav/lib/python3.12/site-packages/tb3_multi_nav/__pycache__/map_republisher.cpython-312.pyc
 /root/ros_ws/install/tb3_multi_nav/lib/python3.12/site-packages/tb3_multi_nav/__pycache__/__init__.cpython-312.pyc
 /root/ros_ws/install/tb3_multi_nav/share/ament_index/resource_index/packages/tb3_multi_nav
@@ -19,4 +21,4 @@
 /root/ros_ws/install/tb3_multi_nav/lib/python3.12/site-packages/tb3_multi_nav-0.0.0-py3.12.egg-info/entry_points.txt
 /root/ros_ws/install/tb3_multi_nav/lib/python3.12/site-packages/tb3_multi_nav-0.0.0-py3.12.egg-info/dependency_links.txt
 /root/ros_ws/install/tb3_multi_nav/lib/python3.12/site-packages/tb3_multi_nav-0.0.0-py3.12.egg-info/requires.txt
-/root/ros_ws/install/tb3_multi_nav/lib/tb3_multi_nav/map_republisher
+/root/ros_ws/install/tb3_multi_nav/lib/tb3_multi_nav/tfs_republisher

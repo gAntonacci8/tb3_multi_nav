@@ -307,3 +307,134 @@
     		)]
     )
     '''
+	    # Map server for Rviz2 and Nav2 -- GENERAL, LIFECYCLE NODE.  Needs activiation
+    map_server1 = LifecycleNode(
+	    package='nav2_map_server',
+	    executable='map_server',
+	    name='map_server',
+	    namespace='robot1',
+	    output='screen',
+	    parameters=[{
+			'yaml_filename': map_yaml_file, 
+			'use_sim_time': True,
+			'map_qos_profile': {
+				'durability': 'transient_local',
+				'depth': 1
+        	}
+		}]
+    )
+    map_server2 = LifecycleNode(
+		package='nav2_map_server',
+		executable='map_server',
+		name='map_server',
+		namespace='robot2',
+		output='screen',
+		parameters=[{
+			'yaml_filename': map_yaml_file, 
+			'use_sim_time': True,
+			'map_qos_profile': {
+				'durability': 'transient_local',
+				'depth': 1
+			}
+		}]
+    )
+	    rviz_node2 =TimerAction( 
+		period=2.0, #wait 2 sec for clock 
+		actions=[ 	#PushRosNamespace("robot2"),
+				Node(
+					package='rviz2',
+					executable='rviz2',
+					name="rviz_robot2",
+					arguments=['-d', rviz_config],
+					output='screen',
+					parameters=[{'use_sim_time':True}]
+				)]
+    )
+    broadcaster_odom_robot1=TimerAction(
+		period=2.0, #wait 2 sec for clock 
+		actions=[Node(
+					package='tb3_multi_nav',
+					executable='broadcaster_odom',
+					name='odom_tf_broadcaster1',
+					namespace='robot1',
+					output='screen'
+		)]
+	)
+    broadcaster_odom_robot2=TimerAction(
+		period=2.0, #wait 2 sec for clock 
+		actions=[Node(
+					package='tb3_multi_nav',
+					executable='broadcaster_odom',
+					name='odom_tf_broadcaster2',
+					namespace='robot2',
+					output='screen'
+		)]
+	)
+		# Static TF map -> odom for robot1
+    map_to_odom_robot1 =TimerAction(
+	period=2.0, #wait 2 sec for clock 
+	actions=[ GroupAction([
+		        Node(
+		            package='tf2_ros',
+		            executable='static_transform_publisher',
+		            #name='map_to_odom1',
+					name='transformer1',
+		            output='screen',
+		            arguments=['-0', '0', '0', '0', '0', '0', 'robot1/base_footprint', 'robot1/base_link']
+		        )])
+    	]
+    )
+    # Static TF map -> odom per robot2
+    map_to_odom_robot2 =TimerAction(
+	period=2.0, #wait 2 sec for clock 
+	actions=[ GroupAction([
+		        Node(
+		            package='tf2_ros',
+		            executable='static_transform_publisher',
+		            #name='map_to_odom2',
+		            name='transformer2',
+					output='screen',
+		            arguments=['-0', '0', '0', '0', '0', '0', 'robot2/base_footprint', 'robot2/base_link']
+		        )
+		    ])
+		]
+    )
+
+
+
+    #Link TF from Odom to Base_footprint of each robot
+    odom_to_base_robot1=TimerAction(
+	period=2.0, #wait 2 sec for clock 
+	actions=[ GroupAction([
+		        Node(
+		            package='tf2_ros',
+		            executable='static_transform_publisher',
+		            name='odom_to_base_footprint_robot1',
+		            output='screen',
+		            arguments=['0', '0', '0', '0', '0', '0', 'robot1/odom', 'robot1/base_footprint']
+		        )
+		    ])
+		]
+    )
+    odom_to_base_robot2=TimerAction(
+	period=2.0, #wait 2 sec for clock 
+	actions=[ GroupAction([
+		        Node(
+		            package='tf2_ros',
+		            executable='static_transform_publisher',
+		            name='odom_to_base_footprint_robot2',
+		            output='screen',
+		            arguments=['0', '0', '0', '0', '0', '0', 'robot2/odom', 'robot2/base_footprint']
+		        )
+		    ])
+		]
+    )
+
+
+    #Fake clock to publish sim time 
+    fake_clock_node = Node(
+    	package='tb3_multi_nav',  
+    	executable='fake_clock',
+    	name='fake_clock',
+    	output='screen'
+    )
