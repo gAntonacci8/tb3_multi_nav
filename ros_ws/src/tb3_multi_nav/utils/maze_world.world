@@ -48,9 +48,9 @@
     <include>
       <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Sun</uri>
     </include>
-    <!-- <include>
-      <uri>Supposed to have ground plane but uri "https://fuel.gazebosim.org/1.0/OpenRobotics/models/Ground Plane"   gives 404 </uri>
-    </include> -->
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Ground Plane</uri>
+    </include>
 
 
     <model name="maze_walls">
