@@ -10,6 +10,9 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        ('share/' + package_name + '/launch', ['launch/multi_tb3.launch.py']),  #to get main launch available
+        ('share/' + package_name + '/launch', ['launch/mapping.launch.py']),    # EMPTY LAUNCH to get mapping launch available
+
     ],
     install_requires=['setuptools'],
     zip_safe=True,
