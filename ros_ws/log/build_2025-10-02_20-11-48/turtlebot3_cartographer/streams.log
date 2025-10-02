@@ -1,0 +1,47 @@
+[0.045s] Invoking command in '/root/ros_ws/build/turtlebot3_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros_ws/install/turtlebot3_teleop:/root/ros_ws/install/turtlebot3_example:/root/ros_ws/install/tb3_multi_nav:/root/ros_ws/install/custom_explorer:/opt/ros/jazzy /usr/bin/cmake /root/ros_ws/src/turtlebot3-jazzy/turtlebot3_cartographer -DCMAKE_INSTALL_PREFIX=/root/ros_ws/install/turtlebot3_cartographer
+[0.646s] -- The C compiler identification is GNU 13.3.0
+[0.646s] -- The CXX compiler identification is GNU 13.3.0
+[0.646s] -- Detecting C compiler ABI info
+[0.647s] -- Detecting C compiler ABI info - done
+[0.647s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.647s] -- Detecting C compile features
+[0.647s] -- Detecting C compile features - done
+[0.647s] -- Detecting CXX compiler ABI info
+[0.647s] -- Detecting CXX compiler ABI info - done
+[0.647s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.647s] -- Detecting CXX compile features
+[0.648s] -- Detecting CXX compile features - done
+[0.648s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.802s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.084s] -- Configuring done (1.0s)
+[1.091s] -- Generating done (0.0s)
+[1.096s] -- Build files have been written to: /root/ros_ws/build/turtlebot3_cartographer
+[1.101s] Invoked command in '/root/ros_ws/build/turtlebot3_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros_ws/install/turtlebot3_teleop:/root/ros_ws/install/turtlebot3_example:/root/ros_ws/install/tb3_multi_nav:/root/ros_ws/install/custom_explorer:/opt/ros/jazzy /usr/bin/cmake /root/ros_ws/src/turtlebot3-jazzy/turtlebot3_cartographer -DCMAKE_INSTALL_PREFIX=/root/ros_ws/install/turtlebot3_cartographer
+[1.102s] Invoking command in '/root/ros_ws/build/turtlebot3_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros_ws/install/turtlebot3_teleop:/root/ros_ws/install/turtlebot3_example:/root/ros_ws/install/tb3_multi_nav:/root/ros_ws/install/custom_explorer:/opt/ros/jazzy /usr/bin/cmake --build /root/ros_ws/build/turtlebot3_cartographer -- -j16 -l16
+[1.160s] Invoked command in '/root/ros_ws/build/turtlebot3_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros_ws/install/turtlebot3_teleop:/root/ros_ws/install/turtlebot3_example:/root/ros_ws/install/tb3_multi_nav:/root/ros_ws/install/custom_explorer:/opt/ros/jazzy /usr/bin/cmake --build /root/ros_ws/build/turtlebot3_cartographer -- -j16 -l16
+[1.162s] Invoking command in '/root/ros_ws/build/turtlebot3_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros_ws/install/turtlebot3_teleop:/root/ros_ws/install/turtlebot3_example:/root/ros_ws/install/tb3_multi_nav:/root/ros_ws/install/custom_explorer:/opt/ros/jazzy /usr/bin/cmake --install /root/ros_ws/build/turtlebot3_cartographer
+[1.172s] -- Install configuration: ""
+[1.172s] -- Installing: /root/ros_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/config
+[1.173s] -- Installing: /root/ros_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/config/turtlebot3_lds_2d.lua
+[1.173s] -- Installing: /root/ros_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/launch
+[1.174s] -- Installing: /root/ros_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/launch/cartographer.launch.py
+[1.174s] -- Installing: /root/ros_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/launch/occupancy_grid.launch.py
+[1.175s] -- Installing: /root/ros_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/rviz
+[1.175s] -- Installing: /root/ros_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/rviz/tb3_cartographer.rviz:Zone.Identifier
+[1.176s] -- Installing: /root/ros_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/rviz/tb3_cartographer.rviz
+[1.177s] -- Installing: /root/ros_ws/install/turtlebot3_cartographer/share/ament_index/resource_index/package_run_dependencies/turtlebot3_cartographer
+[1.178s] -- Installing: /root/ros_ws/install/turtlebot3_cartographer/share/ament_index/resource_index/parent_prefix_path/turtlebot3_cartographer
+[1.178s] -- Installing: /root/ros_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/environment/ament_prefix_path.sh
+[1.178s] -- Installing: /root/ros_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/environment/ament_prefix_path.dsv
+[1.178s] -- Installing: /root/ros_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/environment/path.sh
+[1.178s] -- Installing: /root/ros_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/environment/path.dsv
+[1.179s] -- Installing: /root/ros_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/local_setup.bash
+[1.179s] -- Installing: /root/ros_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/local_setup.sh
+[1.180s] -- Installing: /root/ros_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/local_setup.zsh
+[1.180s] -- Installing: /root/ros_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/local_setup.dsv
+[1.180s] -- Installing: /root/ros_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.dsv
+[1.180s] -- Installing: /root/ros_ws/install/turtlebot3_cartographer/share/ament_index/resource_index/packages/turtlebot3_cartographer
+[1.181s] -- Installing: /root/ros_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/cmake/turtlebot3_cartographerConfig.cmake
+[1.181s] -- Installing: /root/ros_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/cmake/turtlebot3_cartographerConfig-version.cmake
+[1.181s] -- Installing: /root/ros_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.xml
+[1.185s] Invoked command in '/root/ros_ws/build/turtlebot3_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros_ws/install/turtlebot3_teleop:/root/ros_ws/install/turtlebot3_example:/root/ros_ws/install/tb3_multi_nav:/root/ros_ws/install/custom_explorer:/opt/ros/jazzy /usr/bin/cmake --install /root/ros_ws/build/turtlebot3_cartographer

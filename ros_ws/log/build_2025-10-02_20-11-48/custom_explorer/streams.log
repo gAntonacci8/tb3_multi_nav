@@ -1,0 +1,37 @@
+[1.112s] Invoking command in '/root/ros_ws/src/autonomous_explorer': PYTHONPATH=/root/ros_ws/build/custom_explorer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros_ws/install/custom_explorer/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/custom_explorer build --build-base /root/ros_ws/build/custom_explorer/build install --record /root/ros_ws/build/custom_explorer/install.log --single-version-externally-managed install_data
+[1.329s] running egg_info
+[1.329s] creating ../../build/custom_explorer/custom_explorer.egg-info
+[1.340s] writing ../../build/custom_explorer/custom_explorer.egg-info/PKG-INFO
+[1.340s] writing dependency_links to ../../build/custom_explorer/custom_explorer.egg-info/dependency_links.txt
+[1.340s] writing entry points to ../../build/custom_explorer/custom_explorer.egg-info/entry_points.txt
+[1.341s] writing requirements to ../../build/custom_explorer/custom_explorer.egg-info/requires.txt
+[1.341s] writing top-level names to ../../build/custom_explorer/custom_explorer.egg-info/top_level.txt
+[1.341s] writing manifest file '../../build/custom_explorer/custom_explorer.egg-info/SOURCES.txt'
+[1.365s] reading manifest file '../../build/custom_explorer/custom_explorer.egg-info/SOURCES.txt'
+[1.366s] writing manifest file '../../build/custom_explorer/custom_explorer.egg-info/SOURCES.txt'
+[1.366s] running build
+[1.366s] running build_py
+[1.367s] creating /root/ros_ws/build/custom_explorer/build
+[1.367s] creating /root/ros_ws/build/custom_explorer/build/lib
+[1.367s] creating /root/ros_ws/build/custom_explorer/build/lib/custom_explorer
+[1.367s] copying custom_explorer/__init__.py -> /root/ros_ws/build/custom_explorer/build/lib/custom_explorer
+[1.367s] copying custom_explorer/explorer.py -> /root/ros_ws/build/custom_explorer/build/lib/custom_explorer
+[1.368s] running install
+[1.376s] running install_lib
+[1.388s] creating /root/ros_ws/install/custom_explorer/lib/python3.12/site-packages/custom_explorer
+[1.388s] copying /root/ros_ws/build/custom_explorer/build/lib/custom_explorer/__init__.py -> /root/ros_ws/install/custom_explorer/lib/python3.12/site-packages/custom_explorer
+[1.389s] copying /root/ros_ws/build/custom_explorer/build/lib/custom_explorer/explorer.py -> /root/ros_ws/install/custom_explorer/lib/python3.12/site-packages/custom_explorer
+[1.389s] byte-compiling /root/ros_ws/install/custom_explorer/lib/python3.12/site-packages/custom_explorer/__init__.py to __init__.cpython-312.pyc
+[1.390s] byte-compiling /root/ros_ws/install/custom_explorer/lib/python3.12/site-packages/custom_explorer/explorer.py to explorer.cpython-312.pyc
+[1.392s] running install_data
+[1.392s] creating /root/ros_ws/install/custom_explorer/share/ament_index
+[1.393s] creating /root/ros_ws/install/custom_explorer/share/ament_index/resource_index
+[1.394s] creating /root/ros_ws/install/custom_explorer/share/ament_index/resource_index/packages
+[1.394s] copying resource/custom_explorer -> /root/ros_ws/install/custom_explorer/share/ament_index/resource_index/packages
+[1.395s] copying package.xml -> /root/ros_ws/install/custom_explorer/share/custom_explorer
+[1.395s] running install_egg_info
+[1.412s] Copying ../../build/custom_explorer/custom_explorer.egg-info to /root/ros_ws/install/custom_explorer/lib/python3.12/site-packages/custom_explorer-0.0.0-py3.12.egg-info
+[1.414s] running install_scripts
+[1.495s] Installing explorer script to /root/ros_ws/install/custom_explorer/lib/custom_explorer
+[1.495s] writing list of installed files to '/root/ros_ws/build/custom_explorer/install.log'
+[1.524s] Invoked command in '/root/ros_ws/src/autonomous_explorer' returned '0': PYTHONPATH=/root/ros_ws/build/custom_explorer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros_ws/install/custom_explorer/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/custom_explorer build --build-base /root/ros_ws/build/custom_explorer/build install --record /root/ros_ws/build/custom_explorer/install.log --single-version-externally-managed install_data
