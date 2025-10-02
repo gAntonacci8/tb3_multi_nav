@@ -4,7 +4,7 @@ PROTO_SCRATCH BRANCH -- Testing creation of Nav2 launcher and nodes upbringing f
 
 STATUS: NOT WORKING \
 University project utilizing 2 turtlebot3 waffle robots for a simulated tag game. \
- Using Nav2 stack, Gazebo bridged to ROS2 and Rviz for sensor monitoring.
+Using Nav2 stack, Gazebo bridged to ROS2 and Rviz for sensor monitoring.
 
 Setup: \
 ROS2 Distro - Jazzy \
@@ -19,8 +19,8 @@ External Repositories (used partially or entirely):
 
 Currently working on:
 
-Modular launcher for multi robot nav2 stack
-Mapping an uknown map for .yaml and .pgm map file to Rviz2
+Modular launcher for multi robot nav2 stack \
+Mapping an uknown map for .yaml and .pgm map file to Rviz2 \
 Gazebo <--> ROS <--> Rviz2 integration \
 Rviz2 multi robot configuration \
 Data categorization with namespaces \
