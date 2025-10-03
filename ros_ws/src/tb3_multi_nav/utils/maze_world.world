@@ -76,12 +76,12 @@
         <visual name="visual"><geometry><box><size>0.1 10 1</size></box></geometry></visual>
         <collision name="collision"><geometry><box><size>0.1 10 1</size></box></geometry></collision>
       </link>
-      
+      <!--pose -3 . .   and size  4  .  . was too tight-->
       <link name="inner_wall_horiz_top_L"> 
-        <pose>-3 2.5 0.5 0 0 0</pose>      <visual name="visual">
-          <geometry><box><size>4 0.1 1</size></box></geometry> </visual>
+        <pose>-3.2 2.5 0.5 0 0 0</pose>      <visual name="visual">
+          <geometry><box><size>3.5 0.1 1</size></box></geometry> </visual>
         <collision name="collision">
-          <geometry><box><size>4 0.1 1</size></box></geometry>
+          <geometry><box><size>3.5 0.1 1</size></box></geometry>
         </collision>
       </link>
       
@@ -92,47 +92,47 @@
           <geometry><box><size>2.5 0.1 1</size></box></geometry>
         </collision>
       </link>
-
+      <!--pose 3 . .   and size  4  .  . was too tight-->
       <link name="inner_wall_horiz_top_R"> 
-        <pose>3 2.5 0.5 0 0 0</pose>       <visual name="visual">
-          <geometry><box><size>4 0.1 1</size></box></geometry> </visual>
+        <pose>3.2 2.5 0.5 0 0 0</pose>       <visual name="visual">
+          <geometry><box><size>3.5 0.1 1</size></box></geometry> </visual>
         <collision name="collision">
-          <geometry><box><size>4 0.1 1</size></box></geometry>
+          <geometry><box><size>3.5 0.1 1</size></box></geometry>
         </collision>
       </link>
-      
+      <!--pose -3 . .   and size  4  .  . was too tight-->
       <link name="inner_wall_horiz_bottom_L"> 
-        <pose>-3 -2.5 0.5 0 0 0</pose>     <visual name="visual">
-          <geometry><box><size>4 0.1 1</size></box></geometry>
+        <pose>-3.2 -2.5 0.5 0 0 0</pose>     <visual name="visual">
+          <geometry><box><size>3.5 0.1 1</size></box></geometry>
         </visual>
         <collision name="collision">
-          <geometry><box><size>4 0.1 1</size></box></geometry>
+          <geometry><box><size>3.5 0.1 1</size></box></geometry>
         </collision>
       </link>
-      
+      <!--pose 3 . .   and size  4  .  . was too tight-->
       <link name="inner_wall_horiz_bottom_R"> 
-        <pose>3 -2.5 0.5 0 0 0</pose>      <visual name="visual">
-          <geometry><box><size>4 0.1 1</size></box></geometry>
+        <pose>3.2 -2.5 0.5 0 0 0</pose>      <visual name="visual">
+          <geometry><box><size>3.5 0.1 1</size></box></geometry>
         </visual>
         <collision name="collision">
-          <geometry><box><size>4 0.1 1</size></box></geometry>
+          <geometry><box><size>3.5 0.1 1</size></box></geometry>
         </collision>
       </link>
-
+      <!--pose . 4.2 .   and size . 1.5  . was too tight-->
       <link name="inner_wall_vert_left_T"> 
-        <pose>-2.5 4.2 0.5 0 0 0</pose>      <visual name="visual">
-          <geometry><box><size>0.1 1.5 1</size></box></geometry> </visual>
+        <pose>-2.5 4.5 0.5 0 0 0</pose>      <visual name="visual">
+          <geometry><box><size>0.1 1 1</size></box></geometry> </visual>
         <collision name="collision">
-          <geometry><box><size>0.1 1.5 1</size></box></geometry>
+          <geometry><box><size>0.1 1 1</size></box></geometry>
         </collision>
       </link>
-      
+      <!--pose . -4.2 .   and size . 1.5  . was too tightr-->
       <link name="inner_wall_vert_left_B"> 
-        <pose>-2.5 -4.2 0.5 0 0 0</pose>     <visual name="visual">
-          <geometry><box><size>0.1 1.5 1</size></box></geometry>
+        <pose>-2.5 -4.5 0.5 0 0 0</pose>     <visual name="visual">
+          <geometry><box><size>0.1 1 1</size></box></geometry>
         </visual>
         <collision name="collision">
-          <geometry><box><size>0.1 1.5 1</size></box></geometry>
+          <geometry><box><size>0.1 1 1</size></box></geometry>
         </collision>
       </link>
 
@@ -144,22 +144,22 @@
           <geometry><box><size>0.1 8 1</size></box></geometry>
         </collision>
       </link>
-
+      <!--pose . 4.2 .   and size . 1.5  . was too tight-->
       <link name="inner_wall_vert_right_T"> 
-        <pose>2.5 4.2 0.5 0 0 0</pose>       <visual name="visual">
-          <geometry><box><size>0.1 1.5 1</size></box></geometry>
+        <pose>2.5 4.5 0.5 0 0 0</pose>       <visual name="visual">
+          <geometry><box><size>0.1 1 1</size></box></geometry>
         </visual>
         <collision name="collision">
-          <geometry><box><size>0.1 1.5 1</size></box></geometry>
+          <geometry><box><size>0.1 1 1</size></box></geometry>
         </collision>
       </link>
-      
+      <!--pose . -4.2 .   and size . 1.5  . was too tightr-->
       <link name="inner_wall_vert_right_B"> 
-        <pose>2.5 -4.2 0.5 0 0 0</pose>      <visual name="visual">
-          <geometry><box><size>0.1 1.5 1</size></box></geometry>
+        <pose>2.5 -4.5 0.5 0 0 0</pose>      <visual name="visual">
+          <geometry><box><size>0.1 1 1</size></box></geometry>
         </visual>
         <collision name="collision">
-          <geometry><box><size>0.1 1.5 1</size></box></geometry>
+          <geometry><box><size>0.1 1 1</size></box></geometry>
         </collision>
       </link>
 
