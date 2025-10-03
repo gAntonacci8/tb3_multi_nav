@@ -8,9 +8,10 @@ Tentative approach to modular navigation2 nodes, manually configuring namespaces
 from launch import LaunchDescription
 from launch.actions import ExecuteProcess,TimerAction, IncludeLaunchDescription, GroupAction, DeclareLaunchArgument
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch_ros.actions import LifecycleNode,Node, PushRosNamespace
-from launch.substitutions import Command, LaunchConfiguration
+from launch_ros.actions import LifecycleNode, Node, PushRosNamespace
+from launch.substitutions import Command, LaunchConfiguration, PathJoinSubstitution
 from ament_index_python.packages import get_package_share_directory
+from launch_ros.substitutions import FindPackageShare
 import os
 
 def generate_launch_description():
@@ -47,7 +48,7 @@ def generate_launch_description():
     spawn_robot1 = Node(
         package='ros_gz_sim',
         executable='create',
-        arguments=['-name', '', '-x', '-0.5', '-y', '0', '-z', '0.01',
+        arguments=['-name', '', '-x', '-3', '-y', '-1', '-z', '0.01',
                    '-file', default],#'/root/ros_ws/src/tb3_multi_nav/config/model_robot1.sdf'], #sdf_path BACKUP
         output='screen'
     )
@@ -90,7 +91,7 @@ def generate_launch_description():
                 }]
     )
     #------------------------ Nav2 stack nodes -------------------------------------------------------
-    static_tf_node = Node(
+    static_tf_node = Node(          #not used                                                      
     package='tf2_ros',
     executable='static_transform_publisher',
     name='base_footprint_base_link_tf',
@@ -99,7 +100,8 @@ def generate_launch_description():
     # Spostamento tipico del base_link di 1 cm sopra base_footprint
     arguments=['0', '0', '0.01', '0', '0', '0', 'base_footprint', 'base_link']
     )
-    #Cartographer Node (SLAM: map -> odom)
+    # Cartographer Node (SLAM: map -> odom) and occupancy_grid node 
+    # Doc: https://ros2-industrial-workshop.readthedocs.io/en/latest/_source/navigation/ROS2-Cartographer.html 
     # package dir: '/opt/ros/jazzy/share/cartographer_ros/, config folder: configuration_files/
     cartographer_node1 = Node(
         package='cartographer_ros', # O turtlebot3_cartographer se usi il loro wrapper
@@ -112,6 +114,14 @@ def generate_launch_description():
             '-configuration_directory', '/root/ros_ws/src/turtlebot3-jazzy/turtlebot3_cartographer/config',
             '-configuration_basename', 'turtlebot3_lds_2d.lua'
         ]
+    )
+    occupancy_grid1=Node(
+        package='cartographer_ros',
+        executable='cartographer_occupancy_grid_node',
+        name='cartographer_occupancy_grid_node',
+        output='screen',
+        parameters=[{'use_sim_time': True}],
+        arguments=['-resolution', '0.05', '-publish_period_sec', '1.0'] #values from documentation
     )
     nav2_params_file1='/root/ros_ws/src/tb3_multi_nav/config/waffle.yaml'
     planner_server_node1 = LifecycleNode(
@@ -131,14 +141,21 @@ def generate_launch_description():
         parameters=[nav2_params_file1, {'use_sim_time': True}],
         output='screen'
     )
+    # '''Addressing error in bt_navigator 'can't find XML file: overwrite in XML with the specific key '''
+    # bt_package_share = FindPackageShare('nav2_bt_navigator')
+
+    # behavior_tree_xml = PathJoinSubstitution([
+    #     bt_package_share, 
+    #     'behavior_trees', 
+    #     'navigate_to_pose_w_replanning_and_recovery.xml'
+    # ])
     bt_navigator_node = LifecycleNode(
         package='nav2_bt_navigator',
         executable='bt_navigator',
         name='bt_navigator',
         namespace="",   
         output='screen',
-        # Assicurati che use_sim_time sia True e che punti al tuo file di configurazione
-        parameters=[{'use_sim_time': True}, nav2_params_file1]
+        parameters=[{ 'use_sim_time': True},nav2_params_file1]
     )
     behavior_server_node1 = LifecycleNode(
         package='nav2_behaviors',
@@ -163,21 +180,87 @@ def generate_launch_description():
         parameters=[nav2_params_file1, {'use_sim_time': True}],
         output='screen'
     )
+    smoother_server1=LifecycleNode(
+        package='nav2_smoother',
+        executable='smoother_server',
+        name='smoother_server',
+        output='screen',
+        namespace="", #robot1 for multi
+        parameters=[nav2_params_file1, {'use_sim_time': True}]
+    )
+    velocity_smoother_node1 = LifecycleNode(
+        package='nav2_velocity_smoother',
+        executable='velocity_smoother',
+        name='velocity_smoother',  
+        output='screen',
+        namespace="",
+        parameters=[
+            nav2_params_file1,
+            {'use_sim_time': True}
+        ],
+        # Questo nodo riceve i comandi dal controller e li reindirizza al robot.
+        # Assicurati che il tuo controller pubblichi su /cmd_vel_nav e il tuo robot ascolti su /cmd_vel.
+        # Se il tuo controller e il tuo robot usano /cmd_vel di default, potresti aver bisogno di remapping:
+        # remappings=[
+        #     ('cmd_vel', 'cmd_vel_smoothed')
+        # ]
+    )
+    waypoint_follower_node1 = LifecycleNode(
+        package='nav2_waypoint_follower',
+        executable='waypoint_follower',
+        name='waypoint_follower',  
+        output='screen',
+        namespace="",       
+        parameters=[
+            nav2_params_file1,
+            {'use_sim_time': True}
+        ]
+    )
+    lifecycle_nodes = [             #Nav2. For check. NOT IN ORDER.
+        'controller_server', #ok
+        'smoother_server',  #ok
+        'planner_server', #ok
+        'behavior_server', #ok
+        'bt_navigator', #ok
+        'waypoint_follower', #ok
+        'velocity_smoother' #ok
+    ]
     # Lifecycle Manager-- activates all lifecycle nodes -- needed for all nav2 nodes
-    lifecycle_manager = Node(
+    # Activation order is CRUCIAL.
+    lifecycle_manager = TimerAction(
+        period=2.0,
+        actions=[Node(
         package='nav2_lifecycle_manager',
         executable='lifecycle_manager',
         name='lifecycle_manager',
         output='screen',
-        parameters=[
+        parameters=[  #add map_server for AMCL
+            {'use_sim_time':True},
             {'autostart': True},    #starts all nodes automatically
             {'node_names': [        #nodes list
-                'planner_server','controller_server','bt_navigator','behavior_server'
+                #'map_server',      #commented to avoid cartographer conflicts. First when using already mapped envs.
+                'behavior_server',
+                'smoother_server',
+                'planner_server','controller_server',
+                'velocity_smoother','bt_navigator',
+                #'waypoint_follower'
             ]}
-        ]
-    ) 
+        ])] 
+    )
 
     #---------------- Rviz2 and configuration ----------------------------
+    # Sets pose for robot1 in Rviz automatically. Single publish, no node
+    init_pose_robot1 = ExecuteProcess(
+			cmd=[
+				'ros2', 'topic', 'pub', '--once',
+				#'/robot1/initialpose', #uncomment with 2 robots
+                '/initialpose',
+				'geometry_msgs/PoseWithCovarianceStamped',
+				'{header: {frame_id: "map"}, pose: {pose: {position: {x: -3, y: -1, z: 0.01}, orientation: {x: 0.0, y: 0.0, z: 0.0, w: 1.0}}, covariance: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}}'
+			],
+			output='screen'
+    )
+	
     rviz_config_path = os.path.join(
         get_package_share_directory('nav2_bringup'), 
         'rviz', 
@@ -196,24 +279,33 @@ def generate_launch_description():
     ''' 
     rviz_node = ExecuteProcess(
         cmd=['rviz2', '-d', rviz_config_path, '--ros-args', '-p', 'use_sim_time:=True'],
-        name='rviz_visualizer',  # Aggiungi un nome unico per chiarezza
+        name='rviz_visualizer', 
         output='screen',
-        shell=True # Esegue il comando come se fosse in un terminale
+        shell=True                      # Executes like shell
     )
     
-    return LaunchDescription([          #Launches nodes in the exact order
+    #Launches nodes in the exact order. for Lifecycles nodes, order not important here, but in the Manager
+    return LaunchDescription([          
         gazebo,
         spawn_robot1,
-        #spawn_robot2,
+        #spawn_robot2,          #not yet
         bridge_robot1,
         robot1_state_publisher,
-        cartographer_node1,
-        #planner_server_node1,
-        #controller_server_node1,
-        #behavior_server_node1,
-        #bt_navigator_node,
-        #explorer_node,
-        #lifecycle_manager,
-        static_tf_node,
+
+        cartographer_node1,     # comment when migrating to AMCL
+        occupancy_grid1,        # comment when migrating to AMCL (maybe?)
+        
+        planner_server_node1,
+        controller_server_node1,
+        behavior_server_node1,
+        smoother_server1,
+        velocity_smoother_node1,
+        bt_navigator_node,
+        waypoint_follower_node1,
+        # map_server_node,      # conflict when using cartographer. Uncomment when migrating to AMCL and .yaml done.
+        #explorer_node,         # autonomous mapping external node. Not properly working or missing nav2 stuff.
+        lifecycle_manager,
+        #init_pose_robot1,      # incoherent behavior. Rviz seems already configured to proper position. Do not use for now.
+
         rviz_node
     ])
