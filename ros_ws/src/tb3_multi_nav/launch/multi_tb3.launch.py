@@ -18,7 +18,7 @@ def generate_launch_description():
     namespaces=['robot1','robot2']
 
     #------------ Open Gazebo and spawn two (2) turtlebot3 waffle
-    #--- Coordinates: Robot1 (-0.5 0 0.01 0 0 0), Robot2 (-0.5 -1 0 0 0 0.01) 
+    #--- Coordinates: Robot1 (-3 -1 0.01 0 0 0), Robot2 (-3 1 0 0 0 0.01) 
 
     #get STANDARD turtlebot3 world for gazebo
     tb3_world = os.path.join(                               
