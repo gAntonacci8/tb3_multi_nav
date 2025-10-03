@@ -57,128 +57,109 @@
       <static>1</static>
       
       <link name="wall_north">
-        <pose>0 10 0.5 0 0 0</pose>
-        <visual name="visual">
-          <geometry><box><size>20 0.1 1</size></box></geometry>
-        </visual>
-        <collision name="collision">
-          <geometry><box><size>20 0.1 1</size></box></geometry>
-        </collision>
+        <pose>0 5 0.5 0 0 0</pose>         
+        <visual name="visual"><geometry><box><size>10 0.1 1</size></box></geometry></visual>
+        <collision name="collision"><geometry><box><size>10 0.1 1</size></box></geometry></collision>
       </link>
-      
       <link name="wall_south">
-        <pose>0 -10 0.5 0 0 0</pose>
-        <visual name="visual">
-          <geometry><box><size>20 0.1 1</size></box></geometry>
-        </visual>
-        <collision name="collision">
-          <geometry><box><size>20 0.1 1</size></box></geometry>
-        </collision>
+        <pose>0 -5 0.5 0 0 0</pose>        
+        <visual name="visual"><geometry><box><size>10 0.1 1</size></box></geometry></visual>
+        <collision name="collision"><geometry><box><size>10 0.1 1</size></box></geometry></collision>
       </link>
-      
       <link name="wall_east">
-        <pose>10 0 0.5 0 0 0</pose>
-        <visual name="visual">
-          <geometry><box><size>0.1 20 1</size></box></geometry>
-        </visual>
-        <collision name="collision">
-          <geometry><box><size>0.1 20 1</size></box></geometry>
-        </collision>
+        <pose>5 0 0.5 0 0 0</pose>         
+        <visual name="visual"><geometry><box><size>0.1 10 1</size></box></geometry></visual>
+        <collision name="collision"><geometry><box><size>0.1 10 1</size></box></geometry></collision>
       </link>
-      
       <link name="wall_west">
-        <pose>-10 0 0.5 0 0 0</pose>
-        <visual name="visual">
-          <geometry><box><size>0.1 20 1</size></box></geometry>
-        </visual>
+        <pose>-5 0 0.5 0 0 0</pose>        
+        <visual name="visual"><geometry><box><size>0.1 10 1</size></box></geometry></visual>
+        <collision name="collision"><geometry><box><size>0.1 10 1</size></box></geometry></collision>
+      </link>
+      
+      <link name="inner_wall_horiz_top_L"> 
+        <pose>-3 2.5 0.5 0 0 0</pose>      <visual name="visual">
+          <geometry><box><size>4 0.1 1</size></box></geometry> </visual>
         <collision name="collision">
-          <geometry><box><size>0.1 20 1</size></box></geometry>
+          <geometry><box><size>4 0.1 1</size></box></geometry>
         </collision>
       </link>
       
-      <link name="inner_wall_horiz_top_L"> <pose>-6 5 0.5 0 0 0</pose>
-        <visual name="visual">
-          <geometry><box><size>8 0.1 1</size></box></geometry>
-        </visual>
+      <link name="inner_wall_horiz_middle"> 
+        <pose> 1.25 0 0.5 0 0 0</pose>     <visual name="visual">
+          <geometry><box><size>2.5 0.1 1</size></box></geometry> </visual>
         <collision name="collision">
-          <geometry><box><size>8 0.1 1</size></box></geometry>
-        </collision>
-      </link>
-      <link name="inner_wall_horiz_middle"> <pose> 2.5 0 0.5 0 0 0</pose>
-        <visual name="visual">
-          <geometry><box><size>5 0.1 1</size></box></geometry>
-        </visual>
-        <collision name="collision">
-          <geometry><box><size>5 0.1 1</size></box></geometry>
+          <geometry><box><size>2.5 0.1 1</size></box></geometry>
         </collision>
       </link>
 
-      <link name="inner_wall_horiz_top_R"> <pose>6 5 0.5 0 0 0</pose>
-        <visual name="visual">
-          <geometry><box><size>8 0.1 1</size></box></geometry>
-        </visual>
+      <link name="inner_wall_horiz_top_R"> 
+        <pose>3 2.5 0.5 0 0 0</pose>       <visual name="visual">
+          <geometry><box><size>4 0.1 1</size></box></geometry> </visual>
         <collision name="collision">
-          <geometry><box><size>8 0.1 1</size></box></geometry>
+          <geometry><box><size>4 0.1 1</size></box></geometry>
         </collision>
       </link>
       
-      <link name="inner_wall_horiz_bottom_L"> <pose>-6 -5 0.5 0 0 0</pose>
-        <visual name="visual">
-          <geometry><box><size>8 0.1 1</size></box></geometry>
+      <link name="inner_wall_horiz_bottom_L"> 
+        <pose>-3 -2.5 0.5 0 0 0</pose>     <visual name="visual">
+          <geometry><box><size>4 0.1 1</size></box></geometry>
         </visual>
         <collision name="collision">
-          <geometry><box><size>8 0.1 1</size></box></geometry>
+          <geometry><box><size>4 0.1 1</size></box></geometry>
         </collision>
       </link>
-      <link name="inner_wall_horiz_bottom_R"> <pose>6 -5 0.5 0 0 0</pose>
-        <visual name="visual">
-          <geometry><box><size>8 0.1 1</size></box></geometry>
+      
+      <link name="inner_wall_horiz_bottom_R"> 
+        <pose>3 -2.5 0.5 0 0 0</pose>      <visual name="visual">
+          <geometry><box><size>4 0.1 1</size></box></geometry>
         </visual>
         <collision name="collision">
-          <geometry><box><size>8 0.1 1</size></box></geometry>
-        </collision>
-      </link>
-
-      <link name="inner_wall_vert_left_T"> <pose>-5 8 0.5 0 0 0</pose>
-        <visual name="visual">
-          <geometry><box><size>0.1 4 1</size></box></geometry>
-        </visual>
-        <collision name="collision">
-          <geometry><box><size>0.1 4 1</size></box></geometry>
-        </collision>
-      </link>
-      <link name="inner_wall_vert_left_B"> <pose>-5 -8 0.5 0 0 0</pose>
-        <visual name="visual">
-          <geometry><box><size>0.1 4 1</size></box></geometry>
-        </visual>
-        <collision name="collision">
-          <geometry><box><size>0.1 4 1</size></box></geometry>
+          <geometry><box><size>4 0.1 1</size></box></geometry>
         </collision>
       </link>
 
-      <link name="inner_wall_vert_middle"> <pose>0 0 0.5 0 0 0</pose>
-        <visual name="visual">
-          <geometry><box><size>0.1 16 1</size></box></geometry>
+      <link name="inner_wall_vert_left_T"> 
+        <pose>-2.5 4.2 0.5 0 0 0</pose>      <visual name="visual">
+          <geometry><box><size>0.1 1.5 1</size></box></geometry> </visual>
+        <collision name="collision">
+          <geometry><box><size>0.1 1.5 1</size></box></geometry>
+        </collision>
+      </link>
+      
+      <link name="inner_wall_vert_left_B"> 
+        <pose>-2.5 -4.2 0.5 0 0 0</pose>     <visual name="visual">
+          <geometry><box><size>0.1 1.5 1</size></box></geometry>
         </visual>
         <collision name="collision">
-          <geometry><box><size>0.1 16 1</size></box></geometry>
+          <geometry><box><size>0.1 1.5 1</size></box></geometry>
         </collision>
       </link>
 
-      <link name="inner_wall_vert_right_T"> <pose>5 8 0.5 0 0 0</pose>
+      <link name="inner_wall_vert_middle"> 
+        <pose>0 0 0.5 0 0 0</pose>
         <visual name="visual">
-          <geometry><box><size>0.1 4 1</size></box></geometry>
-        </visual>
+          <geometry><box><size>0.1 8 1</size></box></geometry> </visual>
         <collision name="collision">
-          <geometry><box><size>0.1 4 1</size></box></geometry>
+          <geometry><box><size>0.1 8 1</size></box></geometry>
         </collision>
       </link>
-      <link name="inner_wall_vert_right_B"> <pose>5 -8 0.5 0 0 0</pose>
-        <visual name="visual">
-          <geometry><box><size>0.1 4 1</size></box></geometry>
+
+      <link name="inner_wall_vert_right_T"> 
+        <pose>2.5 4.2 0.5 0 0 0</pose>       <visual name="visual">
+          <geometry><box><size>0.1 1.5 1</size></box></geometry>
         </visual>
         <collision name="collision">
-          <geometry><box><size>0.1 4 1</size></box></geometry>
+          <geometry><box><size>0.1 1.5 1</size></box></geometry>
+        </collision>
+      </link>
+      
+      <link name="inner_wall_vert_right_B"> 
+        <pose>2.5 -4.2 0.5 0 0 0</pose>      <visual name="visual">
+          <geometry><box><size>0.1 1.5 1</size></box></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><box><size>0.1 1.5 1</size></box></geometry>
         </collision>
       </link>
 
