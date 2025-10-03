@@ -3,6 +3,14 @@ Tb3 multi nav tag-game \
 PROTO_SCRATCH BRANCH -- Testing creation of Nav2 launcher and nodes upbringing from scratch. 
 
 STATUS: NOT WORKING \
+- Cartographer ONLINE, saves map. 
+- Navigation2 Stack PARTIALLY ONLINE, works but not correctly.
+- Robot accepts pose and goals from Rviz. Navigation shows signs of not adherence to track. 
+- Map saving and loading tested: saving .yaml and .pgm correctly, loads and publish to /map correctly.
+- Rviz accepts map and map frame. Problems for reloading map frame when opening premade map.
+- Autonomous navigation: NOT WORKING 
+- !! Multi-Robot: NOT TESTED YET.
+
 University project utilizing 2 turtlebot3 waffle robots for a simulated tag game. \
 Using Nav2 stack, Gazebo bridged to ROS2 and Rviz for sensor monitoring.
 
