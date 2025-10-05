@@ -40,7 +40,7 @@ def generate_launch_description():
             PythonLaunchDescriptionSource(
                 os.path.join(get_package_share_directory('ros_gz_sim'), 'launch', 'gz_sim.launch.py')
             ),
-            launch_arguments={'gz_args': f'-r {custom_world}'}.items() #maybe 'use_sim_time':'true' ? 
+            launch_arguments={'gz_args': f'-r {custom_world}','use_sim_time':'true'}.items() #maybe 'use_sim_time':'true' ? 
     )
     #Spawn robots in Gazebo
     # Spawn robot1
@@ -101,6 +101,8 @@ def generate_launch_description():
     arguments=['0', '0', '0.01', '0', '0', '0', 'base_footprint', 'base_link']
     )
     # Cartographer Node (SLAM: map -> odom) and occupancy_grid node 
+    # IMP: These nodes are mutually exclusive with AMCL node. Cartographer also overwrites map_server in /map topic, so 
+    # preloaded map is overrun and useless. 
     # Doc: https://ros2-industrial-workshop.readthedocs.io/en/latest/_source/navigation/ROS2-Cartographer.html 
     # package dir: '/opt/ros/jazzy/share/cartographer_ros/, config folder: configuration_files/
     cartographer_node1 = Node(
@@ -123,6 +125,17 @@ def generate_launch_description():
         parameters=[{'use_sim_time': True}],
         arguments=['-resolution', '0.05', '-publish_period_sec', '1.0'] #values from documentation
     )
+
+    # AMCL (Adaptive Monte Carlo Localization) node. Same function (TF map -> odom frames) as cartographer. Mutually exclusive with it
+    amcl_node1=LifecycleNode(
+        package='nav2_amcl',
+        executable='amcl',
+        name='amcl',
+        namespace='', #robot1 for multi-robot scenario
+        output='screen',
+        parameters=[{'use_sim_time':True}],
+    )
+
     nav2_params_file1='/root/ros_ws/src/tb3_multi_nav/config/waffle.yaml'
     planner_server_node1 = LifecycleNode(
         package='nav2_planner',
@@ -172,12 +185,17 @@ def generate_launch_description():
         executable="explorer",
         output="screen"
     )
+    map_yaml_selector=[
+        '/root/ros_ws/src/tb3_multi_nav/utils/newmaze.yaml',
+        '/root/ros_ws/src/tb3_multi_nav/utils/2ndattempt_newmaze.yaml'
+
+    ]
     map_server_node = LifecycleNode(
         package='nav2_map_server',
         executable='map_server',
         namespace="",
         name='map_server',
-        parameters=[nav2_params_file1, {'use_sim_time': True}],
+        parameters=[nav2_params_file1, {'use_sim_time': True, 'yaml_filename':map_yaml_selector[1]}],
         output='screen'
     )
     smoother_server1=LifecycleNode(
@@ -234,16 +252,17 @@ def generate_launch_description():
         executable='lifecycle_manager',
         name='lifecycle_manager',
         output='screen',
-        parameters=[  #add map_server for AMCL
+        parameters=[  
             {'use_sim_time':True},
             {'autostart': True},    #starts all nodes automatically
             {'node_names': [        #nodes list
-                #'map_server',      #commented to avoid cartographer conflicts. First when using already mapped envs.
+                'map_server',      #commented to avoid cartographer conflicts. First when using already mapped envs.
+                'amcl',             #testing if lifecylce, as other Nav2 nodes
                 'behavior_server',
                 'smoother_server',
                 'planner_server','controller_server',
                 'velocity_smoother','bt_navigator',
-                #'waypoint_follower'
+                'waypoint_follower' #-------------- WAS COMMENTED. Works fine uncommented.
             ]}
         ])] 
     )
@@ -292,9 +311,11 @@ def generate_launch_description():
         bridge_robot1,
         robot1_state_publisher,
 
-        cartographer_node1,     # comment when migrating to AMCL
-        occupancy_grid1,        # comment when migrating to AMCL (maybe?)
+        #cartographer_node1,     # comment when migrating to AMCL
+        #occupancy_grid1,        # comment when migrating to AMCL (maybe?)
         
+        amcl_node1,             # comment when using cartographer
+
         planner_server_node1,
         controller_server_node1,
         behavior_server_node1,
@@ -302,10 +323,10 @@ def generate_launch_description():
         velocity_smoother_node1,
         bt_navigator_node,
         waypoint_follower_node1,
-        # map_server_node,      # conflict when using cartographer. Uncomment when migrating to AMCL and .yaml done.
+        map_server_node,        # conflict when using cartographer. Uncomment when migrating to AMCL and .yaml done.
         #explorer_node,         # autonomous mapping external node. Not properly working or missing nav2 stuff.
         lifecycle_manager,
-        #init_pose_robot1,      # incoherent behavior. Rviz seems already configured to proper position. Do not use for now.
+        init_pose_robot1,      # incoherent behavior. Rviz seems already configured to proper position. Do not use for now.
 
         rviz_node
     ])
