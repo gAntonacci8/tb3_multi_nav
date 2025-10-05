@@ -185,9 +185,10 @@ def generate_launch_description():
         executable="explorer",
         output="screen"
     )
-    map_yaml_selector=[
+    #map selector, overrid the "yaml_filename" parameter in "waffle.yaml". Just for simplicity.
+    map_yaml_selector=[ 
         '/root/ros_ws/src/tb3_multi_nav/utils/newmaze.yaml',
-        '/root/ros_ws/src/tb3_multi_nav/utils/2ndattempt_newmaze.yaml'
+        '/root/ros_ws/src/tb3_multi_nav/utils/2ndattempt_newmaze.yaml'  #actually using this one. Better mapping.
 
     ]
     map_server_node = LifecycleNode(
