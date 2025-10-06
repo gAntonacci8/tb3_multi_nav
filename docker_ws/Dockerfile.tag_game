@@ -32,7 +32,8 @@ RUN apt-get update && apt install -y \
 
 #rqt_graph tool installer
 RUN apt-get update && apt-get install -y \
-    ros-jazzy-rqt-graph 
+    ros-jazzy-rqt-graph \
+    && apt clean
 
 ENV TURTLEBOT3_MODEL=waffle
 
