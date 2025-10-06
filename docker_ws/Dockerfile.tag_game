@@ -9,19 +9,23 @@ RUN apt update && apt install -y \
     && apt clean
 
 # TB3 + Gazebo (Harmonic) + RViz2 + ros_gz bridge
-RUN apt-get update && apt install -y \
+RUN apt-get update && apt-get install -y \
     ros-jazzy-turtlebot3-gazebo \
     ros-jazzy-turtlebot3-msgs \
     ros-jazzy-rviz2 \
     ros-jazzy-ros-gz \
     ros-jazzy-ros-gz-sim \
     ros-jazzy-ros-gz-bridge \
-    ros-jazzy-dynamixel-sdk \
+    ros-jazzy-dynamixel-sdk 
+
+RUN apt-get update && apt-get install -y \
     ros-jazzy-navigation2 \
     ros-jazzy-nav2-bringup \
     ros-jazzy-turtlebot3-bringup \
     ros-jazzy-turtlebot3-navigation2 \
-    ros-jazzy-ros-gz-image \
+    ros-jazzy-ros-gz-image 
+
+RUN apt-get update && apt-get install -y \
     ros-jazzy-tf2-tools \
     ros-jazzy-diagnostics \
     ros-jazzy-slam-toolbox \
