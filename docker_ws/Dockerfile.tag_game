@@ -2,7 +2,7 @@ FROM ros:jazzy
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Osnovni alati + colcon (za kasnije, kad dodaš svoj kod)
+# Basic tools + colcon (for later, when you add your code)
 RUN apt update && apt install -y \
     git curl wget nano build-essential \
     python3-colcon-common-extensions \
@@ -29,6 +29,10 @@ RUN apt-get update && apt install -y \
     ros-jazzy-cartographer-ros \
     ros-jazzy-cartographer-ros-msgs \
     && apt clean
+
+#rqt_graph tool installer
+RUN apt-get update && apt-get install -y \
+    ros-jazzy-rqt-graph 
 
 ENV TURTLEBOT3_MODEL=waffle
 
