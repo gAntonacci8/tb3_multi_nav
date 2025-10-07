@@ -1,0 +1,546 @@
+[INFO] [launch]: All log files can be found below /root/.ros/log/2025-10-07-07-42-22-930101-docker-desktop-195
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [gazebo-1]: process started with pid [214]
+[INFO] [create-2]: process started with pid [215]
+[INFO] [parameter_bridge-3]: process started with pid [217]
+[INFO] [robot_state_publisher-4]: process started with pid [218]
+[INFO] [amcl-5]: process started with pid [219]
+[INFO] [planner_server-6]: process started with pid [220]
+[INFO] [controller_server-7]: process started with pid [221]
+[INFO] [behavior_server-8]: process started with pid [222]
+[INFO] [smoother_server-9]: process started with pid [227]
+[INFO] [velocity_smoother-10]: process started with pid [232]
+[INFO] [bt_navigator-11]: process started with pid [233]
+[INFO] [waypoint_follower-12]: process started with pid [236]
+[INFO] [map_server-13]: process started with pid [237]
+[INFO] [lifecycle_manager-14]: process started with pid [238]
+[INFO] [rviz_visualizer-15]: process started with pid [243]
+[behavior_server-8] [INFO] [1759822943.654500629] [robot1.behavior_server]: 
+[behavior_server-8] 	behavior_server lifecycle node launched. 
+[behavior_server-8] 	Waiting on external lifecycle transitions to activate
+[behavior_server-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-5] [INFO] [1759822943.655046800] [robot1.amcl]: 
+[amcl-5] 	amcl lifecycle node launched. 
+[amcl-5] 	Waiting on external lifecycle transitions to activate
+[amcl-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-5] [INFO] [1759822943.656571453] [robot1.amcl]: Creating
+[controller_server-7] [INFO] [1759822943.658408201] [robot1.controller_server]: 
+[controller_server-7] 	controller_server lifecycle node launched. 
+[controller_server-7] 	Waiting on external lifecycle transitions to activate
+[controller_server-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-6] [INFO] [1759822943.661570295] [robot1.planner_server]: 
+[planner_server-6] 	planner_server lifecycle node launched. 
+[planner_server-6] 	Waiting on external lifecycle transitions to activate
+[planner_server-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-6] [INFO] [1759822943.665991599] [robot1.planner_server]: Creating
+[lifecycle_manager-14] [INFO] [1759822943.666577803] [map_lifecycle_manager]: Creating
+[controller_server-7] [INFO] [1759822943.668379170] [robot1.controller_server]: Creating controller server
+[create-2] [INFO] [1759822943.668799390] [ros_gz_sim]: Requesting list of world names.
+[waypoint_follower-12] [INFO] [1759822943.673159008] [robot1.waypoint_follower]: 
+[waypoint_follower-12] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-12] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-11] [INFO] [1759822943.674445473] [robot1.bt_navigator]: 
+[bt_navigator-11] 	bt_navigator lifecycle node launched. 
+[bt_navigator-11] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[velocity_smoother-10] [INFO] [1759822943.674877702] [robot1.velocity_smoother]: 
+[velocity_smoother-10] 	velocity_smoother lifecycle node launched. 
+[velocity_smoother-10] 	Waiting on external lifecycle transitions to activate
+[velocity_smoother-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-12] [INFO] [1759822943.675509898] [robot1.waypoint_follower]: Creating
+[bt_navigator-11] [INFO] [1759822943.676126759] [robot1.bt_navigator]: Creating
+[smoother_server-9] [INFO] [1759822943.676539700] [robot1.smoother_server]: 
+[smoother_server-9] 	smoother_server lifecycle node launched. 
+[smoother_server-9] 	Waiting on external lifecycle transitions to activate
+[smoother_server-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[smoother_server-9] [INFO] [1759822943.678383120] [robot1.smoother_server]: Creating smoother server
+[robot_state_publisher-4] [INFO] [1759822943.683261182] [robot1.robot1_state_publisher]: Robot initialized
+[planner_server-6] [INFO] [1759822943.683326632] [robot1.global_costmap.global_costmap]: 
+[planner_server-6] 	global_costmap lifecycle node launched. 
+[planner_server-6] 	Waiting on external lifecycle transitions to activate
+[planner_server-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[lifecycle_manager-14] [INFO] [1759822943.683455941] [map_lifecycle_manager]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[planner_server-6] [INFO] [1759822943.685461431] [robot1.global_costmap.global_costmap]: Creating Costmap
+[controller_server-7] [INFO] [1759822943.687523979] [robot1.local_costmap.local_costmap]: 
+[controller_server-7] 	local_costmap lifecycle node launched. 
+[controller_server-7] 	Waiting on external lifecycle transitions to activate
+[controller_server-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-7] [INFO] [1759822943.688340711] [robot1.local_costmap.local_costmap]: Creating Costmap
+[lifecycle_manager-14] [INFO] [1759822943.711051083] [map_lifecycle_manager]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-14] [INFO] [1759822943.711097798] [map_lifecycle_manager]: [34m[1mConfiguring map_server[0m[0m
+[map_server-13] [INFO] [1759822943.712853855] [map_server]: 
+[map_server-13] 	map_server lifecycle node launched. 
+[map_server-13] 	Waiting on external lifecycle transitions to activate
+[map_server-13] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-13] [INFO] [1759822943.712971685] [map_server]: Creating
+[rviz_visualizer-15] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+[map_server-13] [INFO] [1759822943.836545634] [map_server]: Configuring
+[map_server-13] [INFO] [1759822943.836618346] [map_io]: Loading yaml file: /root/ros_ws/src/tb3_multi_nav/utils/2ndattempt_newmaze.yaml
+[map_server-13] [INFO] [1759822943.837012152] [map_io]: resolution: 0.05
+[map_server-13] [INFO] [1759822943.837021361] [map_io]: origin[0]: -5.254
+[map_server-13] [INFO] [1759822943.837024024] [map_io]: origin[1]: -5.383
+[map_server-13] [INFO] [1759822943.837025622] [map_io]: origin[2]: 0
+[map_server-13] [INFO] [1759822943.837027420] [map_io]: free_thresh: 0.196
+[map_server-13] [INFO] [1759822943.837028960] [map_io]: occupied_thresh: 0.65
+[map_server-13] [INFO] [1759822943.837031161] [map_io]: mode: trinary
+[map_server-13] [INFO] [1759822943.837033293] [map_io]: negate: 0
+[map_server-13] [INFO] [1759822943.840889223] [map_io]: Loading image_file: /root/ros_ws/src/tb3_multi_nav/utils/2ndattempt_newmaze.pgm
+[map_server-13] [INFO] [1759822943.844215087] [map_io]: Read map /root/ros_ws/src/tb3_multi_nav/utils/2ndattempt_newmaze.pgm: 214 X 213 map @ 0.05 m/cell
+[lifecycle_manager-14] [INFO] [1759822943.851920077] [map_lifecycle_manager]: [34m[1mActivating map_server[0m[0m
+[map_server-13] [INFO] [1759822943.852168641] [map_server]: Activating
+[map_server-13] [INFO] [1759822943.852300147] [map_server]: Creating bond (map_server) to lifecycle manager.
+[lifecycle_manager-14] [INFO] [1759822943.959324812] [map_lifecycle_manager]: Server map_server connected with bond.
+[lifecycle_manager-14] [INFO] [1759822943.959391695] [map_lifecycle_manager]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-14] [INFO] [1759822943.959406008] [map_lifecycle_manager]: [34m[1mCreating bond timer...[0m[0m
+[gazebo-1] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+[rviz_visualizer-15] [INFO] [1759822944.283764598] [rviz2]: Stereo is NOT SUPPORTED
+[rviz_visualizer-15] [INFO] [1759822944.283851859] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[rviz_visualizer-15] [INFO] [1759822944.355091270] [rviz2]: Stereo is NOT SUPPORTED
+[rviz_visualizer-15] [INFO] [1759822944.503711850] [rviz]: Subscribing to: /mobile_base/sensors/bumper_pointcloud
+[rviz_visualizer-15] 
+[rviz_visualizer-15] [INFO] [1759822944.505372082] [rviz]: Subscribing to: /mobile_base/sensors/bumper_pointcloud
+[rviz_visualizer-15] 
+[rviz_visualizer-15] [INFO] [1759822944.540812851] [rviz]: Subscribing to: /robot1/global_costmap/voxel_marked_cloud
+[rviz_visualizer-15] 
+[rviz_visualizer-15] [INFO] [1759822944.551963046] [rviz]: Subscribing to: /robot1/local_costmap/voxel_marked_cloud
+[rviz_visualizer-15] 
+[rviz_visualizer-15] [INFO] [1759822944.580155356] [rviz]: Subscribing to: /mobile_base/sensors/bumper_pointcloud
+[rviz_visualizer-15] 
+[rviz_visualizer-15] [INFO] [1759822944.588841184] [rviz]: Subscribing to: /robot1/global_costmap/voxel_marked_cloud
+[rviz_visualizer-15] 
+[rviz_visualizer-15] [INFO] [1759822944.595687794] [rviz]: Subscribing to: /robot1/local_costmap/voxel_marked_cloud
+[rviz_visualizer-15] 
+[rviz_visualizer-15] [INFO] [1759822944.676006692] [nav2_rviz_selector_node]: Trying to load plugins...
+[parameter_bridge-3] [INFO] [1759822944.706707508] [ros_gz_bridge1]: Creating GZ->ROS Bridge: [clock (gz.msgs.Clock) -> clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1759822944.710345409] [ros_gz_bridge1]: Creating GZ->ROS Bridge: [robot1/joint_states (gz.msgs.Model) -> robot1/joint_states (sensor_msgs/msg/JointState)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1759822944.714762874] [ros_gz_bridge1]: Creating GZ->ROS Bridge: [robot1/odom (gz.msgs.Odometry) -> robot1/odom (nav_msgs/msg/Odometry)] (Lazy 0)
+[rviz_visualizer-15] [WARN] [1759822944.717185109] [rcl.logging_rosout]: Publisher already registered for node name: 'nav2_rviz_selector_node'. If this is due to multiple nodes with the same name then all logs for the logger named 'nav2_rviz_selector_node' will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[parameter_bridge-3] [INFO] [1759822944.718913453] [ros_gz_bridge1]: Creating GZ->ROS Bridge: [tf (gz.msgs.Pose_V) -> tf (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1759822944.725668219] [ros_gz_bridge1]: Creating ROS->GZ Bridge: [robot1/cmd_vel (geometry_msgs/msg/TwistStamped) -> robot1/cmd_vel (gz.msgs.Twist)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1759822944.730593696] [ros_gz_bridge1]: Creating GZ->ROS Bridge: [robot1/imu (gz.msgs.IMU) -> robot1/imu (sensor_msgs/msg/Imu)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1759822944.732082528] [ros_gz_bridge1]: Creating GZ->ROS Bridge: [robot1/scan (gz.msgs.LaserScan) -> robot1/scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1759822944.733765513] [ros_gz_bridge1]: Creating GZ->ROS Bridge: [robot1/camera/camera_info (gz.msgs.CameraInfo) -> robot1/camera/camera_info (sensor_msgs/msg/CameraInfo)] (Lazy 0)
+[rviz_visualizer-15] [INFO] [1759822944.736742771] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759822945.501848994] [rviz2]: Trying to create a map of size 214 x 213 using 1 swatches
+[rviz_visualizer-15] [ERROR] [1759822945.508854599] [rviz2]: rviz/glsl120/indexed_8bit_image.vert
+[rviz_visualizer-15] rviz/glsl120/indexed_8bit_image.frag
+[rviz_visualizer-15]  GLSL link result : 
+[rviz_visualizer-15] active samplers with a different type refer to the same texture image unit
+[INFO] [lifecycle_manager-16]: process started with pid [590]
+[lifecycle_manager-16] [INFO] [1759822945.650968040] [robot1.lifecycle_manager1]: Creating
+[lifecycle_manager-16] [INFO] [1759822945.653291750] [robot1.lifecycle_manager1]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[rviz_visualizer-15] [INFO] [1759822945.688008337] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822945.745094818] [nav2_rviz_selector_node]: controller_server service not available
+[create-2] [INFO] [1759822946.573339000] [ros_gz_sim]: Entity creation successful.
+[gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="turtlebot3_waffle"]/link[@name="robot1/base_scan"]/sensor[@name="hls_lfcd_lds"]/gz_frame_id:/root/ros_ws/src/tb3_multi_nav/config/model.sdf:L141]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="turtlebot3_waffle"]/link[@name="robot1/camera_rgb_frame"]/sensor[@name="camera"]/gz_frame_id:/root/ros_ws/src/tb3_multi_nav/config/model.sdf:L379]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[INFO] [create-2]: process has finished cleanly [pid 215]
+[rviz_visualizer-15] [INFO] [1759822946.705967617] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759822946.758979798] [nav2_rviz_selector_node]: planner_server service not available
+[lifecycle_manager-16] [INFO] [1759822947.425551155] [robot1.lifecycle_manager1]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-16] [INFO] [1759822947.425614119] [robot1.lifecycle_manager1]: [34m[1mConfiguring amcl[0m[0m
+[amcl-5] [INFO] [1759822947.426135329] [robot1.amcl]: Configuring
+[amcl-5] [INFO] [1759822947.426242156] [robot1.amcl]: initTransforms
+[amcl-5] [INFO] [1759822947.437143747] [robot1.amcl]: initPubSub
+[amcl-5] [INFO] [1759822947.448537574] [robot1.amcl]: Subscribed to map topic.
+[lifecycle_manager-16] [INFO] [1759822947.455647021] [robot1.lifecycle_manager1]: [34m[1mConfiguring behavior_server[0m[0m
+[behavior_server-8] [INFO] [1759822947.455999503] [robot1.behavior_server]: Configuring
+[amcl-5] [INFO] [1759822947.459292822] [robot1.amcl]: Received a 214 X 213 map @ 0.050 m/pix
+[behavior_server-8] [INFO] [1759822947.461070899] [robot1.behavior_server]: Creating behavior plugin spin of type nav2_behaviors::Spin
+[behavior_server-8] [INFO] [1759822947.463878739] [robot1.behavior_server]: Creating behavior plugin backup of type nav2_behaviors::BackUp
+[behavior_server-8] [INFO] [1759822947.467247012] [robot1.behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors::DriveOnHeading
+[behavior_server-8] [INFO] [1759822947.469730117] [robot1.behavior_server]: Creating behavior plugin wait of type nav2_behaviors::Wait
+[behavior_server-8] [INFO] [1759822947.472559449] [robot1.behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors::AssistedTeleop
+[gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="turtlebot3_waffle"]/link[@name="robot1/base_scan"]/sensor[@name="hls_lfcd_lds"]/gz_frame_id:<data-string>:L163]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[behavior_server-8] [INFO] [1759822947.488827850] [robot1.behavior_server]: Configuring spin
+[behavior_server-8] [INFO] [1759822947.500153787] [robot1.behavior_server]: Configuring backup
+[gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="turtlebot3_waffle"]/link[@name="robot1/camera_rgb_frame"]/sensor[@name="camera"]/gz_frame_id:<data-string>:L394]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[behavior_server-8] [INFO] [1759822947.508720241] [robot1.behavior_server]: Configuring drive_on_heading
+[behavior_server-8] [INFO] [1759822947.516168631] [robot1.behavior_server]: Configuring wait
+[behavior_server-8] [INFO] [1759822947.526587400] [robot1.behavior_server]: Configuring assisted_teleop
+[lifecycle_manager-16] [INFO] [1759822947.542890805] [robot1.lifecycle_manager1]: [34m[1mConfiguring smoother_server[0m[0m
+[smoother_server-9] [INFO] [1759822947.543458883] [robot1.smoother_server]: Configuring smoother server
+[smoother_server-9] [INFO] [1759822947.573980882] [robot1.smoother_server]: Created smoother : SmoothPath of type nav2_constrained_smoother/ConstrainedSmoother
+[smoother_server-9] [INFO] [1759822947.575611420] [robot1.smoother_server]: Smoother Server has SmoothPath  smoothers available.
+[lifecycle_manager-16] [INFO] [1759822947.589824405] [robot1.lifecycle_manager1]: [34m[1mConfiguring planner_server[0m[0m
+[planner_server-6] [INFO] [1759822947.590519427] [robot1.planner_server]: Configuring
+[planner_server-6] [INFO] [1759822947.590587089] [robot1.global_costmap.global_costmap]: Configuring
+[INFO] [ros2-17]: process started with pid [740]
+[planner_server-6] [INFO] [1759822947.608096899] [robot1.global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-6] [INFO] [1759822947.621663979] [robot1.global_costmap.global_costmap]: Subscribing to the map topic (/robot1/map) with transient local durability
+[planner_server-6] [INFO] [1759822947.624210483] [robot1.global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-6] [INFO] [1759822947.624258813] [robot1.global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-6] [INFO] [1759822947.631044262] [robot1.global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-6] [INFO] [1759822947.637558021] [robot1.global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-6] [INFO] [1759822947.637613430] [robot1.global_costmap.global_costmap]: Using plugin "voxel_layer"
+[planner_server-6] [INFO] [1759822947.638265300] [robot1.global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-6] [INFO] [1759822947.655576099] [robot1.global_costmap.global_costmap]: Initialized plugin "voxel_layer"
+[planner_server-6] [INFO] [1759822947.655620466] [robot1.global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-6] [INFO] [1759822947.657726724] [robot1.global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-6] [INFO] [1759822947.696583736] [robot1.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 214 X 213 at 0.050000 m/pix
+[planner_server-6] [INFO] [1759822947.698091819] [robot1.planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner::NavfnPlanner
+[planner_server-6] [INFO] [1759822947.698157908] [robot1.planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-6] [INFO] [1759822947.700315835] [robot1.planner_server]: Planner Server has GridBased  planners available.
+[gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="turtlebot3_waffle"]/link[@name="robot1/base_scan"]/sensor[@name="hls_lfcd_lds"]/gz_frame_id:<data-string>:L163]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[rviz_visualizer-15] [INFO] [1759822947.718987086] [nav2_rviz_selector_node]: controller_server service not available
+[lifecycle_manager-16] [INFO] [1759822947.724057397] [robot1.lifecycle_manager1]: [34m[1mConfiguring controller_server[0m[0m
+[controller_server-7] [INFO] [1759822947.724509807] [robot1.controller_server]: Configuring controller interface
+[controller_server-7] [INFO] [1759822947.724560949] [robot1.controller_server]: getting progress checker plugins..
+[controller_server-7] [INFO] [1759822947.724856857] [robot1.controller_server]: getting goal checker plugins..
+[controller_server-7] [INFO] [1759822947.724950282] [robot1.controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-7] [INFO] [1759822947.724983209] [robot1.local_costmap.local_costmap]: Configuring
+[gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="turtlebot3_waffle"]/link[@name="robot1/camera_rgb_frame"]/sensor[@name="camera"]/gz_frame_id:<data-string>:L394]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[controller_server-7] [INFO] [1759822947.738566216] [robot1.local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[controller_server-7] [INFO] [1759822947.744246219] [robot1.local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-7] [INFO] [1759822947.749045905] [robot1.local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[controller_server-7] [INFO] [1759822947.749108646] [robot1.local_costmap.local_costmap]: Using plugin "voxel_layer"
+[controller_server-7] [INFO] [1759822947.750729459] [robot1.local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-7] [INFO] [1759822947.762638018] [robot1.local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[controller_server-7] [INFO] [1759822947.762692026] [robot1.local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-7] [INFO] [1759822947.763816934] [robot1.local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[rviz_visualizer-15] [INFO] [1759822947.770488799] [nav2_rviz_selector_node]: controller_server service not available
+[controller_server-7] [INFO] [1759822947.795826384] [robot1.controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-7] [INFO] [1759822947.796669805] [robot1.controller_server]: Controller Server has progress_checker  progress checkers available.
+[controller_server-7] [INFO] [1759822947.797863398] [robot1.controller_server]: Created goal checker : goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-7] [INFO] [1759822947.798607582] [robot1.controller_server]: Controller Server has goal_checker  goal checkers available.
+[controller_server-7] [INFO] [1759822947.809097434] [robot1.controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[controller_server-7] [INFO] [1759822947.810525145] [robot1.controller_server]: Setting transform_tolerance to 0.500000
+[controller_server-7] [INFO] [1759822947.838120242] [robot1.controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[controller_server-7] [INFO] [1759822947.838665378] [robot1.controller_server]: Critic plugin initialized
+[controller_server-7] [INFO] [1759822947.838769079] [robot1.controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[controller_server-7] [INFO] [1759822947.839606921] [robot1.controller_server]: Critic plugin initialized
+[controller_server-7] [INFO] [1759822947.839814775] [robot1.controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[controller_server-7] [INFO] [1759822947.840216719] [robot1.controller_server]: Critic plugin initialized
+[controller_server-7] [INFO] [1759822947.840442954] [robot1.controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[controller_server-7] [INFO] [1759822947.841039129] [robot1.controller_server]: Critic plugin initialized
+[controller_server-7] [INFO] [1759822947.841261261] [robot1.controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[controller_server-7] [INFO] [1759822947.841708649] [robot1.controller_server]: Critic plugin initialized
+[controller_server-7] [INFO] [1759822947.841917675] [robot1.controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[controller_server-7] [INFO] [1759822947.842402611] [robot1.controller_server]: Critic plugin initialized
+[controller_server-7] [INFO] [1759822947.842650304] [robot1.controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[controller_server-7] [INFO] [1759822947.843126202] [robot1.controller_server]: Critic plugin initialized
+[controller_server-7] [INFO] [1759822947.843490735] [robot1.controller_server]: Controller Server has FollowPath  controllers available.
+[lifecycle_manager-16] [INFO] [1759822947.856643280] [robot1.lifecycle_manager1]: [34m[1mConfiguring velocity_smoother[0m[0m
+[velocity_smoother-10] [INFO] [1759822947.857144434] [robot1.velocity_smoother]: Configuring velocity smoother
+[lifecycle_manager-16] [INFO] [1759822947.863304218] [robot1.lifecycle_manager1]: [34m[1mConfiguring bt_navigator[0m[0m
+[bt_navigator-11] [INFO] [1759822947.863861996] [robot1.bt_navigator]: Configuring
+[bt_navigator-11] [INFO] [1759822947.875509148] [robot1.bt_navigator]: Creating navigator id navigate_to_pose of type nav2_bt_navigator::NavigateToPoseNavigator
+[bt_navigator-11] [WARN] [1759822947.882539735] [robot1.bt_navigator]: Error_code parameters were not set. Using default values of: follow_path_error_code compute_path_error_code
+[bt_navigator-11] Make sure these match your BT and there are not other sources of error codes youreported to your application
+[bt_navigator-11] [INFO] [1759822948.031611238] [robot1.bt_navigator]: Creating navigator id navigate_through_poses of type nav2_bt_navigator::NavigateThroughPosesNavigator
+[lifecycle_manager-16] [INFO] [1759822948.067738719] [robot1.lifecycle_manager1]: [34m[1mConfiguring waypoint_follower[0m[0m
+[waypoint_follower-12] [INFO] [1759822948.068070492] [robot1.waypoint_follower]: Configuring
+[waypoint_follower-12] [INFO] [1759822948.098773967] [robot1.waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[lifecycle_manager-16] [INFO] [1759822948.099997245] [robot1.lifecycle_manager1]: [34m[1mActivating amcl[0m[0m
+[amcl-5] [INFO] [1759822948.100240221] [robot1.amcl]: Activating
+[amcl-5] [INFO] [1759822948.100269417] [robot1.amcl]: Creating bond (amcl) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1759822948.211583571] [robot1.lifecycle_manager1]: Server amcl connected with bond.
+[lifecycle_manager-16] [INFO] [1759822948.211646745] [robot1.lifecycle_manager1]: [34m[1mActivating behavior_server[0m[0m
+[behavior_server-8] [INFO] [1759822948.212057950] [robot1.behavior_server]: Activating
+[behavior_server-8] [INFO] [1759822948.212078077] [robot1.behavior_server]: Activating spin
+[behavior_server-8] [INFO] [1759822948.212085752] [robot1.behavior_server]: Activating backup
+[behavior_server-8] [INFO] [1759822948.212095269] [robot1.behavior_server]: Activating drive_on_heading
+[behavior_server-8] [INFO] [1759822948.212099840] [robot1.behavior_server]: Activating wait
+[behavior_server-8] [INFO] [1759822948.212104400] [robot1.behavior_server]: Activating assisted_teleop
+[behavior_server-8] [INFO] [1759822948.212112888] [robot1.behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1759822948.316580497] [robot1.lifecycle_manager1]: Server behavior_server connected with bond.
+[lifecycle_manager-16] [INFO] [1759822948.316688085] [robot1.lifecycle_manager1]: [34m[1mActivating smoother_server[0m[0m
+[smoother_server-9] [INFO] [1759822948.317360772] [robot1.smoother_server]: Activating
+[smoother_server-9] [INFO] [1759822948.317393433] [robot1.smoother_server]: Activating smoother: SmoothPath of type nav2_constrained_smoother::ConstrainedSmoother
+[smoother_server-9] [INFO] [1759822948.317403451] [robot1.smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1759822948.428016310] [robot1.lifecycle_manager1]: Server smoother_server connected with bond.
+[lifecycle_manager-16] [INFO] [1759822948.428117744] [robot1.lifecycle_manager1]: [34m[1mActivating planner_server[0m[0m
+[planner_server-6] [INFO] [1759822948.428674693] [robot1.planner_server]: Activating
+[planner_server-6] [INFO] [1759822948.428733886] [robot1.global_costmap.global_costmap]: Activating
+[planner_server-6] [INFO] [1759822948.428745859] [robot1.global_costmap.global_costmap]: Checking transform
+[planner_server-6] [INFO] [1759822948.428809404] [robot1.global_costmap.global_costmap]: Timed out waiting for transform from robot1/base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-5] [INFO] [1759822948.540135468] [robot1.amcl]: createLaserObject
+[ros2-17] publisher: beginning loop
+[ros2-17] publishing #1: geometry_msgs.msg.PoseWithCovarianceStamped(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=0, nanosec=0), frame_id='map'), pose=geometry_msgs.msg.PoseWithCovariance(pose=geometry_msgs.msg.Pose(position=geometry_msgs.msg.Point(x=-3.0, y=-1.0, z=0.01), orientation=geometry_msgs.msg.Quaternion(x=0.0, y=0.0, z=0.0, w=1.0)), covariance=array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+[ros2-17]        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+[ros2-17]        0., 0.])))
+[ros2-17] 
+[amcl-5] [INFO] [1759822948.675233525] [robot1.amcl]: initialPoseReceived
+[amcl-5] [WARN] [1759822948.675739255] [robot1.amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 0.231000 but the latest data is at time 0.220000, when looking up transform from frame [robot1/base_footprint] to frame [robot1/odom])
+[amcl-5] [INFO] [1759822948.675788199] [robot1.amcl]: Setting pose (0.231000): -3.000 -1.000 0.000
+[rviz_visualizer-15] [INFO] [1759822948.741594170] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759822948.793359484] [nav2_rviz_selector_node]: smoother_server service not available
+[planner_server-6] [INFO] [1759822948.928956349] [robot1.global_costmap.global_costmap]: Timed out waiting for transform from robot1/base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 0.380000 but the earliest data is at time 0.700000, when looking up transform from frame [robot1/base_link] to frame [map]
+[INFO] [ros2-17]: process has finished cleanly [pid 740]
+[amcl-5] [INFO] [1759822949.089939538] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 0.002 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-6] [INFO] [1759822949.428976336] [robot1.global_costmap.global_costmap]: start
+[planner_server-6] [INFO] [1759822949.531703370] [robot1.planner_server]: Activating plugin GridBased of type NavfnPlanner
+[planner_server-6] [INFO] [1759822949.533429731] [robot1.planner_server]: Creating bond (planner_server) to lifecycle manager.
+[rviz_visualizer-15] [INFO] [1759822949.635381282] [rviz2]: Trying to create a map of size 214 x 213 using 1 swatches
+[lifecycle_manager-16] [INFO] [1759822949.638667256] [robot1.lifecycle_manager1]: Server planner_server connected with bond.
+[lifecycle_manager-16] [INFO] [1759822949.638733277] [robot1.lifecycle_manager1]: [34m[1mActivating controller_server[0m[0m
+[controller_server-7] [INFO] [1759822949.639128771] [robot1.controller_server]: Activating
+[controller_server-7] [INFO] [1759822949.639185202] [robot1.local_costmap.local_costmap]: Activating
+[controller_server-7] [INFO] [1759822949.639196489] [robot1.local_costmap.local_costmap]: Checking transform
+[controller_server-7] [INFO] [1759822949.639394384] [robot1.local_costmap.local_costmap]: start
+[controller_server-7] [INFO] [1759822949.691421021] [robot1.controller_server]: Creating bond (controller_server) to lifecycle manager.
+[rviz_visualizer-15] [INFO] [1759822949.760740464] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822949.769365941] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759822949.769418359] [nav2_rviz_selector_node]: Trying to load plugins...
+[lifecycle_manager-16] [INFO] [1759822949.797134044] [robot1.lifecycle_manager1]: Server controller_server connected with bond.
+[lifecycle_manager-16] [INFO] [1759822949.797174609] [robot1.lifecycle_manager1]: [34m[1mActivating velocity_smoother[0m[0m
+[velocity_smoother-10] [INFO] [1759822949.797716889] [robot1.velocity_smoother]: Activating
+[velocity_smoother-10] [INFO] [1759822949.797824414] [robot1.velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
+[rviz_visualizer-15] [INFO] [1759822949.812502871] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822949.819092396] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759822949.819139457] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759822949.832486662] [rviz2]: Trying to create a map of size 60 x 60 using 1 swatches
+[lifecycle_manager-16] [INFO] [1759822949.908121002] [robot1.lifecycle_manager1]: Server velocity_smoother connected with bond.
+[lifecycle_manager-16] [INFO] [1759822949.908176073] [robot1.lifecycle_manager1]: [34m[1mActivating bt_navigator[0m[0m
+[bt_navigator-11] [INFO] [1759822949.908773585] [robot1.bt_navigator]: Activating
+[bt_navigator-11] [INFO] [1759822950.010274755] [robot1.bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1759822950.119755485] [robot1.lifecycle_manager1]: Server bt_navigator connected with bond.
+[lifecycle_manager-16] [INFO] [1759822950.119804058] [robot1.lifecycle_manager1]: [34m[1mActivating waypoint_follower[0m[0m
+[waypoint_follower-12] [INFO] [1759822950.120278986] [robot1.waypoint_follower]: Activating
+[waypoint_follower-12] [INFO] [1759822950.120333013] [robot1.waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1759822950.228903392] [robot1.lifecycle_manager1]: Server waypoint_follower connected with bond.
+[lifecycle_manager-16] [INFO] [1759822950.228968754] [robot1.lifecycle_manager1]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-16] [INFO] [1759822950.228980048] [robot1.lifecycle_manager1]: [34m[1mCreating bond timer...[0m[0m
+[rviz_visualizer-15] [INFO] [1759822950.776275542] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822950.826187555] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822951.798073208] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759822951.842306901] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759822952.814149334] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822952.860869547] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822953.833012380] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759822953.880647805] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759822954.849157385] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822954.859095446] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759822954.859185327] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759822954.897902133] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822954.906735809] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759822954.906825649] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759822955.871247389] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822955.915813049] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822956.889031606] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759822956.945464640] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759822957.910555461] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822957.967152770] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822958.933766372] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759822958.992388336] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759822959.962735254] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822959.970645271] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759822959.970689887] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759822960.013707822] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822960.022158481] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759822960.022205961] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759822960.980415277] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822961.032736698] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822962.001097671] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759822962.053603792] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759822963.019039171] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822963.070894939] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822964.038353529] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759822964.089715082] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759822965.056970824] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822965.065036638] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759822965.065091750] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759822965.111050328] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822965.120179509] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759822965.120240254] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759822966.074131762] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822966.129141305] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822966.254566485] [rviz]: Message Filter dropping message: frame 'robot1/base_scan' at time 0.002 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz_visualizer-15] [INFO] [1759822968.357892827] [rviz]: Message Filter dropping message: frame 'robot1/base_scan' at time 0.100 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz_visualizer-15] [INFO] [1759822968.530917328] [rviz]: Message Filter dropping message: frame 'robot1/base_scan' at time 0.200 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz_visualizer-15] [INFO] [1759822968.706907292] [rviz]: Message Filter dropping message: frame 'robot1/base_scan' at time 0.300 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz_visualizer-15] [INFO] [1759822968.869387614] [rviz]: Message Filter dropping message: frame 'robot1/base_scan' at time 0.400 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz_visualizer-15] [INFO] [1759822969.017015116] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759822969.027160407] [rviz]: Message Filter dropping message: frame 'robot1/base_scan' at time 0.500 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz_visualizer-15] [INFO] [1759822969.071957342] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759822969.194345966] [rviz]: Message Filter dropping message: frame 'robot1/base_scan' at time 0.600 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz_visualizer-15] [INFO] [1759822970.033194541] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822970.088043713] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822971.059611444] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759822971.107200134] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759822972.085038264] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822972.093199876] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759822972.093253111] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759822972.130920809] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822972.137177653] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759822972.137232487] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759822973.102834449] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822973.147114662] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822974.126741471] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759822974.166063861] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759822975.146693074] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822975.183178269] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822976.163417284] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759822976.200237428] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759822977.183203417] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822977.191021488] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759822977.191078598] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759822977.215342929] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822977.224575537] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759822977.224625956] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759822978.199402491] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822978.234351534] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822979.223956940] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759822979.260434919] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759822980.240195393] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822980.276777384] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822981.255463898] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759822981.294326162] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759822982.271470016] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822982.278339873] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759822982.278381281] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759822982.307924184] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822982.313971930] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759822982.314022231] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759822983.289473504] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822983.320741314] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822984.303846433] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759822984.336333435] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759822985.322148401] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822985.349072837] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822986.341535187] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759822986.364592663] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759822987.359957902] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822987.367141659] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759822987.367184004] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759822987.378354718] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822987.385552947] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759822987.385594609] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759822988.325639165] [rclcpp]: signal_handler(signum=2)
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[lifecycle_manager-16] [INFO] [1759822988.325674120] [rclcpp]: signal_handler(signum=2)
+[waypoint_follower-12] [INFO] [1759822988.325709189] [rclcpp]: signal_handler(signum=2)
+[waypoint_follower-12] [INFO] [1759822988.325842807] [robot1.waypoint_follower]: Running Nav2 LifecycleNode rcl preshutdown (waypoint_follower)
+[waypoint_follower-12] [INFO] [1759822988.325984229] [robot1.waypoint_follower]: Deactivating
+[waypoint_follower-12] [INFO] [1759822988.326015257] [robot1.waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[bt_navigator-11] [INFO] [1759822988.325734586] [rclcpp]: signal_handler(signum=2)
+[bt_navigator-11] [INFO] [1759822988.325852439] [robot1.bt_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_navigator)
+[map_server-13] [INFO] [1759822988.325751565] [rclcpp]: signal_handler(signum=2)
+[map_server-13] [INFO] [1759822988.325865093] [map_server]: Running Nav2 LifecycleNode rcl preshutdown (map_server)
+[map_server-13] [INFO] [1759822988.326033909] [map_server]: Deactivating
+[map_server-13] [INFO] [1759822988.326058949] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[velocity_smoother-10] [INFO] [1759822988.325765133] [rclcpp]: signal_handler(signum=2)
+[velocity_smoother-10] [INFO] [1759822988.325873326] [robot1.velocity_smoother]: Running Nav2 LifecycleNode rcl preshutdown (velocity_smoother)
+[velocity_smoother-10] [INFO] [1759822988.325983845] [robot1.velocity_smoother]: Deactivating
+[velocity_smoother-10] [INFO] [1759822988.326011508] [robot1.velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1759822988.326062948] [robot1.lifecycle_manager1]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager1)
+[smoother_server-9] [INFO] [1759822988.325803690] [rclcpp]: signal_handler(signum=2)
+[smoother_server-9] [INFO] [1759822988.325890860] [robot1.smoother_server]: Running Nav2 LifecycleNode rcl preshutdown (smoother_server)
+[smoother_server-9] [INFO] [1759822988.325997095] [robot1.smoother_server]: Deactivating
+[smoother_server-9] [INFO] [1759822988.326147849] [robot1.smoother_server]: Deactivating smoother: SmoothPath of type nav2_constrained_smoother::ConstrainedSmoother
+[smoother_server-9] [INFO] [1759822988.326172960] [robot1.smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[behavior_server-8] [INFO] [1759822988.325813171] [rclcpp]: signal_handler(signum=2)
+[behavior_server-8] [INFO] [1759822988.326025997] [robot1.behavior_server]: Running Nav2 LifecycleNode rcl preshutdown (behavior_server)
+[behavior_server-8] [INFO] [1759822988.326137202] [robot1.behavior_server]: Deactivating
+[behavior_server-8] [INFO] [1759822988.326268757] [robot1.behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[lifecycle_manager-14] [INFO] [1759822988.325832326] [map_lifecycle_manager]: Running Nav2 LifecycleManager rcl preshutdown (map_lifecycle_manager)
+[lifecycle_manager-14] [INFO] [1759822988.325886579] [map_lifecycle_manager]: [34m[1mTerminating bond timer...[0m[0m
+[controller_server-7] [INFO] [1759822988.325836348] [rclcpp]: signal_handler(signum=2)
+[planner_server-6] [INFO] [1759822988.325870844] [rclcpp]: signal_handler(signum=2)
+[planner_server-6] [INFO] [1759822988.326309646] [robot1.planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[planner_server-6] [INFO] [1759822988.326406003] [robot1.planner_server]: Deactivating
+[planner_server-6] [INFO] [1759822988.326469212] [robot1.global_costmap.global_costmap]: Deactivating
+[amcl-5] [INFO] [1759822988.325896666] [rclcpp]: signal_handler(signum=2)
+[robot_state_publisher-4] [INFO] [1759822988.325946126] [rclcpp]: signal_handler(signum=2)
+[parameter_bridge-3] [INFO] [1759822988.325990015] [rclcpp]: signal_handler(signum=2)
+[lifecycle_manager-16] [INFO] [1759822988.326621532] [robot1.lifecycle_manager1]: [34m[1mTerminating bond timer...[0m[0m
+[rviz_visualizer-15] [ERROR] [1759822988.326029252] [nav2_rviz_selector_node]: Interrupted while waiting for the service. Exiting.
+[rviz_visualizer-15] 
+[rviz_visualizer-15] >>> [rcutils|error_handling.c:108] rcutils_set_error_state()
+[rviz_visualizer-15] This error state is being overwritten:
+[rviz_visualizer-15] 
+[rviz_visualizer-15]   'rcl node's context is invalid, at ./src/rcl/node.c:404'
+[rviz_visualizer-15] 
+[rviz_visualizer-15] with this new error message:
+[rviz_visualizer-15] 
+[rviz_visualizer-15]   'publisher's context is invalid, at ./src/rcl/publisher.c:423'
+[rviz_visualizer-15] 
+[rviz_visualizer-15] rcutils_reset_error() should be called after error handling to avoid this.
+[rviz_visualizer-15] <<<
+[rviz_visualizer-15] Failed to publish log message to rosout: publisher's context is invalid, at ./src/rcl/publisher.c:423
+[rviz_visualizer-15] [ERROR] [1759822988.326040505] [nav2_rviz_selector_node]: Interrupted while waiting for the service. Exiting.
+[rviz_visualizer-15] 
+[rviz_visualizer-15] >>> [rcutils|error_handling.c:108] rcutils_set_error_state()
+[rviz_visualizer-15] This error state is being overwritten:
+[rviz_visualizer-15] 
+[rviz_visualizer-15]   'rcl node's context is invalid, at ./src/rcl/node.c:404'
+[rviz_visualizer-15] 
+[rviz_visualizer-15] with this new error message:
+[rviz_visualizer-15] 
+[rviz_visualizer-15]   'publisher's context is invalid, at ./src/rcl/publisher.c:423'
+[rviz_visualizer-15] 
+[rviz_visualizer-15] rcutils_reset_error() should be called after error handling to avoid this.
+[rviz_visualizer-15] <<<
+[rviz_visualizer-15] Failed to publish log message to rosout: publisher's context is invalid, at ./src/rcl/publisher.c:423
+[controller_server-7] [INFO] [1759822988.329229081] [robot1.controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[controller_server-7] [INFO] [1759822988.329349005] [robot1.controller_server]: Deactivating
+[controller_server-7] [INFO] [1759822988.329480977] [robot1.local_costmap.local_costmap]: Deactivating
+[controller_server-7] [INFO] [1759822988.365717374] [robot1.controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[controller_server-7] [INFO] [1759822988.376096885] [robot1.controller_server]: Cleaning up
+[controller_server-7] [INFO] [1759822988.377288638] [robot1.local_costmap.local_costmap]: Cleaning up
+[amcl-5] [INFO] [1759822988.329885661] [robot1.amcl]: Running Nav2 LifecycleNode rcl preshutdown (amcl)
+[amcl-5] [INFO] [1759822988.330001633] [robot1.amcl]: Deactivating
+[amcl-5] [INFO] [1759822988.330041120] [robot1.amcl]: Destroying bond (amcl) to lifecycle manager.
+[amcl-5] [INFO] [1759822988.340323535] [robot1.amcl]: Cleaning up
+[amcl-5] [INFO] [1759822988.346205077] [robot1.amcl]: Destroying bond (amcl) to lifecycle manager.
+[amcl-5] [INFO] [1759822988.361042377] [robot1.amcl]: Destroying
+[bt_navigator-11] [INFO] [1759822988.331128444] [robot1.bt_navigator]: Deactivating
+[bt_navigator-11] [INFO] [1759822988.331172872] [robot1.bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[bt_navigator-11] [INFO] [1759822988.341728794] [robot1.bt_navigator]: Cleaning up
+[map_server-13] [INFO] [1759822988.336597851] [map_server]: Cleaning up
+[map_server-13] [INFO] [1759822988.336736616] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[map_server-13] [INFO] [1759822988.351742598] [map_server]: Destroying
+[waypoint_follower-12] [INFO] [1759822988.336714546] [robot1.waypoint_follower]: Cleaning up
+[waypoint_follower-12] [INFO] [1759822988.344444021] [robot1.waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[waypoint_follower-12] [INFO] [1759822988.359582809] [robot1.waypoint_follower]: Destroying
+[smoother_server-9] [INFO] [1759822988.336767405] [robot1.smoother_server]: Cleaning up
+[smoother_server-9] [INFO] [1759822988.336786750] [robot1.smoother_server]: Cleaning up smoother: SmoothPath of type nav2_constrained_smoother::ConstrainedSmoother
+[smoother_server-9] [INFO] [1759822988.348661331] [robot1.smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[smoother_server-9] [INFO] [1759822988.358278976] [robot1.smoother_server]: Destroying
+[behavior_server-8] [INFO] [1759822988.337013913] [robot1.behavior_server]: Cleaning up
+[behavior_server-8] [INFO] [1759822988.340300139] [robot1.behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[velocity_smoother-10] [INFO] [1759822988.337378133] [robot1.velocity_smoother]: Cleaning up
+[velocity_smoother-10] [INFO] [1759822988.337416027] [robot1.velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[velocity_smoother-10] [INFO] [1759822988.343699590] [robot1.velocity_smoother]: Destroying
+[lifecycle_manager-14] [INFO] [1759822988.344054032] [map_lifecycle_manager]: Destroying map_lifecycle_manager
+[rviz_visualizer-15] [INFO] [1759822988.345151366] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759822988.345210028] [nav2_rviz_selector_node]: controller_server service not available
+[planner_server-6] [INFO] [1759822988.356081645] [robot1.planner_server]: Deactivating plugin GridBased of type NavfnPlanner
+[planner_server-6] [INFO] [1759822988.356153467] [robot1.planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[planner_server-6] [INFO] [1759822988.371741361] [robot1.planner_server]: Cleaning up
+[behavior_server-8] [INFO] [1759822988.384639705] [robot1.behavior_server]: Destroying
+[planner_server-6] [INFO] [1759822988.387021586] [robot1.global_costmap.global_costmap]: Cleaning up
+[rviz_visualizer-15] terminate called after throwing an instance of 'rclcpp::exceptions::RCLError'
+[rviz_visualizer-15]   what():  failed to create guard condition: the given context is not valid, either rcl_init() was not called or rcl_shutdown() was called., at ./src/rcl/guard_condition.c:67
+[planner_server-6] [INFO] [1759822988.394207780] [robot1.planner_server]: Cleaning up plugin GridBased of type NavfnPlanner
+[planner_server-6] [INFO] [1759822988.394545019] [robot1.planner_server]: Destroying plugin GridBased of type NavfnPlanner
+[controller_server-7] [INFO] [1759822988.399947427] [robot1.controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[controller_server-7] [INFO] [1759822988.406118120] [robot1.local_costmap.local_costmap]: Destroying
+[planner_server-6] [INFO] [1759822988.407993869] [robot1.planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[planner_server-6] [INFO] [1759822988.410846896] [robot1.global_costmap.global_costmap]: Destroying
+[controller_server-7] [INFO] [1759822988.413585230] [robot1.controller_server]: Destroying
+[planner_server-6] [INFO] [1759822988.419632870] [robot1.planner_server]: Destroying
+[bt_navigator-11] [INFO] [1759822988.436316718] [robot1.bt_navigator]: Completed Cleaning up
+[bt_navigator-11] [INFO] [1759822988.436373616] [robot1.bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1759822988.439544513] [robot1.lifecycle_manager1]: Destroying lifecycle_manager1
+[bt_navigator-11] [INFO] [1759822988.442753610] [robot1.bt_navigator]: Destroying
+[INFO] [parameter_bridge-3]: process has finished cleanly [pid 217]
+[INFO] [robot_state_publisher-4]: process has finished cleanly [pid 218]
+[INFO] [velocity_smoother-10]: process has finished cleanly [pid 232]
+[INFO] [lifecycle_manager-14]: process has finished cleanly [pid 238]
+[INFO] [amcl-5]: process has finished cleanly [pid 219]
+[INFO] [map_server-13]: process has finished cleanly [pid 237]
+[INFO] [waypoint_follower-12]: process has finished cleanly [pid 236]
+[INFO] [smoother_server-9]: process has finished cleanly [pid 227]
+[INFO] [behavior_server-8]: process has finished cleanly [pid 222]
+[INFO] [controller_server-7]: process has finished cleanly [pid 221]
+[INFO] [planner_server-6]: process has finished cleanly [pid 220]
+[INFO] [lifecycle_manager-16]: process has finished cleanly [pid 590]
+[INFO] [bt_navigator-11]: process has finished cleanly [pid 233]
+[ERROR] [gazebo-1]: process has died [pid 214, exit code -2, cmd 'ruby /opt/ros/jazzy/opt/gz_tools_vendor/bin/gz sim -r /root/ros_ws/src/tb3_multi_nav/utils/maze_world.world --force-version 8'].
+[ERROR] [rviz_visualizer-15]: process[rviz_visualizer-15] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[INFO] [rviz_visualizer-15]: sending signal 'SIGTERM' to process[rviz_visualizer-15]
+[ERROR] [rviz_visualizer-15]: process[rviz_visualizer-15] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[INFO] [rviz_visualizer-15]: sending signal 'SIGKILL' to process[rviz_visualizer-15]
+[ERROR] [rviz_visualizer-15]: process has died [pid 243, exit code -9, cmd 'rviz2 -d /root/ros_ws/src/tb3_multi_nav/config/rviz_namespaced_singleBot.rviz --ros-args -p use_sim_time:=True --remap /navigate_to_pose:=/robot1/navigate_to_pose --remap /follow_path:=/robot1/follow_path --remap /compute_path_to_pose:=/robot1/compute_path_to_pose --remap /follow_path_local:=/robot1/follow_path_local --remap /docking:=/robot1/docking --remap /undo_last_command:=/robot1/undo_last_command --remap /initialpose:=/robot1/initialpose'].

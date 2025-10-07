@@ -1,0 +1,20 @@
+[0.761s] Invoking command in '/root/ros_ws/src/tb3_multi_nav': PYTHONPATH=/root/ros_ws/build/tb3_multi_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros_ws/install/tb3_multi_nav/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tb3_multi_nav build --build-base /root/ros_ws/build/tb3_multi_nav/build install --record /root/ros_ws/build/tb3_multi_nav/install.log --single-version-externally-managed install_data
+[0.903s] running egg_info
+[0.912s] writing ../../build/tb3_multi_nav/tb3_multi_nav.egg-info/PKG-INFO
+[0.912s] writing dependency_links to ../../build/tb3_multi_nav/tb3_multi_nav.egg-info/dependency_links.txt
+[0.912s] writing requirements to ../../build/tb3_multi_nav/tb3_multi_nav.egg-info/requires.txt
+[0.912s] writing top-level names to ../../build/tb3_multi_nav/tb3_multi_nav.egg-info/top_level.txt
+[0.929s] reading manifest file '../../build/tb3_multi_nav/tb3_multi_nav.egg-info/SOURCES.txt'
+[0.929s] writing manifest file '../../build/tb3_multi_nav/tb3_multi_nav.egg-info/SOURCES.txt'
+[0.930s] running build
+[0.930s] running build_py
+[0.930s] running install
+[0.933s] running install_lib
+[0.943s] running install_data
+[0.944s] copying launch/multi_tb3.launch.py -> /root/ros_ws/install/tb3_multi_nav/share/tb3_multi_nav/launch
+[0.944s] running install_egg_info
+[0.954s] removing '/root/ros_ws/install/tb3_multi_nav/lib/python3.12/site-packages/tb3_multi_nav-0.0.0-py3.12.egg-info' (and everything under it)
+[0.954s] Copying ../../build/tb3_multi_nav/tb3_multi_nav.egg-info to /root/ros_ws/install/tb3_multi_nav/lib/python3.12/site-packages/tb3_multi_nav-0.0.0-py3.12.egg-info
+[0.954s] running install_scripts
+[1.021s] writing list of installed files to '/root/ros_ws/build/tb3_multi_nav/install.log'
+[1.044s] Invoked command in '/root/ros_ws/src/tb3_multi_nav' returned '0': PYTHONPATH=/root/ros_ws/build/tb3_multi_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros_ws/install/tb3_multi_nav/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tb3_multi_nav build --build-base /root/ros_ws/build/tb3_multi_nav/build install --record /root/ros_ws/build/tb3_multi_nav/install.log --single-version-externally-managed install_data

@@ -1,0 +1,705 @@
+[INFO] [launch]: All log files can be found below /root/.ros/log/2025-10-06-19-21-28-439825-docker-desktop-7963
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [gazebo-1]: process started with pid [7980]
+[INFO] [create-2]: process started with pid [7981]
+[INFO] [parameter_bridge-3]: process started with pid [7983]
+[INFO] [robot_state_publisher-4]: process started with pid [7984]
+[INFO] [amcl-5]: process started with pid [7985]
+[INFO] [planner_server-6]: process started with pid [7988]
+[INFO] [controller_server-7]: process started with pid [7989]
+[INFO] [behavior_server-8]: process started with pid [7990]
+[INFO] [smoother_server-9]: process started with pid [8087]
+[INFO] [velocity_smoother-10]: process started with pid [8088]
+[INFO] [bt_navigator-11]: process started with pid [8089]
+[INFO] [waypoint_follower-12]: process started with pid [8091]
+[INFO] [map_server-13]: process started with pid [8095]
+[INFO] [lifecycle_manager-14]: process started with pid [8098]
+[INFO] [ros2-15]: process started with pid [8099]
+[INFO] [rviz_visualizer-16]: process started with pid [8100]
+[robot_state_publisher-4] [INFO] [1759778488.780884160] [robot1.robot1_state_publisher]: Robot initialized
+[amcl-5] [INFO] [1759778488.793452651] [robot1.amcl]: 
+[amcl-5] 	amcl lifecycle node launched. 
+[amcl-5] 	Waiting on external lifecycle transitions to activate
+[amcl-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-5] [INFO] [1759778488.793949239] [robot1.amcl]: Creating
+[create-2] [INFO] [1759778488.797919239] [ros_gz_sim]: Requesting list of world names.
+[controller_server-7] [INFO] [1759778488.801501081] [robot1.controller_server]: 
+[controller_server-7] 	controller_server lifecycle node launched. 
+[controller_server-7] 	Waiting on external lifecycle transitions to activate
+[controller_server-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-6] [INFO] [1759778488.803339611] [robot1.planner_server]: 
+[planner_server-6] 	planner_server lifecycle node launched. 
+[planner_server-6] 	Waiting on external lifecycle transitions to activate
+[planner_server-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-6] [INFO] [1759778488.805541362] [robot1.planner_server]: Creating
+[controller_server-7] [INFO] [1759778488.808313778] [robot1.controller_server]: Creating controller server
+[behavior_server-8] [INFO] [1759778488.809658281] [robot1.behavior_server]: 
+[behavior_server-8] 	behavior_server lifecycle node launched. 
+[behavior_server-8] 	Waiting on external lifecycle transitions to activate
+[behavior_server-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-6] [INFO] [1759778488.823747816] [robot1.global_costmap.global_costmap]: 
+[planner_server-6] 	global_costmap lifecycle node launched. 
+[planner_server-6] 	Waiting on external lifecycle transitions to activate
+[planner_server-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-6] [INFO] [1759778488.824270800] [robot1.global_costmap.global_costmap]: Creating Costmap
+[controller_server-7] [INFO] [1759778488.829674637] [robot1.local_costmap.local_costmap]: 
+[controller_server-7] 	local_costmap lifecycle node launched. 
+[controller_server-7] 	Waiting on external lifecycle transitions to activate
+[controller_server-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-7] [INFO] [1759778488.830251991] [robot1.local_costmap.local_costmap]: Creating Costmap
+[rviz_visualizer-16] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+[velocity_smoother-10] [INFO] [1759778488.843180564] [robot1.velocity_smoother]: 
+[velocity_smoother-10] 	velocity_smoother lifecycle node launched. 
+[velocity_smoother-10] 	Waiting on external lifecycle transitions to activate
+[velocity_smoother-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-12] [INFO] [1759778488.854845272] [robot1.waypoint_follower]: 
+[waypoint_follower-12] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-12] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-12] [INFO] [1759778488.855444728] [robot1.waypoint_follower]: Creating
+[lifecycle_manager-14] [INFO] [1759778488.860319361] [map_lifecycle_manager]: Creating
+[smoother_server-9] [INFO] [1759778488.860633844] [robot1.smoother_server]: 
+[smoother_server-9] 	smoother_server lifecycle node launched. 
+[smoother_server-9] 	Waiting on external lifecycle transitions to activate
+[smoother_server-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[smoother_server-9] [INFO] [1759778488.862237060] [robot1.smoother_server]: Creating smoother server
+[bt_navigator-11] [INFO] [1759778488.862729515] [robot1.bt_navigator]: 
+[bt_navigator-11] 	bt_navigator lifecycle node launched. 
+[bt_navigator-11] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-11] [INFO] [1759778488.864288573] [robot1.bt_navigator]: Creating
+[lifecycle_manager-14] [INFO] [1759778488.866398150] [map_lifecycle_manager]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[map_server-13] [INFO] [1759778488.867985039] [map_server]: 
+[map_server-13] 	map_server lifecycle node launched. 
+[map_server-13] 	Waiting on external lifecycle transitions to activate
+[map_server-13] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-13] [INFO] [1759778488.868111857] [map_server]: Creating
+[lifecycle_manager-14] [INFO] [1759778488.869628043] [map_lifecycle_manager]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-14] [INFO] [1759778488.869675360] [map_lifecycle_manager]: [34m[1mConfiguring map_server[0m[0m
+[gazebo-1] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+[rviz_visualizer-16] [INFO] [1759778488.998628993] [rviz2]: Stereo is NOT SUPPORTED
+[rviz_visualizer-16] [INFO] [1759778488.998735744] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[map_server-13] [INFO] [1759778489.024468099] [map_server]: Configuring
+[map_server-13] [INFO] [1759778489.024552753] [map_io]: Loading yaml file: /root/ros_ws/src/tb3_multi_nav/utils/2ndattempt_newmaze.yaml
+[map_server-13] [INFO] [1759778489.024809573] [map_io]: resolution: 0.05
+[map_server-13] [INFO] [1759778489.024821841] [map_io]: origin[0]: -5.254
+[map_server-13] [INFO] [1759778489.024825801] [map_io]: origin[1]: -5.383
+[map_server-13] [INFO] [1759778489.024828473] [map_io]: origin[2]: 0
+[map_server-13] [INFO] [1759778489.024831257] [map_io]: free_thresh: 0.196
+[map_server-13] [INFO] [1759778489.024833901] [map_io]: occupied_thresh: 0.65
+[map_server-13] [INFO] [1759778489.024837689] [map_io]: mode: trinary
+[map_server-13] [INFO] [1759778489.024840686] [map_io]: negate: 0
+[map_server-13] [INFO] [1759778489.025010111] [map_io]: Loading image_file: /root/ros_ws/src/tb3_multi_nav/utils/2ndattempt_newmaze.pgm
+[map_server-13] [INFO] [1759778489.026200757] [map_io]: Read map /root/ros_ws/src/tb3_multi_nav/utils/2ndattempt_newmaze.pgm: 214 X 213 map @ 0.05 m/cell
+[lifecycle_manager-14] [INFO] [1759778489.034305386] [map_lifecycle_manager]: [34m[1mActivating map_server[0m[0m
+[map_server-13] [INFO] [1759778489.034590828] [map_server]: Activating
+[map_server-13] [INFO] [1759778489.034731179] [map_server]: Creating bond (map_server) to lifecycle manager.
+[rviz_visualizer-16] [INFO] [1759778489.050724963] [rviz2]: Stereo is NOT SUPPORTED
+[rviz_visualizer-16] [INFO] [1759778489.121779900] [rviz]: Subscribing to: /mobile_base/sensors/bumper_pointcloud
+[rviz_visualizer-16] 
+[rviz_visualizer-16] [INFO] [1759778489.123219812] [rviz]: Subscribing to: /mobile_base/sensors/bumper_pointcloud
+[rviz_visualizer-16] 
+[lifecycle_manager-14] [INFO] [1759778489.142932075] [map_lifecycle_manager]: Server map_server connected with bond.
+[lifecycle_manager-14] [INFO] [1759778489.142970152] [map_lifecycle_manager]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-14] [INFO] [1759778489.142975384] [map_lifecycle_manager]: [34m[1mCreating bond timer...[0m[0m
+[rviz_visualizer-16] [INFO] [1759778489.162375426] [rviz]: Subscribing to: /robot1/local_costmap/voxel_marked_cloud
+[rviz_visualizer-16] 
+[rviz_visualizer-16] [INFO] [1759778489.185767346] [rviz]: Subscribing to: /robot1/global_costmap/voxel_marked_cloud
+[rviz_visualizer-16] 
+[rviz_visualizer-16] [INFO] [1759778489.212543886] [rviz]: Subscribing to: /mobile_base/sensors/bumper_pointcloud
+[rviz_visualizer-16] 
+[rviz_visualizer-16] [INFO] [1759778489.228026667] [rviz]: Subscribing to: /robot1/local_costmap/voxel_marked_cloud
+[rviz_visualizer-16] 
+[rviz_visualizer-16] [INFO] [1759778489.238052182] [rviz]: Subscribing to: /robot1/global_costmap/voxel_marked_cloud
+[rviz_visualizer-16] 
+[rviz_visualizer-16] [INFO] [1759778489.324901759] [nav2_rviz_selector_node]: Trying to load plugins...
+[create-2] [INFO] [1759778489.535389837] [ros_gz_sim]: Entity creation successful.
+[ros2-15] publisher: beginning loop
+[ros2-15] publishing #1: geometry_msgs.msg.PoseWithCovarianceStamped(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=0, nanosec=0), frame_id='map'), pose=geometry_msgs.msg.PoseWithCovariance(pose=geometry_msgs.msg.Pose(position=geometry_msgs.msg.Point(x=-3.0, y=-1.0, z=0.01), orientation=geometry_msgs.msg.Quaternion(x=0.0, y=0.0, z=0.0, w=1.0)), covariance=array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+[ros2-15]        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+[ros2-15]        0., 0.])))
+[ros2-15] 
+[INFO] [create-2]: process has finished cleanly [pid 7981]
+[parameter_bridge-3] [INFO] [1759778489.810450498] [ros_gz_bridge1]: Creating GZ->ROS Bridge: [clock (gz.msgs.Clock) -> clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1759778489.812245865] [ros_gz_bridge1]: Creating GZ->ROS Bridge: [robot1/joint_states (gz.msgs.Model) -> robot1/joint_states (sensor_msgs/msg/JointState)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1759778489.815301506] [ros_gz_bridge1]: Creating GZ->ROS Bridge: [robot1/odom (gz.msgs.Odometry) -> robot1/odom (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1759778489.817984446] [ros_gz_bridge1]: Creating GZ->ROS Bridge: [tf (gz.msgs.Pose_V) -> tf (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1759778489.820184668] [ros_gz_bridge1]: Creating ROS->GZ Bridge: [robot1/cmd_vel (geometry_msgs/msg/TwistStamped) -> robot1/cmd_vel (gz.msgs.Twist)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1759778489.822850177] [ros_gz_bridge1]: Creating GZ->ROS Bridge: [robot1/imu (gz.msgs.IMU) -> robot1/imu (sensor_msgs/msg/Imu)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1759778489.826564784] [ros_gz_bridge1]: Creating GZ->ROS Bridge: [robot1/scan (gz.msgs.LaserScan) -> robot1/scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1759778489.829945307] [ros_gz_bridge1]: Creating GZ->ROS Bridge: [robot1/camera/camera_info (gz.msgs.CameraInfo) -> robot1/camera/camera_info (sensor_msgs/msg/CameraInfo)] (Lazy 0)
+[INFO] [ros2-15]: process has finished cleanly [pid 8099]
+[rviz_visualizer-16] [INFO] [1759778489.947214347] [rviz2]: Trying to create a map of size 214 x 213 using 1 swatches
+[rviz_visualizer-16] [ERROR] [1759778489.950840176] [rviz2]: rviz/glsl120/indexed_8bit_image.vert
+[rviz_visualizer-16] rviz/glsl120/indexed_8bit_image.frag
+[rviz_visualizer-16]  GLSL link result : 
+[rviz_visualizer-16] active samplers with a different type refer to the same texture image unit
+[rviz_visualizer-16] [INFO] [1759778490.340474782] [nav2_rviz_selector_node]: controller_server service not available
+[INFO] [lifecycle_manager-17]: process started with pid [8437]
+[lifecycle_manager-17] [INFO] [1759778490.838013065] [robot1.lifecycle_manager1]: Creating
+[lifecycle_manager-17] [INFO] [1759778490.840697518] [robot1.lifecycle_manager1]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="turtlebot3_waffle"]/link[@name="robot1/base_scan"]/sensor[@name="hls_lfcd_lds"]/gz_frame_id:/root/ros_ws/src/tb3_multi_nav/config/model.sdf:L141]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="turtlebot3_waffle"]/link[@name="robot1/camera_rgb_frame"]/sensor[@name="camera"]/gz_frame_id:/root/ros_ws/src/tb3_multi_nav/config/model.sdf:L379]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="turtlebot3_waffle"]/link[@name="robot1/base_scan"]/sensor[@name="hls_lfcd_lds"]/gz_frame_id:<data-string>:L163]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="turtlebot3_waffle"]/link[@name="robot1/camera_rgb_frame"]/sensor[@name="camera"]/gz_frame_id:<data-string>:L394]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[rviz_visualizer-16] [INFO] [1759778491.350481675] [nav2_rviz_selector_node]: planner_server service not available
+[lifecycle_manager-17] [INFO] [1759778492.073478550] [robot1.lifecycle_manager1]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-17] [INFO] [1759778492.073613905] [robot1.lifecycle_manager1]: [34m[1mConfiguring amcl[0m[0m
+[amcl-5] [INFO] [1759778492.074363513] [robot1.amcl]: Configuring
+[amcl-5] [INFO] [1759778492.074467487] [robot1.amcl]: initTransforms
+[amcl-5] [INFO] [1759778492.087835304] [robot1.amcl]: initPubSub
+[amcl-5] [INFO] [1759778492.097914693] [robot1.amcl]: Subscribed to map topic.
+[lifecycle_manager-17] [INFO] [1759778492.104823853] [robot1.lifecycle_manager1]: [34m[1mConfiguring behavior_server[0m[0m
+[behavior_server-8] [INFO] [1759778492.105239322] [robot1.behavior_server]: Configuring
+[amcl-5] [INFO] [1759778492.108511801] [robot1.amcl]: Received a 214 X 213 map @ 0.050 m/pix
+[behavior_server-8] [INFO] [1759778492.110294052] [robot1.behavior_server]: Creating behavior plugin spin of type nav2_behaviors::Spin
+[behavior_server-8] [INFO] [1759778492.111037773] [robot1.behavior_server]: Creating behavior plugin backup of type nav2_behaviors::BackUp
+[behavior_server-8] [INFO] [1759778492.111790786] [robot1.behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors::DriveOnHeading
+[behavior_server-8] [INFO] [1759778492.112502520] [robot1.behavior_server]: Creating behavior plugin wait of type nav2_behaviors::Wait
+[behavior_server-8] [INFO] [1759778492.122248348] [robot1.behavior_server]: Configuring spin
+[behavior_server-8] [INFO] [1759778492.130935617] [robot1.behavior_server]: Configuring backup
+[behavior_server-8] [INFO] [1759778492.138879194] [robot1.behavior_server]: Configuring drive_on_heading
+[behavior_server-8] [INFO] [1759778492.147311485] [robot1.behavior_server]: Configuring wait
+[lifecycle_manager-17] [INFO] [1759778492.155778513] [robot1.lifecycle_manager1]: [34m[1mConfiguring smoother_server[0m[0m
+[smoother_server-9] [INFO] [1759778492.156328821] [robot1.smoother_server]: Configuring smoother server
+[smoother_server-9] [INFO] [1759778492.171571882] [robot1.smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[smoother_server-9] [INFO] [1759778492.172067818] [robot1.smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[lifecycle_manager-17] [INFO] [1759778492.180503519] [robot1.lifecycle_manager1]: [34m[1mConfiguring planner_server[0m[0m
+[planner_server-6] [INFO] [1759778492.180939584] [robot1.planner_server]: Configuring
+[planner_server-6] [INFO] [1759778492.181022585] [robot1.global_costmap.global_costmap]: Configuring
+[planner_server-6] [INFO] [1759778492.190752075] [robot1.global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-6] [INFO] [1759778492.196121886] [robot1.global_costmap.global_costmap]: Subscribing to the map topic (/robot1/map) with transient local durability
+[planner_server-6] [INFO] [1759778492.198797162] [robot1.global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-6] [INFO] [1759778492.198867256] [robot1.global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-6] [INFO] [1759778492.199720788] [robot1.global_costmap.global_costmap]: Subscribed to Topics: 
+[planner_server-6] [INFO] [1759778492.199834929] [robot1.global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-6] [INFO] [1759778492.199853455] [robot1.global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-6] [INFO] [1759778492.201247713] [robot1.global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-6] [INFO] [1759778492.232969690] [robot1.planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner::NavfnPlanner
+[planner_server-6] [INFO] [1759778492.233035545] [robot1.planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-6] [INFO] [1759778492.233585109] [robot1.planner_server]: Planner Server has GridBased  planners available.
+[lifecycle_manager-17] [INFO] [1759778492.250633791] [robot1.lifecycle_manager1]: [34m[1mConfiguring controller_server[0m[0m
+[controller_server-7] [INFO] [1759778492.251013497] [robot1.controller_server]: Configuring controller interface
+[controller_server-7] [INFO] [1759778492.251042831] [robot1.controller_server]: getting progress checker plugins..
+[controller_server-7] [INFO] [1759778492.251286115] [robot1.controller_server]: getting goal checker plugins..
+[controller_server-7] [INFO] [1759778492.251738140] [robot1.controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-7] [INFO] [1759778492.251817007] [robot1.local_costmap.local_costmap]: Configuring
+[controller_server-7] [INFO] [1759778492.264085263] [robot1.local_costmap.local_costmap]: Using plugin "static_layer"
+[controller_server-7] [INFO] [1759778492.268915616] [robot1.local_costmap.local_costmap]: Subscribing to the map topic (/robot1/map) with transient local durability
+[controller_server-7] [INFO] [1759778492.271679434] [robot1.local_costmap.local_costmap]: Initialized plugin "static_layer"
+[controller_server-7] [INFO] [1759778492.271749919] [robot1.local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[controller_server-7] [INFO] [1759778492.273254565] [robot1.local_costmap.local_costmap]: Subscribed to Topics: 
+[controller_server-7] [INFO] [1759778492.273351282] [robot1.local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[controller_server-7] [INFO] [1759778492.273374434] [robot1.local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-7] [INFO] [1759778492.274699799] [robot1.local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-7] [INFO] [1759778492.307875592] [robot1.local_costmap.local_costmap]: StaticLayer: Resizing costmap to 214 X 213 at 0.050000 m/pix
+[controller_server-7] [INFO] [1759778492.308132484] [robot1.controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-7] [INFO] [1759778492.308718115] [robot1.controller_server]: Controller Server has progress_checker  progress checkers available.
+[controller_server-7] [INFO] [1759778492.309493258] [robot1.controller_server]: Created goal checker : goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-7] [INFO] [1759778492.310150283] [robot1.controller_server]: Controller Server has goal_checker  goal checkers available.
+[controller_server-7] [INFO] [1759778492.312820306] [robot1.controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[controller_server-7] [INFO] [1759778492.314309045] [robot1.controller_server]: Setting transform_tolerance to 0.100000
+[controller_server-7] [ERROR] [1759778492.329840111] [robot1.controller_server]: Couldn't load critics! Caught exception: No critics defined for FollowPath
+[controller_server-7] [ERROR] [1759778492.335028421] [robot1.controller_server]: Caught exception in callback for transition 10
+[controller_server-7] [ERROR] [1759778492.335108350] [robot1.controller_server]: Original error: Couldn't load critics! Caught exception: No critics defined for FollowPath
+[controller_server-7] [WARN] [1759778492.335167269] [robot1.controller_server]: Callback returned ERROR during the transition: configure
+[controller_server-7] [FATAL] [1759778492.335182851] [robot1.controller_server]: Lifecycle node controller_server does not have error state implemented
+[lifecycle_manager-17] [ERROR] [1759778492.335945714] [robot1.lifecycle_manager1]: Failed to change state for node: controller_server
+[lifecycle_manager-17] [ERROR] [1759778492.336031196] [robot1.lifecycle_manager1]: Failed to bring up all requested nodes. Aborting bringup.
+[rviz_visualizer-16] [INFO] [1759778492.362842626] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-16] [INFO] [1759778493.378983953] [nav2_rviz_selector_node]: smoother_server service not available
+[amcl-5] [INFO] [1759778493.774512967] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 0.100 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778493.937617049] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 0.200 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778494.094269611] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 0.300 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778494.253686620] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 0.400 for reason 'discarding message because the queue is full'
+[rviz_visualizer-16] [INFO] [1759778494.393542592] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-16] [INFO] [1759778494.400701542] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-16] [INFO] [1759778494.400791500] [nav2_rviz_selector_node]: Trying to load plugins...
+[amcl-5] [INFO] [1759778494.415577566] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 0.500 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778494.575833295] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 0.600 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778494.742099033] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 0.700 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778494.906241988] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 0.800 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778495.070079152] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 0.900 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778495.239481375] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 1.000 for reason 'discarding message because the queue is full'
+[rviz_visualizer-16] [INFO] [1759778495.408542013] [nav2_rviz_selector_node]: controller_server service not available
+[amcl-5] [INFO] [1759778495.410838771] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 1.100 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778495.581068126] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 1.200 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778495.751066136] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 1.300 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778495.920778878] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 1.400 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778496.089469433] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 1.500 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778496.268060872] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 1.600 for reason 'discarding message because the queue is full'
+[rviz_visualizer-16] [INFO] [1759778496.424650409] [nav2_rviz_selector_node]: planner_server service not available
+[amcl-5] [INFO] [1759778496.439635641] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 1.700 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778496.606336261] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 1.800 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778496.791041116] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 1.900 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778496.974891148] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 2.000 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778497.146913673] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 2.100 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778497.324907017] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 2.200 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778497.437765932] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 2.300 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz_visualizer-16] [INFO] [1759778497.439529753] [nav2_rviz_selector_node]: controller_server service not available
+[amcl-5] [INFO] [1759778497.149363000] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 2.400 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778500.452155106] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 2.500 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778500.595252312] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 2.600 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778500.749352572] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 2.700 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778500.895984116] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 2.800 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778501.041013711] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 2.900 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz_visualizer-16] [INFO] [1759778501.173330929] [nav2_rviz_selector_node]: smoother_server service not available
+[amcl-5] [INFO] [1759778501.191031259] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 3.000 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778501.343187951] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 3.100 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778501.494979531] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 3.200 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778501.720059799] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 3.300 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778501.873454809] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 3.400 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778502.025836506] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 3.500 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778502.183221785] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 3.600 for reason 'discarding message because the queue is full'
+[rviz_visualizer-16] [INFO] [1759778502.190808122] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-16] [INFO] [1759778502.202335081] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-16] [INFO] [1759778502.202380063] [nav2_rviz_selector_node]: Trying to load plugins...
+[amcl-5] [INFO] [1759778502.342989020] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 3.700 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778502.506583625] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 3.800 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778502.666499739] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 3.900 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778502.822799250] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 4.000 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778502.982778027] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 4.100 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778503.149207512] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 4.200 for reason 'discarding message because the queue is full'
+[rviz_visualizer-16] [INFO] [1759778503.211294120] [nav2_rviz_selector_node]: controller_server service not available
+[amcl-5] [INFO] [1759778503.312903447] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 4.300 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778503.485555566] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 4.400 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778503.659485595] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 4.500 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778503.824481809] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 4.600 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778503.993493155] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 4.700 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778504.165211639] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 4.800 for reason 'discarding message because the queue is full'
+[rviz_visualizer-16] [INFO] [1759778504.231422797] [nav2_rviz_selector_node]: planner_server service not available
+[amcl-5] [INFO] [1759778504.332740310] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 4.900 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778504.509501366] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 5.000 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778504.683746826] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 5.100 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778504.860400333] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 5.200 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778505.034551355] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 5.300 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778505.207095364] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 5.400 for reason 'discarding message because the queue is full'
+[rviz_visualizer-16] [INFO] [1759778505.246084191] [nav2_rviz_selector_node]: controller_server service not available
+[amcl-5] [INFO] [1759778505.384179935] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 5.500 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778505.497217621] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 5.600 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778505.642178496] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 5.700 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778505.785131216] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 5.800 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778505.939750299] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 5.900 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778506.103127442] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 6.000 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778506.255528119] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 6.100 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz_visualizer-16] [INFO] [1759778506.262067118] [nav2_rviz_selector_node]: smoother_server service not available
+[amcl-5] [INFO] [1759778506.419333528] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 6.200 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778506.568615576] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 6.300 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778506.720730464] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 6.400 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778506.876295700] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 6.500 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778507.114055320] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 6.600 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778507.276128325] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 6.700 for reason 'discarding message because the queue is full'
+[rviz_visualizer-16] [INFO] [1759778507.280352570] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-16] [INFO] [1759778507.287960406] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-16] [INFO] [1759778507.287991439] [nav2_rviz_selector_node]: Trying to load plugins...
+[amcl-5] [INFO] [1759778507.429349937] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 6.800 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778507.585033738] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 6.900 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778507.750999123] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 7.000 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778507.905535637] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 7.100 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778508.066809331] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 7.200 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778508.225369105] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 7.300 for reason 'discarding message because the queue is full'
+[rviz_visualizer-16] [INFO] [1759778508.294965684] [nav2_rviz_selector_node]: controller_server service not available
+[amcl-5] [INFO] [1759778508.393040838] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 7.400 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778508.559701967] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 7.500 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778508.731539230] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 7.600 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778508.900100577] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 7.700 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778509.065165946] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 7.800 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778509.231265932] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 7.900 for reason 'discarding message because the queue is full'
+[rviz_visualizer-16] [INFO] [1759778509.310433542] [nav2_rviz_selector_node]: planner_server service not available
+[amcl-5] [INFO] [1759778509.402550219] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 8.000 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778509.578804925] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 8.100 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778509.753990354] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 8.200 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778509.928039690] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 8.300 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778510.102143656] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 8.400 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778510.277566049] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 8.500 for reason 'discarding message because the queue is full'
+[rviz_visualizer-16] [INFO] [1759778510.323957963] [nav2_rviz_selector_node]: controller_server service not available
+[amcl-5] [INFO] [1759778510.453702497] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 8.600 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778510.626685980] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 8.700 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778510.804881911] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 8.800 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778510.918836478] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 8.900 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778511.065385055] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 9.000 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778511.209772057] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 9.100 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz_visualizer-16] [INFO] [1759778511.344354373] [nav2_rviz_selector_node]: smoother_server service not available
+[amcl-5] [INFO] [1759778511.356208134] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 9.200 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778511.521267559] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 9.300 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778511.678843964] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 9.400 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778511.828065442] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 9.500 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778511.980694244] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 9.600 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778512.125752883] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 9.700 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778512.274534765] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 9.800 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz_visualizer-16] [INFO] [1759778512.371974567] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-16] [INFO] [1759778512.379723797] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-16] [INFO] [1759778512.379765463] [nav2_rviz_selector_node]: Trying to load plugins...
+[amcl-5] [INFO] [1759778512.509572865] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 9.900 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778512.665149306] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 10.000 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778512.825063755] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 10.100 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778512.979221764] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 10.200 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778513.131509527] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 10.300 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778513.297554389] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 10.400 for reason 'discarding message because the queue is full'
+[rviz_visualizer-16] [INFO] [1759778513.386711750] [nav2_rviz_selector_node]: controller_server service not available
+[amcl-5] [INFO] [1759778513.454998757] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 10.500 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778513.612191226] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 10.600 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778513.770683572] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 10.700 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778513.938874009] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 10.800 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778514.105942851] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 10.900 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778514.311432051] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 11.000 for reason 'discarding message because the queue is full'
+[rviz_visualizer-16] [INFO] [1759778514.401650838] [nav2_rviz_selector_node]: planner_server service not available
+[amcl-5] [INFO] [1759778514.482180390] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 11.100 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778514.650044251] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 11.200 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778514.812588594] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 11.300 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778514.976741721] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 11.400 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778515.144526506] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 11.500 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778515.314725211] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 11.600 for reason 'discarding message because the queue is full'
+[rviz_visualizer-16] [INFO] [1759778515.419996784] [nav2_rviz_selector_node]: controller_server service not available
+[amcl-5] [INFO] [1759778515.491090664] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 11.700 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778515.660299246] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 11.800 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778515.835256614] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 11.900 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778516.010606986] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 12.000 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778516.183254696] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 12.100 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778516.296616434] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 12.200 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz_visualizer-16] [INFO] [1759778516.437249046] [nav2_rviz_selector_node]: smoother_server service not available
+[amcl-5] [INFO] [1759778516.445472021] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 12.300 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778516.592981643] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 12.400 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778516.741207514] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 12.500 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778516.888474712] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 12.600 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778517.039868311] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 12.700 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778517.181948926] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 12.800 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778517.335621384] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 12.900 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz_visualizer-16] [INFO] [1759778517.456116840] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-16] [INFO] [1759778517.464334620] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-16] [INFO] [1759778517.464374823] [nav2_rviz_selector_node]: Trying to load plugins...
+[amcl-5] [INFO] [1759778517.486961019] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 13.000 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778517.634608592] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 13.100 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778517.856012869] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 13.200 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778518.014914539] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 13.300 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778518.173569721] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 13.400 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778518.326067721] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 13.500 for reason 'discarding message because the queue is full'
+[rviz_visualizer-16] [INFO] [1759778518.471645104] [nav2_rviz_selector_node]: controller_server service not available
+[amcl-5] [INFO] [1759778518.484966619] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 13.600 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778518.639947725] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 13.700 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778518.798872686] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 13.800 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778518.956496755] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 13.900 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778519.124986003] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 14.000 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778519.286169423] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 14.100 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778519.451965356] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 14.200 for reason 'discarding message because the queue is full'
+[rviz_visualizer-16] [INFO] [1759778519.486320083] [nav2_rviz_selector_node]: planner_server service not available
+[amcl-5] [INFO] [1759778519.622256527] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 14.300 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778519.785843595] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 14.400 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778519.959481097] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 14.500 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778520.133384579] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 14.600 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778520.300546367] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 14.700 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778520.468435442] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 14.800 for reason 'discarding message because the queue is full'
+[rviz_visualizer-16] [INFO] [1759778520.501897110] [nav2_rviz_selector_node]: controller_server service not available
+[amcl-5] [INFO] [1759778520.642454933] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 14.900 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778520.813150876] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 15.000 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778520.979212958] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 15.100 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778521.152404487] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 15.200 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778521.324346762] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 15.300 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778521.499878792] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 15.400 for reason 'discarding message because the queue is full'
+[rviz_visualizer-16] [INFO] [1759778521.518377352] [nav2_rviz_selector_node]: smoother_server service not available
+[amcl-5] [INFO] [1759778521.615911059] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 15.500 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778521.764234614] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 15.600 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778521.906202393] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 15.700 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778522.061878208] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 15.800 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778522.205271802] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 15.900 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778522.352816462] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 16.000 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778522.502217151] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 16.100 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz_visualizer-16] [INFO] [1759778522.533688033] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-16] [INFO] [1759778522.541418961] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-16] [INFO] [1759778522.541469297] [nav2_rviz_selector_node]: Trying to load plugins...
+[amcl-5] [INFO] [1759778522.656022776] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 16.200 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778522.808373081] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 16.300 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778522.963320847] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 16.400 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778523.184889237] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 16.500 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778523.341487649] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 16.600 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778523.516757399] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 16.700 for reason 'discarding message because the queue is full'
+[rviz_visualizer-16] [INFO] [1759778523.549147375] [nav2_rviz_selector_node]: controller_server service not available
+[amcl-5] [INFO] [1759778523.675025349] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 16.800 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778523.842118740] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 16.900 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778524.014752063] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 17.000 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778524.175675012] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 17.100 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778524.350211155] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 17.200 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778524.519242041] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 17.300 for reason 'discarding message because the queue is full'
+[rviz_visualizer-16] [INFO] [1759778524.570332017] [nav2_rviz_selector_node]: planner_server service not available
+[amcl-5] [INFO] [1759778524.702307702] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 17.400 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778524.862191418] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 17.500 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778525.032000667] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 17.600 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778525.197393494] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 17.700 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778525.362085430] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 17.800 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778525.530070935] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 17.900 for reason 'discarding message because the queue is full'
+[rviz_visualizer-16] [INFO] [1759778525.591664355] [nav2_rviz_selector_node]: controller_server service not available
+[amcl-5] [INFO] [1759778525.696235156] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 18.000 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778525.867831577] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 18.100 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778526.046019654] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 18.200 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778526.221463185] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 18.300 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778526.390903802] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 18.400 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778526.564156457] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 18.500 for reason 'discarding message because the queue is full'
+[rviz_visualizer-16] [INFO] [1759778526.606716230] [nav2_rviz_selector_node]: smoother_server service not available
+[amcl-5] [INFO] [1759778526.735270001] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 18.600 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778526.909731255] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 18.700 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778527.026280401] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 18.800 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778527.172547359] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 18.900 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778527.316931563] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 19.000 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778527.463529842] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 19.100 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778527.614231543] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 19.200 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz_visualizer-16] [INFO] [1759778527.620235395] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-16] [INFO] [1759778527.627045454] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-16] [INFO] [1759778527.627082528] [nav2_rviz_selector_node]: Trying to load plugins...
+[amcl-5] [INFO] [1759778527.768670791] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 19.300 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778527.916396121] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 19.400 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778528.073218151] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 19.500 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778528.221772680] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 19.600 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778528.373219667] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 19.700 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778528.597808488] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 19.800 for reason 'discarding message because the queue is full'
+[rviz_visualizer-16] [INFO] [1759778528.633756180] [nav2_rviz_selector_node]: controller_server service not available
+[amcl-5] [INFO] [1759778528.750886109] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 19.900 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778528.911193735] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 20.000 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778529.066325164] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 20.100 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778529.230876580] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 20.200 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778529.386533951] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 20.300 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778529.541083032] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 20.400 for reason 'discarding message because the queue is full'
+[rviz_visualizer-16] [INFO] [1759778529.652200862] [nav2_rviz_selector_node]: planner_server service not available
+[amcl-5] [INFO] [1759778529.717398747] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 20.500 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778529.882474124] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 20.600 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778530.043810245] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 20.700 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778530.211904208] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 20.800 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778533.115803187] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 20.900 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778533.278605832] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 21.000 for reason 'discarding message because the queue is full'
+[rviz_visualizer-16] [INFO] [1759778533.396783967] [nav2_rviz_selector_node]: controller_server service not available
+[amcl-5] [INFO] [1759778533.451155352] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 21.100 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778533.611686406] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 21.200 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778533.780906385] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 21.300 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778533.950442579] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 21.400 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778534.115327862] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 21.500 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778534.282509826] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 21.600 for reason 'discarding message because the queue is full'
+[rviz_visualizer-16] [INFO] [1759778534.413655891] [nav2_rviz_selector_node]: smoother_server service not available
+[amcl-5] [INFO] [1759778534.452117103] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 21.700 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778534.627959736] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 21.800 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778534.803152589] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 21.900 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778534.974337596] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 22.000 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778535.088956758] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 22.100 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778535.237959958] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 22.200 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778535.397172698] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 22.300 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz_visualizer-16] [INFO] [1759778535.430392537] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-16] [INFO] [1759778535.439448545] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-16] [INFO] [1759778535.439497436] [nav2_rviz_selector_node]: Trying to load plugins...
+[amcl-5] [INFO] [1759778535.551369852] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 22.400 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778535.706332532] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 22.500 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778535.864126626] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 22.600 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778536.018103058] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 22.700 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778536.169542854] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 22.800 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778536.323520140] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 22.900 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz_visualizer-16] [INFO] [1759778536.451134450] [nav2_rviz_selector_node]: controller_server service not available
+[amcl-5] [INFO] [1759778536.478954374] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 23.000 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778536.714555765] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 23.100 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778536.875552902] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 23.200 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778537.047601486] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 23.300 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778537.205618482] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 23.400 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778537.363822041] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 23.500 for reason 'discarding message because the queue is full'
+[rviz_visualizer-16] [INFO] [1759778537.464013099] [nav2_rviz_selector_node]: planner_server service not available
+[amcl-5] [INFO] [1759778537.529468169] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 23.600 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778537.685864263] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 23.700 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778537.846910890] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 23.800 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778538.006431288] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 23.900 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778538.167335474] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 24.000 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778538.327026527] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 24.100 for reason 'discarding message because the queue is full'
+[rviz_visualizer-16] [INFO] [1759778538.481008367] [nav2_rviz_selector_node]: controller_server service not available
+[amcl-5] [INFO] [1759778538.488273016] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 24.200 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778538.656484623] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 24.300 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778538.824632700] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 24.400 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778538.989821078] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 24.500 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778539.162223691] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 24.600 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778539.335312755] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 24.700 for reason 'discarding message because the queue is full'
+[rviz_visualizer-16] [INFO] [1759778539.499729509] [nav2_rviz_selector_node]: smoother_server service not available
+[amcl-5] [INFO] [1759778539.510452444] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 24.800 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778539.692025087] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 24.900 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778539.863213521] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 25.000 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778540.046578346] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 25.100 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778540.216897585] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 25.200 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778540.390453057] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 25.300 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778540.503957695] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 25.400 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz_visualizer-16] [INFO] [1759778540.517810236] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-16] [INFO] [1759778540.526128927] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[amcl-5] [INFO] [1759778540.650535490] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 25.500 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778540.812437809] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 25.600 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778540.962023952] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 25.700 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778541.114503140] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 25.800 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778541.263684948] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 25.900 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778541.413557015] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 26.000 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778541.562926955] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 26.100 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778541.712930986] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 26.200 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778541.882991912] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 26.300 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778542.117636528] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 26.400 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778542.285056304] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 26.500 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778542.446664166] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 26.600 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778542.602023992] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 26.700 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778542.763957800] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 26.800 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778542.920713418] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 26.900 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778543.085741796] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 27.000 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778543.254613763] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 27.100 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778543.420732439] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 27.200 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778543.584390151] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 27.300 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778543.745161282] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 27.400 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778543.912079084] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 27.500 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778544.072770748] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 27.600 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778544.235891052] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 27.700 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778544.401821320] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 27.800 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778544.565083739] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 27.900 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778544.732977860] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 28.000 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778544.904152253] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 28.100 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778545.072169451] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 28.200 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778545.239369782] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 28.300 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778545.410032379] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 28.400 for reason 'discarding message because the queue is full'
+[rviz_visualizer-16] [INFO] [1759778545.439737205] [nav2_rviz_selector_node]: Trying to load plugins...
+[amcl-5] [INFO] [1759778545.584822910] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 28.500 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778545.759956865] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 28.600 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778545.873610921] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 28.700 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778546.017160307] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 28.800 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778546.161226891] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 28.900 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778546.306327212] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 29.000 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz_visualizer-16] [INFO] [1759778546.447919664] [nav2_rviz_selector_node]: controller_server service not available
+[amcl-5] [INFO] [1759778546.458822672] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 29.100 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778546.610194235] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 29.200 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778546.757917913] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 29.300 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778546.907117703] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 29.400 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778547.053751913] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 29.500 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778547.204312002] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 29.600 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778547.439389054] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 29.700 for reason 'discarding message because the queue is full'
+[rviz_visualizer-16] [INFO] [1759778547.462740793] [nav2_rviz_selector_node]: planner_server service not available
+[amcl-5] [INFO] [1759778547.592148037] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 29.800 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778547.745850967] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 29.900 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778547.900763210] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 30.000 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778548.059843082] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 30.100 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778548.228071612] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 30.200 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778548.384371954] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 30.300 for reason 'discarding message because the queue is full'
+[rviz_visualizer-16] [INFO] [1759778548.483466437] [nav2_rviz_selector_node]: controller_server service not available
+[amcl-5] [INFO] [1759778548.541182794] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 30.400 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778548.699429721] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 30.500 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778548.858172429] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 30.600 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778549.027860803] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 30.700 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778549.194468755] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 30.800 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778549.367379941] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 30.900 for reason 'discarding message because the queue is full'
+[rviz_visualizer-16] [INFO] [1759778549.498360629] [nav2_rviz_selector_node]: smoother_server service not available
+[amcl-5] [INFO] [1759778549.546488287] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 31.000 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778549.717553582] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 31.100 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778549.883154985] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 31.200 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778550.055024641] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 31.300 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778550.222693080] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 31.400 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778550.399099148] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 31.500 for reason 'discarding message because the queue is full'
+[rviz_visualizer-16] [INFO] [1759778550.515561034] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-16] [INFO] [1759778550.522369582] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-16] [INFO] [1759778550.522420073] [nav2_rviz_selector_node]: Trying to load plugins...
+[amcl-5] [INFO] [1759778550.570754830] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 31.600 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778550.738966719] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 31.700 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778550.913895395] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 31.800 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778551.086332220] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 31.900 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778551.200620020] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 32.000 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778551.343951556] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 32.100 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778551.504718471] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 32.200 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz_visualizer-16] [INFO] [1759778551.529515895] [nav2_rviz_selector_node]: controller_server service not available
+[amcl-5] [INFO] [1759778551.655856318] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 32.300 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778551.820729204] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 32.400 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778551.977090680] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 32.500 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778552.124266333] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 32.600 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778552.274358688] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 32.700 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778552.422001039] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 32.800 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz_visualizer-16] [INFO] [1759778552.546659734] [nav2_rviz_selector_node]: planner_server service not available
+[amcl-5] [INFO] [1759778552.576051925] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 32.900 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[amcl-5] [INFO] [1759778552.796296161] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 33.000 for reason 'discarding message because the queue is full'
+[amcl-5] [INFO] [1759778552.957371557] [robot1.amcl]: Message Filter dropping message: frame 'robot1/base_scan' at time 33.100 for reason 'discarding message because the queue is full'
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[rviz_visualizer-16] [INFO] [1759778553.075078090] [rclcpp]: signal_handler(signum=2)
+[map_server-13] [INFO] [1759778553.075097399] [rclcpp]: signal_handler(signum=2)
+[map_server-13] [INFO] [1759778553.075250910] [map_server]: Running Nav2 LifecycleNode rcl preshutdown (map_server)
+[lifecycle_manager-14] [INFO] [1759778553.075114681] [rclcpp]: signal_handler(signum=2)
+[lifecycle_manager-14] [INFO] [1759778553.075264527] [map_lifecycle_manager]: Running Nav2 LifecycleManager rcl preshutdown (map_lifecycle_manager)
+[lifecycle_manager-14] [INFO] [1759778553.075292357] [map_lifecycle_manager]: [34m[1mTerminating bond timer...[0m[0m
+[lifecycle_manager-17] [INFO] [1759778553.075126783] [rclcpp]: signal_handler(signum=2)
+[lifecycle_manager-17] [INFO] [1759778553.075275200] [robot1.lifecycle_manager1]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager1)
+[velocity_smoother-10] [INFO] [1759778553.075132603] [rclcpp]: signal_handler(signum=2)
+[velocity_smoother-10] [INFO] [1759778553.075241360] [robot1.velocity_smoother]: Running Nav2 LifecycleNode rcl preshutdown (velocity_smoother)
+[velocity_smoother-10] [INFO] [1759778553.075289549] [robot1.velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[waypoint_follower-12] [INFO] [1759778553.075139826] [rclcpp]: signal_handler(signum=2)
+[waypoint_follower-12] [INFO] [1759778553.075279647] [robot1.waypoint_follower]: Running Nav2 LifecycleNode rcl preshutdown (waypoint_follower)
+[waypoint_follower-12] [INFO] [1759778553.075328124] [robot1.waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[bt_navigator-11] [INFO] [1759778553.075142813] [rclcpp]: signal_handler(signum=2)
+[smoother_server-9] [INFO] [1759778553.075156882] [rclcpp]: signal_handler(signum=2)
+[smoother_server-9] [INFO] [1759778553.075249932] [robot1.smoother_server]: Running Nav2 LifecycleNode rcl preshutdown (smoother_server)
+[behavior_server-8] [INFO] [1759778553.075158034] [rclcpp]: signal_handler(signum=2)
+[behavior_server-8] [INFO] [1759778553.075328856] [robot1.behavior_server]: Running Nav2 LifecycleNode rcl preshutdown (behavior_server)
+[amcl-5] [INFO] [1759778553.075174815] [rclcpp]: signal_handler(signum=2)
+[amcl-5] [INFO] [1759778553.075292932] [robot1.amcl]: Running Nav2 LifecycleNode rcl preshutdown (amcl)
+[amcl-5] [INFO] [1759778553.075394485] [robot1.amcl]: Cleaning up
+[planner_server-6] [INFO] [1759778553.075176604] [rclcpp]: signal_handler(signum=2)
+[planner_server-6] [INFO] [1759778553.076849306] [robot1.planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[planner_server-6] [INFO] [1759778553.077011700] [robot1.planner_server]: Cleaning up
+[controller_server-7] [INFO] [1759778553.075179720] [rclcpp]: signal_handler(signum=2)
+[controller_server-7] [INFO] [1759778553.075662567] [robot1.controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[controller_server-7] [INFO] [1759778553.075707459] [robot1.controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[robot_state_publisher-4] [INFO] [1759778553.075220228] [rclcpp]: signal_handler(signum=2)
+[rviz_visualizer-16] [ERROR] [1759778553.075601736] [nav2_rviz_selector_node]: Interrupted while waiting for the service. Exiting.
+[rviz_visualizer-16] 
+[rviz_visualizer-16] >>> [rcutils|error_handling.c:108] rcutils_set_error_state()
+[rviz_visualizer-16] This error state is being overwritten:
+[rviz_visualizer-16] 
+[rviz_visualizer-16]   'rcl node's context is invalid, at ./src/rcl/node.c:404'
+[rviz_visualizer-16] 
+[rviz_visualizer-16] with this new error message:
+[rviz_visualizer-16] 
+[rviz_visualizer-16]   'publisher's context is invalid, at ./src/rcl/publisher.c:423'
+[rviz_visualizer-16] 
+[rviz_visualizer-16] rcutils_reset_error() should be called after error handling to avoid this.
+[rviz_visualizer-16] <<<
+[rviz_visualizer-16] Failed to publish log message to rosout: publisher's context is invalid, at ./src/rcl/publisher.c:423
+[rviz_visualizer-16] [INFO] [1759778553.095516842] [nav2_rviz_selector_node]: controller_server service not available
+[map_server-13] [INFO] [1759778553.075339648] [map_server]: Deactivating
+[map_server-13] [INFO] [1759778553.075353615] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[map_server-13] [INFO] [1759778553.086549063] [map_server]: Cleaning up
+[map_server-13] [INFO] [1759778553.086604948] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[map_server-13] [INFO] [1759778553.096375790] [map_server]: Destroying
+[velocity_smoother-10] [INFO] [1759778553.078189716] [robot1.velocity_smoother]: Destroying
+[waypoint_follower-12] [INFO] [1759778553.078478994] [robot1.waypoint_follower]: Destroying
+[bt_navigator-11] [INFO] [1759778553.075525686] [robot1.bt_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_navigator)
+[bt_navigator-11] [INFO] [1759778553.075587620] [robot1.bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[bt_navigator-11] [INFO] [1759778553.076450547] [robot1.bt_navigator]: Destroying
+[smoother_server-9] [INFO] [1759778553.075366637] [robot1.smoother_server]: Cleaning up
+[smoother_server-9] [INFO] [1759778553.088166499] [robot1.smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[smoother_server-9] [INFO] [1759778553.098372291] [robot1.smoother_server]: Destroying
+[behavior_server-8] [INFO] [1759778553.076165140] [robot1.behavior_server]: Cleaning up
+[behavior_server-8] [INFO] [1759778553.079645800] [robot1.behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[behavior_server-8] [INFO] [1759778553.121491214] [robot1.behavior_server]: Destroying
+[parameter_bridge-3] [INFO] [1759778553.075571863] [rclcpp]: signal_handler(signum=2)
+[amcl-5] [INFO] [1759778553.084802822] [robot1.amcl]: Destroying bond (amcl) to lifecycle manager.
+[amcl-5] [INFO] [1759778553.100289989] [robot1.amcl]: Destroying
+[lifecycle_manager-14] [INFO] [1759778553.094653736] [map_lifecycle_manager]: Destroying map_lifecycle_manager
+[planner_server-6] [INFO] [1759778553.103781101] [robot1.global_costmap.global_costmap]: Cleaning up
+[planner_server-6] [INFO] [1759778553.113671464] [robot1.planner_server]: Cleaning up plugin GridBased of type NavfnPlanner
+[planner_server-6] [INFO] [1759778553.113740201] [robot1.planner_server]: Destroying plugin GridBased of type NavfnPlanner
+[controller_server-7] Warning: class_loader.ClassLoader: SEVERE WARNING!!! Attempting to unload library while objects created by this loader exist in the heap! You should delete your objects before attempting to unload the library or destroying the ClassLoader. The library will NOT be unloaded.
+[controller_server-7]          at line 127 in ./src/class_loader.cpp
+[controller_server-7] [INFO] [1759778553.127078524] [robot1.local_costmap.local_costmap]: Destroying
+[controller_server-7] [ERROR] [1759778553.127112453] [robot1.local_costmap.local_costmap]: Unable to start transition 2 from current state cleaningup: Could not publish transition: publisher's context is invalid, at ./src/rcl/publisher.c:423, at ./src/rcl_lifecycle.c:368
+[lifecycle_manager-17] [INFO] [1759778553.115690278] [robot1.lifecycle_manager1]: Destroying lifecycle_manager1
+[planner_server-6] [INFO] [1759778553.128960109] [robot1.planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[planner_server-6] [INFO] [1759778553.133258103] [robot1.global_costmap.global_costmap]: Destroying
+[controller_server-7] [INFO] [1759778553.135363325] [robot1.controller_server]: Destroying
+[rviz_visualizer-16] terminate called after throwing an instance of 'rclcpp::exceptions::RCLError'
+[rviz_visualizer-16]   what():  failed to create guard condition: the given context is not valid, either rcl_init() was not called or rcl_shutdown() was called., at ./src/rcl/guard_condition.c:67
+[planner_server-6] [INFO] [1759778553.140582224] [robot1.planner_server]: Destroying
+[INFO] [parameter_bridge-3]: process has finished cleanly [pid 7983]
+[INFO] [robot_state_publisher-4]: process has finished cleanly [pid 7984]
+[INFO] [bt_navigator-11]: process has finished cleanly [pid 8089]
+[INFO] [lifecycle_manager-14]: process has finished cleanly [pid 8098]
+[INFO] [waypoint_follower-12]: process has finished cleanly [pid 8091]
+[INFO] [velocity_smoother-10]: process has finished cleanly [pid 8088]
+[INFO] [amcl-5]: process has finished cleanly [pid 7985]
+[INFO] [map_server-13]: process has finished cleanly [pid 8095]
+[INFO] [smoother_server-9]: process has finished cleanly [pid 8087]
+[INFO] [lifecycle_manager-17]: process has finished cleanly [pid 8437]
+[INFO] [behavior_server-8]: process has finished cleanly [pid 7990]
+[INFO] [controller_server-7]: process has finished cleanly [pid 7989]
+[INFO] [planner_server-6]: process has finished cleanly [pid 7988]
+[ERROR] [gazebo-1]: process has died [pid 7980, exit code -2, cmd 'ruby /opt/ros/jazzy/opt/gz_tools_vendor/bin/gz sim -r /root/ros_ws/src/tb3_multi_nav/utils/maze_world.world --force-version 8'].
+[ERROR] [rviz_visualizer-16]: process[rviz_visualizer-16] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[INFO] [rviz_visualizer-16]: sending signal 'SIGTERM' to process[rviz_visualizer-16]
+[ERROR] [rviz_visualizer-16]: process has died [pid 8100, exit code -15, cmd 'rviz2 -d /root/ros_ws/src/tb3_multi_nav/config/rviz_namespaced_singleBot.rviz --ros-args -p use_sim_time:=True'].

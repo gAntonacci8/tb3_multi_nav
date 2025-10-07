@@ -1,0 +1,1043 @@
+[INFO] [launch]: All log files can be found below /root/.ros/log/2025-10-07-07-52-40-286359-docker-desktop-901
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [gazebo-1]: process started with pid [918]
+[INFO] [create-2]: process started with pid [919]
+[INFO] [parameter_bridge-3]: process started with pid [921]
+[INFO] [robot_state_publisher-4]: process started with pid [922]
+[INFO] [amcl-5]: process started with pid [923]
+[INFO] [planner_server-6]: process started with pid [924]
+[INFO] [controller_server-7]: process started with pid [925]
+[INFO] [behavior_server-8]: process started with pid [928]
+[INFO] [smoother_server-9]: process started with pid [1008]
+[INFO] [velocity_smoother-10]: process started with pid [1012]
+[INFO] [bt_navigator-11]: process started with pid [1016]
+[INFO] [waypoint_follower-12]: process started with pid [1019]
+[INFO] [map_server-13]: process started with pid [1024]
+[INFO] [lifecycle_manager-14]: process started with pid [1027]
+[INFO] [rviz_visualizer-15]: process started with pid [1028]
+[create-2] [INFO] [1759823560.649448874] [ros_gz_sim]: Requesting list of world names.
+[robot_state_publisher-4] [INFO] [1759823560.636844336] [robot1.robot1_state_publisher]: Robot initialized
+[controller_server-7] [INFO] [1759823560.669148278] [robot1.controller_server]: 
+[controller_server-7] 	controller_server lifecycle node launched. 
+[controller_server-7] 	Waiting on external lifecycle transitions to activate
+[controller_server-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-6] [INFO] [1759823560.671208905] [robot1.planner_server]: 
+[planner_server-6] 	planner_server lifecycle node launched. 
+[planner_server-6] 	Waiting on external lifecycle transitions to activate
+[planner_server-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-5] [INFO] [1759823560.672733960] [robot1.amcl]: 
+[amcl-5] 	amcl lifecycle node launched. 
+[amcl-5] 	Waiting on external lifecycle transitions to activate
+[amcl-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-5] [INFO] [1759823560.673292239] [robot1.amcl]: Creating
+[planner_server-6] [INFO] [1759823560.673858010] [robot1.planner_server]: Creating
+[controller_server-7] [INFO] [1759823560.675871067] [robot1.controller_server]: Creating controller server
+[behavior_server-8] [INFO] [1759823560.677850829] [robot1.behavior_server]: 
+[behavior_server-8] 	behavior_server lifecycle node launched. 
+[behavior_server-8] 	Waiting on external lifecycle transitions to activate
+[behavior_server-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-6] [INFO] [1759823560.692042483] [robot1.global_costmap.global_costmap]: 
+[planner_server-6] 	global_costmap lifecycle node launched. 
+[planner_server-6] 	Waiting on external lifecycle transitions to activate
+[planner_server-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-6] [INFO] [1759823560.692803806] [robot1.global_costmap.global_costmap]: Creating Costmap
+[controller_server-7] [INFO] [1759823560.704507352] [robot1.local_costmap.local_costmap]: 
+[controller_server-7] 	local_costmap lifecycle node launched. 
+[controller_server-7] 	Waiting on external lifecycle transitions to activate
+[controller_server-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-7] [INFO] [1759823560.705115312] [robot1.local_costmap.local_costmap]: Creating Costmap
+[rviz_visualizer-15] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+[lifecycle_manager-14] [INFO] [1759823560.713318362] [map_lifecycle_manager]: Creating
+[velocity_smoother-10] [INFO] [1759823560.714694812] [robot1.velocity_smoother]: 
+[velocity_smoother-10] 	velocity_smoother lifecycle node launched. 
+[velocity_smoother-10] 	Waiting on external lifecycle transitions to activate
+[velocity_smoother-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[lifecycle_manager-14] [INFO] [1759823560.722151501] [map_lifecycle_manager]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[lifecycle_manager-14] [INFO] [1759823560.725365901] [map_lifecycle_manager]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-14] [INFO] [1759823560.725421542] [map_lifecycle_manager]: [34m[1mConfiguring map_server[0m[0m
+[smoother_server-9] [INFO] [1759823560.727387866] [robot1.smoother_server]: 
+[smoother_server-9] 	smoother_server lifecycle node launched. 
+[smoother_server-9] 	Waiting on external lifecycle transitions to activate
+[smoother_server-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-11] [INFO] [1759823560.727578652] [robot1.bt_navigator]: 
+[bt_navigator-11] 	bt_navigator lifecycle node launched. 
+[bt_navigator-11] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-13] [INFO] [1759823560.729193857] [map_server]: 
+[map_server-13] 	map_server lifecycle node launched. 
+[map_server-13] 	Waiting on external lifecycle transitions to activate
+[map_server-13] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-13] [INFO] [1759823560.729298614] [map_server]: Creating
+[bt_navigator-11] [INFO] [1759823560.729358968] [robot1.bt_navigator]: Creating
+[smoother_server-9] [INFO] [1759823560.729543290] [robot1.smoother_server]: Creating smoother server
+[waypoint_follower-12] [INFO] [1759823560.733619011] [robot1.waypoint_follower]: 
+[waypoint_follower-12] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-12] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-12] [INFO] [1759823560.734091110] [robot1.waypoint_follower]: Creating
+[rviz_visualizer-15] [INFO] [1759823560.874718614] [rviz2]: Stereo is NOT SUPPORTED
+[rviz_visualizer-15] [INFO] [1759823560.875008584] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[map_server-13] [INFO] [1759823560.885077126] [map_server]: Configuring
+[map_server-13] [INFO] [1759823560.885153298] [map_io]: Loading yaml file: /root/ros_ws/src/tb3_multi_nav/utils/2ndattempt_newmaze.yaml
+[map_server-13] [INFO] [1759823560.885311781] [map_io]: resolution: 0.05
+[map_server-13] [INFO] [1759823560.885315996] [map_io]: origin[0]: -5.254
+[map_server-13] [INFO] [1759823560.885318518] [map_io]: origin[1]: -5.383
+[map_server-13] [INFO] [1759823560.885320102] [map_io]: origin[2]: 0
+[map_server-13] [INFO] [1759823560.885321873] [map_io]: free_thresh: 0.196
+[map_server-13] [INFO] [1759823560.885323498] [map_io]: occupied_thresh: 0.65
+[map_server-13] [INFO] [1759823560.885325803] [map_io]: mode: trinary
+[map_server-13] [INFO] [1759823560.885327699] [map_io]: negate: 0
+[map_server-13] [INFO] [1759823560.885651428] [map_io]: Loading image_file: /root/ros_ws/src/tb3_multi_nav/utils/2ndattempt_newmaze.pgm
+[map_server-13] [INFO] [1759823560.887151636] [map_io]: Read map /root/ros_ws/src/tb3_multi_nav/utils/2ndattempt_newmaze.pgm: 214 X 213 map @ 0.05 m/cell
+[gazebo-1] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+[lifecycle_manager-14] [INFO] [1759823560.894432986] [map_lifecycle_manager]: [34m[1mActivating map_server[0m[0m
+[map_server-13] [INFO] [1759823560.894830111] [map_server]: Activating
+[map_server-13] [INFO] [1759823560.895073100] [map_server]: Creating bond (map_server) to lifecycle manager.
+[rviz_visualizer-15] [INFO] [1759823560.916953664] [rviz2]: Stereo is NOT SUPPORTED
+[rviz_visualizer-15] [INFO] [1759823560.980258058] [rviz]: Subscribing to: /mobile_base/sensors/bumper_pointcloud
+[rviz_visualizer-15] 
+[rviz_visualizer-15] [INFO] [1759823560.981823939] [rviz]: Subscribing to: /mobile_base/sensors/bumper_pointcloud
+[rviz_visualizer-15] 
+[lifecycle_manager-14] [INFO] [1759823561.002234033] [map_lifecycle_manager]: Server map_server connected with bond.
+[lifecycle_manager-14] [INFO] [1759823561.002277502] [map_lifecycle_manager]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-14] [INFO] [1759823561.002282545] [map_lifecycle_manager]: [34m[1mCreating bond timer...[0m[0m
+[rviz_visualizer-15] [INFO] [1759823561.033366462] [rviz]: Subscribing to: /robot1/global_costmap/voxel_marked_cloud
+[rviz_visualizer-15] 
+[rviz_visualizer-15] [INFO] [1759823561.045604101] [rviz]: Subscribing to: /robot1/local_costmap/voxel_marked_cloud
+[rviz_visualizer-15] 
+[rviz_visualizer-15] [INFO] [1759823561.072496121] [rviz]: Subscribing to: /mobile_base/sensors/bumper_pointcloud
+[rviz_visualizer-15] 
+[rviz_visualizer-15] [INFO] [1759823561.089891172] [rviz]: Subscribing to: /robot1/global_costmap/voxel_marked_cloud
+[rviz_visualizer-15] 
+[rviz_visualizer-15] [INFO] [1759823561.098603873] [rviz]: Subscribing to: /robot1/local_costmap/voxel_marked_cloud
+[rviz_visualizer-15] 
+[rviz_visualizer-15] [INFO] [1759823561.183434774] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [WARN] [1759823561.221625735] [rcl.logging_rosout]: Publisher already registered for node name: 'nav2_rviz_selector_node'. If this is due to multiple nodes with the same name then all logs for the logger named 'nav2_rviz_selector_node' will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[rviz_visualizer-15] [INFO] [1759823561.241481590] [nav2_rviz_selector_node]: Trying to load plugins...
+[create-2] [INFO] [1759823561.429326400] [ros_gz_sim]: Entity creation successful.
+[INFO] [create-2]: process has finished cleanly [pid 919]
+[parameter_bridge-3] [INFO] [1759823561.669094722] [ros_gz_bridge1]: Creating GZ->ROS Bridge: [clock (gz.msgs.Clock) -> clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1759823561.671683932] [ros_gz_bridge1]: Creating GZ->ROS Bridge: [robot1/joint_states (gz.msgs.Model) -> robot1/joint_states (sensor_msgs/msg/JointState)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1759823561.675525051] [ros_gz_bridge1]: Creating GZ->ROS Bridge: [robot1/odom (gz.msgs.Odometry) -> robot1/odom (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1759823561.678409041] [ros_gz_bridge1]: Creating GZ->ROS Bridge: [tf (gz.msgs.Pose_V) -> tf (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1759823561.682744519] [ros_gz_bridge1]: Creating ROS->GZ Bridge: [robot1/cmd_vel (geometry_msgs/msg/TwistStamped) -> robot1/cmd_vel (gz.msgs.Twist)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1759823561.684516805] [ros_gz_bridge1]: Creating GZ->ROS Bridge: [robot1/imu (gz.msgs.IMU) -> robot1/imu (sensor_msgs/msg/Imu)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1759823561.686133577] [ros_gz_bridge1]: Creating GZ->ROS Bridge: [robot1/scan (gz.msgs.LaserScan) -> robot1/scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1759823561.687425499] [ros_gz_bridge1]: Creating GZ->ROS Bridge: [robot1/camera/camera_info (gz.msgs.CameraInfo) -> robot1/camera/camera_info (sensor_msgs/msg/CameraInfo)] (Lazy 0)
+[rviz_visualizer-15] [INFO] [1759823561.813489656] [rviz2]: Trying to create a map of size 214 x 213 using 1 swatches
+[rviz_visualizer-15] [ERROR] [1759823561.817014219] [rviz2]: rviz/glsl120/indexed_8bit_image.vert
+[rviz_visualizer-15] rviz/glsl120/indexed_8bit_image.frag
+[rviz_visualizer-15]  GLSL link result : 
+[rviz_visualizer-15] active samplers with a different type refer to the same texture image unit
+[rviz_visualizer-15] [INFO] [1759823562.196783016] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823562.249650461] [nav2_rviz_selector_node]: controller_server service not available
+[INFO] [lifecycle_manager-16]: process started with pid [1362]
+[lifecycle_manager-16] [INFO] [1759823562.694674966] [robot1.lifecycle_manager1]: Creating
+[lifecycle_manager-16] [INFO] [1759823562.698374376] [robot1.lifecycle_manager1]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="turtlebot3_waffle"]/link[@name="robot1/base_scan"]/sensor[@name="hls_lfcd_lds"]/gz_frame_id:/root/ros_ws/src/tb3_multi_nav/config/model.sdf:L141]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="turtlebot3_waffle"]/link[@name="robot1/camera_rgb_frame"]/sensor[@name="camera"]/gz_frame_id:/root/ros_ws/src/tb3_multi_nav/config/model.sdf:L379]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="turtlebot3_waffle"]/link[@name="robot1/base_scan"]/sensor[@name="hls_lfcd_lds"]/gz_frame_id:<data-string>:L163]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="turtlebot3_waffle"]/link[@name="robot1/camera_rgb_frame"]/sensor[@name="camera"]/gz_frame_id:<data-string>:L394]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="turtlebot3_waffle"]/link[@name="robot1/base_scan"]/sensor[@name="hls_lfcd_lds"]/gz_frame_id:<data-string>:L163]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="turtlebot3_waffle"]/link[@name="robot1/camera_rgb_frame"]/sensor[@name="camera"]/gz_frame_id:<data-string>:L394]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[rviz_visualizer-15] [INFO] [1759823563.211162562] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823563.262031667] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823564.226516299] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823564.279930978] [nav2_rviz_selector_node]: controller_server service not available
+[lifecycle_manager-16] [INFO] [1759823564.450039929] [robot1.lifecycle_manager1]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-16] [INFO] [1759823564.450114221] [robot1.lifecycle_manager1]: [34m[1mConfiguring amcl[0m[0m
+[amcl-5] [INFO] [1759823564.450732402] [robot1.amcl]: Configuring
+[amcl-5] [INFO] [1759823564.450827391] [robot1.amcl]: initTransforms
+[amcl-5] [INFO] [1759823564.460417925] [robot1.amcl]: initPubSub
+[amcl-5] [INFO] [1759823564.469021307] [robot1.amcl]: Subscribed to map topic.
+[lifecycle_manager-16] [INFO] [1759823564.475210216] [robot1.lifecycle_manager1]: [34m[1mConfiguring behavior_server[0m[0m
+[behavior_server-8] [INFO] [1759823564.475722947] [robot1.behavior_server]: Configuring
+[amcl-5] [INFO] [1759823564.479915665] [robot1.amcl]: Received a 214 X 213 map @ 0.050 m/pix
+[behavior_server-8] [INFO] [1759823564.480530084] [robot1.behavior_server]: Creating behavior plugin spin of type nav2_behaviors::Spin
+[behavior_server-8] [INFO] [1759823564.482059688] [robot1.behavior_server]: Creating behavior plugin backup of type nav2_behaviors::BackUp
+[behavior_server-8] [INFO] [1759823564.483923055] [robot1.behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors::DriveOnHeading
+[behavior_server-8] [INFO] [1759823564.486094176] [robot1.behavior_server]: Creating behavior plugin wait of type nav2_behaviors::Wait
+[behavior_server-8] [INFO] [1759823564.487139109] [robot1.behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors::AssistedTeleop
+[behavior_server-8] [INFO] [1759823564.496979298] [robot1.behavior_server]: Configuring spin
+[behavior_server-8] [INFO] [1759823564.505585189] [robot1.behavior_server]: Configuring backup
+[behavior_server-8] [INFO] [1759823564.511163030] [robot1.behavior_server]: Configuring drive_on_heading
+[behavior_server-8] [INFO] [1759823564.518177106] [robot1.behavior_server]: Configuring wait
+[behavior_server-8] [INFO] [1759823564.524494389] [robot1.behavior_server]: Configuring assisted_teleop
+[lifecycle_manager-16] [INFO] [1759823564.536018515] [robot1.lifecycle_manager1]: [34m[1mConfiguring smoother_server[0m[0m
+[smoother_server-9] [INFO] [1759823564.536353419] [robot1.smoother_server]: Configuring smoother server
+[smoother_server-9] [INFO] [1759823564.553931993] [robot1.smoother_server]: Created smoother : SmoothPath of type nav2_constrained_smoother/ConstrainedSmoother
+[smoother_server-9] [INFO] [1759823564.557572341] [robot1.smoother_server]: Smoother Server has SmoothPath  smoothers available.
+[lifecycle_manager-16] [INFO] [1759823564.566922016] [robot1.lifecycle_manager1]: [34m[1mConfiguring planner_server[0m[0m
+[planner_server-6] [INFO] [1759823564.567395040] [robot1.planner_server]: Configuring
+[planner_server-6] [INFO] [1759823564.567426087] [robot1.global_costmap.global_costmap]: Configuring
+[planner_server-6] [INFO] [1759823564.577573709] [robot1.global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-6] [INFO] [1759823564.583156120] [robot1.global_costmap.global_costmap]: Subscribing to the map topic (/robot1/map) with transient local durability
+[planner_server-6] [INFO] [1759823564.587171408] [robot1.global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-6] [INFO] [1759823564.587222584] [robot1.global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-6] [INFO] [1759823564.588485691] [robot1.global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-6] [INFO] [1759823564.593261950] [robot1.global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-6] [INFO] [1759823564.593313745] [robot1.global_costmap.global_costmap]: Using plugin "voxel_layer"
+[planner_server-6] [INFO] [1759823564.594095637] [robot1.global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-6] [INFO] [1759823564.602983952] [robot1.global_costmap.global_costmap]: Initialized plugin "voxel_layer"
+[planner_server-6] [INFO] [1759823564.603024379] [robot1.global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-6] [INFO] [1759823564.603907538] [robot1.global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-6] [INFO] [1759823564.639011514] [robot1.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 214 X 213 at 0.050000 m/pix
+[planner_server-6] [INFO] [1759823564.639406935] [robot1.planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner::NavfnPlanner
+[planner_server-6] [INFO] [1759823564.639442567] [robot1.planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-6] [INFO] [1759823564.640615841] [robot1.planner_server]: Planner Server has GridBased  planners available.
+[INFO] [ros2-17]: process started with pid [1495]
+[lifecycle_manager-16] [INFO] [1759823564.654987620] [robot1.lifecycle_manager1]: [34m[1mConfiguring controller_server[0m[0m
+[controller_server-7] [INFO] [1759823564.655435737] [robot1.controller_server]: Configuring controller interface
+[controller_server-7] [INFO] [1759823564.655529005] [robot1.controller_server]: getting progress checker plugins..
+[controller_server-7] [INFO] [1759823564.655802290] [robot1.controller_server]: getting goal checker plugins..
+[controller_server-7] [INFO] [1759823564.656039459] [robot1.controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-7] [INFO] [1759823564.656077430] [robot1.local_costmap.local_costmap]: Configuring
+[controller_server-7] [INFO] [1759823564.666475277] [robot1.local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[controller_server-7] [INFO] [1759823564.670097694] [robot1.local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-7] [INFO] [1759823564.675425212] [robot1.local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[controller_server-7] [INFO] [1759823564.675467195] [robot1.local_costmap.local_costmap]: Using plugin "voxel_layer"
+[controller_server-7] [INFO] [1759823564.676490373] [robot1.local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-7] [INFO] [1759823564.689406495] [robot1.local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[controller_server-7] [INFO] [1759823564.689460511] [robot1.local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-7] [INFO] [1759823564.691299908] [robot1.local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-7] [INFO] [1759823564.721670359] [robot1.controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-7] [INFO] [1759823564.722176867] [robot1.controller_server]: Controller Server has progress_checker  progress checkers available.
+[controller_server-7] [INFO] [1759823564.722692539] [robot1.controller_server]: Created goal checker : goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-7] [INFO] [1759823564.723122032] [robot1.controller_server]: Controller Server has goal_checker  goal checkers available.
+[controller_server-7] [INFO] [1759823564.726293853] [robot1.controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[controller_server-7] [INFO] [1759823564.727539459] [robot1.controller_server]: Setting transform_tolerance to 0.500000
+[controller_server-7] [INFO] [1759823564.740207809] [robot1.controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[controller_server-7] [INFO] [1759823564.740632593] [robot1.controller_server]: Critic plugin initialized
+[controller_server-7] [INFO] [1759823564.740875925] [robot1.controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[controller_server-7] [INFO] [1759823564.741387380] [robot1.controller_server]: Critic plugin initialized
+[controller_server-7] [INFO] [1759823564.741560291] [robot1.controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[controller_server-7] [INFO] [1759823564.741705463] [robot1.controller_server]: Critic plugin initialized
+[controller_server-7] [INFO] [1759823564.741794216] [robot1.controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[controller_server-7] [INFO] [1759823564.742189755] [robot1.controller_server]: Critic plugin initialized
+[controller_server-7] [INFO] [1759823564.742361903] [robot1.controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[controller_server-7] [INFO] [1759823564.742732728] [robot1.controller_server]: Critic plugin initialized
+[controller_server-7] [INFO] [1759823564.742874012] [robot1.controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[controller_server-7] [INFO] [1759823564.743231027] [robot1.controller_server]: Critic plugin initialized
+[controller_server-7] [INFO] [1759823564.743394259] [robot1.controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[controller_server-7] [INFO] [1759823564.743693515] [robot1.controller_server]: Critic plugin initialized
+[controller_server-7] [INFO] [1759823564.743713985] [robot1.controller_server]: Controller Server has FollowPath  controllers available.
+[lifecycle_manager-16] [INFO] [1759823564.756265367] [robot1.lifecycle_manager1]: [34m[1mConfiguring velocity_smoother[0m[0m
+[velocity_smoother-10] [INFO] [1759823564.756744707] [robot1.velocity_smoother]: Configuring velocity smoother
+[lifecycle_manager-16] [INFO] [1759823564.766382093] [robot1.lifecycle_manager1]: [34m[1mConfiguring bt_navigator[0m[0m
+[bt_navigator-11] [INFO] [1759823564.766841801] [robot1.bt_navigator]: Configuring
+[bt_navigator-11] [INFO] [1759823564.778427467] [robot1.bt_navigator]: Creating navigator id navigate_to_pose of type nav2_bt_navigator::NavigateToPoseNavigator
+[bt_navigator-11] [WARN] [1759823564.783263082] [robot1.bt_navigator]: Error_code parameters were not set. Using default values of: follow_path_error_code compute_path_error_code
+[bt_navigator-11] Make sure these match your BT and there are not other sources of error codes youreported to your application
+[bt_navigator-11] [INFO] [1759823564.849189466] [robot1.bt_navigator]: Creating navigator id navigate_through_poses of type nav2_bt_navigator::NavigateThroughPosesNavigator
+[lifecycle_manager-16] [INFO] [1759823564.881563602] [robot1.lifecycle_manager1]: [34m[1mConfiguring waypoint_follower[0m[0m
+[waypoint_follower-12] [INFO] [1759823564.881969628] [robot1.waypoint_follower]: Configuring
+[waypoint_follower-12] [INFO] [1759823564.904958778] [robot1.waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[lifecycle_manager-16] [INFO] [1759823564.907171092] [robot1.lifecycle_manager1]: [34m[1mActivating amcl[0m[0m
+[amcl-5] [INFO] [1759823564.908104754] [robot1.amcl]: Activating
+[amcl-5] [INFO] [1759823564.908154228] [robot1.amcl]: Creating bond (amcl) to lifecycle manager.
+[amcl-5] [INFO] [1759823564.912497623] [robot1.amcl]: createLaserObject
+[lifecycle_manager-16] [INFO] [1759823565.015654476] [robot1.lifecycle_manager1]: Server amcl connected with bond.
+[lifecycle_manager-16] [INFO] [1759823565.015724719] [robot1.lifecycle_manager1]: [34m[1mActivating behavior_server[0m[0m
+[behavior_server-8] [INFO] [1759823565.016237425] [robot1.behavior_server]: Activating
+[behavior_server-8] [INFO] [1759823565.016272962] [robot1.behavior_server]: Activating spin
+[behavior_server-8] [INFO] [1759823565.016284891] [robot1.behavior_server]: Activating backup
+[behavior_server-8] [INFO] [1759823565.016295369] [robot1.behavior_server]: Activating drive_on_heading
+[behavior_server-8] [INFO] [1759823565.016304600] [robot1.behavior_server]: Activating wait
+[behavior_server-8] [INFO] [1759823565.016312044] [robot1.behavior_server]: Activating assisted_teleop
+[behavior_server-8] [INFO] [1759823565.016324983] [robot1.behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1759823565.122136309] [robot1.lifecycle_manager1]: Server behavior_server connected with bond.
+[lifecycle_manager-16] [INFO] [1759823565.122219490] [robot1.lifecycle_manager1]: [34m[1mActivating smoother_server[0m[0m
+[smoother_server-9] [INFO] [1759823565.122666228] [robot1.smoother_server]: Activating
+[smoother_server-9] [INFO] [1759823565.122750360] [robot1.smoother_server]: Activating smoother: SmoothPath of type nav2_constrained_smoother::ConstrainedSmoother
+[smoother_server-9] [INFO] [1759823565.122772865] [robot1.smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1759823565.227222605] [robot1.lifecycle_manager1]: Server smoother_server connected with bond.
+[lifecycle_manager-16] [INFO] [1759823565.227308911] [robot1.lifecycle_manager1]: [34m[1mActivating planner_server[0m[0m
+[planner_server-6] [INFO] [1759823565.227966227] [robot1.planner_server]: Activating
+[planner_server-6] [INFO] [1759823565.228024091] [robot1.global_costmap.global_costmap]: Activating
+[planner_server-6] [INFO] [1759823565.228031173] [robot1.global_costmap.global_costmap]: Checking transform
+[planner_server-6] [INFO] [1759823565.228069962] [robot1.global_costmap.global_costmap]: Timed out waiting for transform from robot1/base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz_visualizer-15] [INFO] [1759823565.242686615] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823565.297070970] [nav2_rviz_selector_node]: smoother_server service not available
+[ros2-17] publisher: beginning loop
+[ros2-17] publishing #1: geometry_msgs.msg.PoseWithCovarianceStamped(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=0, nanosec=0), frame_id='map'), pose=geometry_msgs.msg.PoseWithCovariance(pose=geometry_msgs.msg.Pose(position=geometry_msgs.msg.Point(x=-3.0, y=-1.0, z=0.01), orientation=geometry_msgs.msg.Quaternion(x=0.0, y=0.0, z=0.0, w=1.0)), covariance=array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+[ros2-17]        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+[ros2-17]        0., 0.])))
+[ros2-17] 
+[amcl-5] [INFO] [1759823565.532499183] [robot1.amcl]: initialPoseReceived
+[amcl-5] [WARN] [1759823565.532661431] [robot1.amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 0.924000 but the latest data is at time 0.920000, when looking up transform from frame [robot1/base_footprint] to frame [robot1/odom])
+[amcl-5] [INFO] [1759823565.532712843] [robot1.amcl]: Setting pose (0.924000): -3.000 -1.000 0.000
+[planner_server-6] [INFO] [1759823565.728363819] [robot1.global_costmap.global_costmap]: Timed out waiting for transform from robot1/base_link to map to become available, tf error: Lookup would require extrapolation at time 1.020000, but only time 1.400000 is in the buffer, when looking up transform from frame [robot1/base_link] to frame [map]
+[rviz_visualizer-15] [INFO] [1759823565.754170743] [rviz]: Message Filter dropping message: frame 'robot1/base_scan' at time 0.002 for reason 'discarding message because the queue is full'
+[INFO] [ros2-17]: process has finished cleanly [pid 1495]
+[rviz_visualizer-15] [INFO] [1759823565.912847861] [rviz]: Message Filter dropping message: frame 'robot1/base_scan' at time 0.100 for reason 'discarding message because the queue is full'
+[rviz_visualizer-15] [INFO] [1759823566.071930100] [rviz]: Message Filter dropping message: frame 'robot1/base_scan' at time 0.200 for reason 'discarding message because the queue is full'
+[planner_server-6] [INFO] [1759823566.228354254] [robot1.global_costmap.global_costmap]: Timed out waiting for transform from robot1/base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 1.320000 but the earliest data is at time 1.400000, when looking up transform from frame [robot1/base_link] to frame [map]
+[rviz_visualizer-15] [INFO] [1759823566.241495356] [rviz]: Message Filter dropping message: frame 'robot1/base_scan' at time 0.300 for reason 'discarding message because the queue is full'
+[rviz_visualizer-15] [INFO] [1759823566.259263963] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823566.267050667] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823566.267115259] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823566.313876716] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823566.321097166] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823566.321139262] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823566.378706986] [rviz]: Message Filter dropping message: frame 'robot1/base_scan' at time 0.400 for reason 'discarding message because the queue is full'
+[planner_server-6] [INFO] [1759823566.728412733] [robot1.global_costmap.global_costmap]: start
+[planner_server-6] [INFO] [1759823566.830318658] [robot1.planner_server]: Activating plugin GridBased of type NavfnPlanner
+[planner_server-6] [INFO] [1759823566.832171847] [robot1.planner_server]: Creating bond (planner_server) to lifecycle manager.
+[rviz_visualizer-15] [INFO] [1759823566.909171856] [rviz2]: Trying to create a map of size 214 x 213 using 1 swatches
+[lifecycle_manager-16] [INFO] [1759823566.937876135] [robot1.lifecycle_manager1]: Server planner_server connected with bond.
+[lifecycle_manager-16] [INFO] [1759823566.937925925] [robot1.lifecycle_manager1]: [34m[1mActivating controller_server[0m[0m
+[controller_server-7] [INFO] [1759823566.938378233] [robot1.controller_server]: Activating
+[controller_server-7] [INFO] [1759823566.938493845] [robot1.local_costmap.local_costmap]: Activating
+[controller_server-7] [INFO] [1759823566.938504408] [robot1.local_costmap.local_costmap]: Checking transform
+[controller_server-7] [INFO] [1759823566.938670608] [robot1.local_costmap.local_costmap]: start
+[controller_server-7] [INFO] [1759823566.991156882] [robot1.controller_server]: Creating bond (controller_server) to lifecycle manager.
+[rviz_visualizer-15] [INFO] [1759823567.075317719] [rviz2]: Trying to create a map of size 60 x 60 using 1 swatches
+[lifecycle_manager-16] [INFO] [1759823567.098031002] [robot1.lifecycle_manager1]: Server controller_server connected with bond.
+[lifecycle_manager-16] [INFO] [1759823567.098072267] [robot1.lifecycle_manager1]: [34m[1mActivating velocity_smoother[0m[0m
+[velocity_smoother-10] [INFO] [1759823567.098516628] [robot1.velocity_smoother]: Activating
+[velocity_smoother-10] [INFO] [1759823567.098629565] [robot1.velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1759823567.212787962] [robot1.lifecycle_manager1]: Server velocity_smoother connected with bond.
+[lifecycle_manager-16] [INFO] [1759823567.212907488] [robot1.lifecycle_manager1]: [34m[1mActivating bt_navigator[0m[0m
+[bt_navigator-11] [INFO] [1759823567.213687898] [robot1.bt_navigator]: Activating
+[rviz_visualizer-15] [INFO] [1759823567.273177742] [nav2_rviz_selector_node]: controller_server service not available
+[bt_navigator-11] [INFO] [1759823567.297210617] [robot1.bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[rviz_visualizer-15] [INFO] [1759823567.328435845] [nav2_rviz_selector_node]: controller_server service not available
+[lifecycle_manager-16] [INFO] [1759823567.403820157] [robot1.lifecycle_manager1]: Server bt_navigator connected with bond.
+[lifecycle_manager-16] [INFO] [1759823567.403859329] [robot1.lifecycle_manager1]: [34m[1mActivating waypoint_follower[0m[0m
+[waypoint_follower-12] [INFO] [1759823567.404349624] [robot1.waypoint_follower]: Activating
+[waypoint_follower-12] [INFO] [1759823567.404437947] [robot1.waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1759823567.510425028] [robot1.lifecycle_manager1]: Server waypoint_follower connected with bond.
+[lifecycle_manager-16] [INFO] [1759823567.510491620] [robot1.lifecycle_manager1]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-16] [INFO] [1759823567.510500561] [robot1.lifecycle_manager1]: [34m[1mCreating bond timer...[0m[0m
+[rviz_visualizer-15] [INFO] [1759823568.292997969] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823568.343121058] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823569.309041856] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823569.356104982] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823570.328033230] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823570.370537349] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823571.345601486] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823571.352503513] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823571.352559401] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823571.385771499] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823571.392119611] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823571.392160383] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823572.360785241] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823572.401274928] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823573.373371878] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823573.415966946] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823574.386854427] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823574.431369782] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823575.404255101] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823575.447601636] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823576.420634920] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823576.427488311] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823576.427539553] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823576.460967035] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823576.468493790] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823576.468563982] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823577.438366314] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823577.476355051] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823578.459018697] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823578.489393636] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823579.474804484] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823579.505968746] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823580.489009175] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823580.521511508] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823581.506942292] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823581.514678608] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823581.514716876] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823581.533619060] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823581.542457264] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823581.542514646] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823581.602547489] [rviz]: Message Filter dropping message: frame 'robot1/base_scan' at time 0.500 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz_visualizer-15] [INFO] [1759823581.765749435] [rviz]: Message Filter dropping message: frame 'robot1/base_scan' at time 0.600 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz_visualizer-15] [INFO] [1759823581.937799548] [rviz]: Message Filter dropping message: frame 'robot1/base_scan' at time 0.700 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz_visualizer-15] [INFO] [1759823582.097507488] [rviz]: Message Filter dropping message: frame 'robot1/base_scan' at time 0.800 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz_visualizer-15] [INFO] [1759823582.265000907] [rviz]: Message Filter dropping message: frame 'robot1/base_scan' at time 0.900 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz_visualizer-15] [INFO] [1759823582.425802623] [rviz]: Message Filter dropping message: frame 'robot1/base_scan' at time 1.000 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz_visualizer-15] [INFO] [1759823582.522095930] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823582.551455141] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823582.592194390] [rviz]: Message Filter dropping message: frame 'robot1/base_scan' at time 1.100 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz_visualizer-15] [INFO] [1759823582.767764298] [rviz]: Message Filter dropping message: frame 'robot1/base_scan' at time 1.200 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz_visualizer-15] [INFO] [1759823583.006907752] [rviz]: Message Filter dropping message: frame 'robot1/base_scan' at time 1.300 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz_visualizer-15] [INFO] [1759823583.541320674] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823583.570918899] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823584.559207236] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823584.585383564] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823585.575071920] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823585.605585578] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823586.592749286] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823586.600130312] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823586.600169357] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823586.620067231] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823586.626964392] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823586.627008958] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823590.329914799] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823590.355642785] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823591.351324267] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823591.375975268] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823592.369296159] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823592.393209459] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823593.381823940] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823593.409745726] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823594.398477801] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823594.406996781] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823594.407061056] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823594.427037500] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823594.433734133] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823594.433775876] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823595.419855165] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823595.442330883] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823596.435381099] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823596.464977657] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823597.452966612] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823597.478167858] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823598.474766552] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823598.493358377] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823599.489636145] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823599.496270445] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823599.496321934] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823599.506742876] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823599.515321096] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823599.515386394] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823600.506420785] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823600.524857061] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823601.524091270] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823601.543917427] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823602.541915332] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823602.559949235] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823603.558162981] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823603.574526295] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823604.574550497] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823604.584765633] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823604.584808283] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823604.592988183] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823604.600674112] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823604.600720952] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823605.594397445] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823605.611132959] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823606.612799884] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823606.631611278] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823607.631591499] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823607.647490736] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823608.648570250] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823608.661318507] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823609.668899213] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823609.676482413] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823609.676538912] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823609.683785467] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823609.693371789] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823609.693436723] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823610.686430131] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823610.706199199] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823611.701297249] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823611.725462632] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823612.717200614] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823612.742683354] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823613.733989308] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823613.759442003] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823614.749156543] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823614.756977083] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823614.757036175] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823614.775636841] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823614.785500701] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823614.785540279] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823615.766172189] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823615.793209940] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823616.780785490] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823616.812206605] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823617.795821095] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823617.829315546] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823618.811235154] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823618.849365591] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823622.558434191] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823622.566223382] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823622.566324606] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823622.594567334] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823622.603771580] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823622.603820559] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823623.576220431] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823623.610118842] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823624.592832989] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823624.624517617] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823625.614655030] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823625.638324752] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823626.628672129] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823626.661947367] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823627.647690761] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823627.652761906] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823627.678265333] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823627.687047521] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823632.566445365] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823632.603896103] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823633.574100498] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823633.612673783] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823634.588439976] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823634.629795987] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823635.604980866] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823635.645225082] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823636.619116308] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823636.666328986] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823637.631491906] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823637.637134693] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823637.637195150] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823637.683340741] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823637.691907347] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823637.691958503] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823638.649187871] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823638.705052481] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823639.666902739] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823639.722522798] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823640.689206515] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823640.739533398] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823641.704930577] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823641.756435923] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823642.719928446] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823642.728062053] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823642.728103787] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823642.772447793] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823642.780494963] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823642.780557905] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823643.737701733] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823643.788500412] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823644.756479494] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823644.808815475] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823645.773065405] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823645.824523882] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823646.788582701] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823646.839475701] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823647.803303758] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823647.812630809] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823647.812695945] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823647.856624431] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823647.862958620] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823647.863001250] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823648.825343378] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823648.870276098] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823649.839538076] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823649.885269620] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823650.854390376] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823650.903682772] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823651.874931207] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823651.918960565] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823655.624690167] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823655.632084646] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823655.632127375] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823655.665001613] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823655.671276090] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823655.671319004] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823656.639461247] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823656.678556479] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823657.660102065] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823657.692723143] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823658.674610474] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823658.717286383] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823659.697431429] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823659.735742570] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823660.712306350] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823660.719375679] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823660.719413862] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823660.755256517] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823660.761268056] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823660.761379125] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823661.728184819] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823661.772880046] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823662.745811183] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823662.792784776] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823663.769039537] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823663.811775013] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823664.785016783] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823664.829355941] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823665.806304837] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823665.814159123] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823665.814215773] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823665.844930388] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823665.854785882] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823665.854856609] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823666.824391679] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823666.863290003] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823667.841871664] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823667.882904402] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823668.859456084] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823668.897730082] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823669.874545711] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823669.915740635] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823670.888735557] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823670.900487150] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823670.900585590] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823670.931163635] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823670.942067377] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823670.942113323] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823671.911432016] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823671.949762218] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823672.933632841] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823672.963958132] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823673.951134959] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823673.978341697] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823674.969652874] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823674.992434326] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823675.984837014] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823675.993158002] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823675.993200537] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823676.005953214] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823676.011178255] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823676.011228041] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823677.000342646] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823677.020163365] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823678.017656737] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823678.034485840] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823679.033008285] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823679.049039020] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823680.054832844] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823680.069793703] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823681.083399428] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823681.091387992] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823681.091445881] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823681.093412873] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823681.106394004] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823681.106436295] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823682.100908285] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823682.117816264] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823683.121242629] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823683.147921867] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823684.139294659] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823684.164761021] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823685.158204979] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823685.183505286] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823688.901889527] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823688.912864027] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823688.912952271] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823688.928435155] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823688.933478093] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823688.933593958] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823689.922253748] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823689.948427010] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823690.942049267] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823690.965766820] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823691.956142783] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823691.984985622] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823692.977236446] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823693.005411514] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823693.995892128] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823694.006505658] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823694.020288167] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823694.030784858] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823698.913019589] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823698.933682987] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823699.921642339] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823699.943253945] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823700.939580010] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823700.961943342] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823701.958145473] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823701.980318955] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823702.977281193] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823703.000729683] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823703.997088931] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823704.008295334] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823704.008349695] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823704.018413373] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823704.028952282] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823704.028984941] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823705.017076441] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823705.039566469] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823706.037192318] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823706.064442732] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823707.054524738] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823707.079815085] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823708.074177130] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823708.095497524] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823709.094618120] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823709.101904512] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823709.101963217] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823709.113987377] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823709.123896562] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823709.123945086] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823710.112279606] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823710.135277799] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823711.132152035] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823711.158149976] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823712.148947725] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823712.175457834] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823713.174029223] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823713.200794096] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823714.193703975] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823714.202988111] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823714.203030452] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823714.219071808] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823714.231289276] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823714.231336716] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823715.210595293] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823715.242611541] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823716.230094249] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823716.257838756] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823717.249819152] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823717.274277334] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823720.997387165] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823721.018542855] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823722.018791582] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823722.028348444] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823722.028404828] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823722.036448693] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823722.048674704] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823722.048721002] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823723.039053566] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823723.058150636] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823724.057188651] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823724.077440933] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823725.074742562] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823725.092624167] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823726.092593397] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823726.109529652] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823727.115575886] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823727.126402671] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823727.126468293] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823727.130847659] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823727.150949357] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823727.151000614] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823728.141987523] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823728.162339724] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823729.161310661] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823729.184461094] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823730.184225477] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823730.208694263] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823731.204055387] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823731.229332322] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823732.221342311] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823732.231364912] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823732.231432486] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823732.252505649] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823732.260899779] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823732.260944112] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823733.242219859] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823733.270348374] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823734.255799689] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823734.288960488] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823735.281965929] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823735.307276155] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823736.299855678] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823736.329002944] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823737.325751266] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823737.336451582] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823737.336502516] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823737.361384892] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823737.371018373] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823737.371066292] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823738.351738743] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823738.381738955] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823739.372311123] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823739.406442790] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823740.391140535] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823740.428345239] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823741.413950322] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823741.455678158] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823742.432450219] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823742.444276770] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823742.444336814] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823742.477570624] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823742.487135488] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823742.487182880] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823743.457274542] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823743.496326747] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823744.474756820] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823744.513983848] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823745.492030218] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823745.534358682] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823746.514046567] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823746.559517442] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823747.531058119] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823747.541996052] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823747.542059257] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823747.584910450] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823747.593752033] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823747.593808412] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823748.554009307] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823748.610079022] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823749.569870760] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823749.627708679] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823750.588145310] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823750.653553451] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823754.336541901] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823754.399787750] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823755.363735106] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823755.374798816] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823755.374841163] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823755.416952292] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823755.425709578] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823755.426282505] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823756.385944178] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823756.438025686] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823757.406207694] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823757.456129875] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823758.424718140] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823758.477429308] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823759.441793784] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823759.497356959] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823760.460215091] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823760.468350115] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823760.522220983] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823760.533401662] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823765.374909220] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823765.426340759] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823766.383638308] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823766.436981163] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823767.397928290] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823767.453648850] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823768.419092750] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823768.470581754] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823769.435738036] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823769.493095057] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823770.451222374] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823770.458477590] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823770.458519222] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823770.511534781] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823770.518659234] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823770.518702741] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823771.467206089] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823771.526562723] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823772.483763343] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823772.545469235] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823773.505331877] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823773.565809052] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823774.525645602] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823774.585398372] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823775.548847177] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823775.555881238] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823775.555936446] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823775.608798693] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823775.616105617] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823775.616152034] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823776.570430224] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823776.624023955] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823777.585919543] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823777.642844343] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823778.604626388] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823778.661327167] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823779.620760708] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823779.677127260] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823780.648595820] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823780.659284342] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823780.659327062] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823780.708523876] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823780.716823866] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823780.716865676] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823781.668140205] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823781.725052507] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823782.692153516] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823782.744000746] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823786.437771742] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823786.486453386] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823787.458127511] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823787.519047038] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823788.480634090] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823788.490691176] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823788.490756226] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823788.543510174] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823788.554388173] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823788.554447630] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823789.501532656] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823789.565983741] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823790.520646734] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823790.587728901] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823791.544337423] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823791.605803067] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823792.559871922] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823792.624345439] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823793.582192959] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823793.589538793] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823793.589625703] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823793.644330244] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823793.652399874] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823793.652454814] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823794.600354288] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823794.661813589] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823795.622895728] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823795.679754306] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823796.638657064] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823796.697147157] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823797.659896850] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823797.718196220] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823798.680423652] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823798.687448553] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823798.687504037] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823798.738349573] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823798.746670113] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823798.746717234] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823799.699508550] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823799.755952905] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823800.721488737] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823800.772360818] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823801.751079280] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823801.791513699] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823802.766666637] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823802.816192394] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823803.787225285] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823803.795660435] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823803.795716837] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823803.835248166] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823803.843557905] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823803.843609293] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823804.808246014] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823804.854153570] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823805.825882776] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823805.869775991] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823806.841649790] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823806.890273990] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823807.866686421] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823807.908139454] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823808.883580382] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823808.892016205] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823808.892069955] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823808.928954643] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823808.934425299] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823808.935446751] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823809.901363827] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823809.945267877] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823810.924045740] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823810.965163482] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823811.942852633] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823811.985109993] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823812.961292667] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823813.008170268] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823813.978716694] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823813.987250483] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823813.987292541] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823814.023547521] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823814.033405535] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823814.033474157] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823814.995375385] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823815.043146606] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823816.012562211] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823816.064504371] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823819.758351806] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823819.810684517] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823820.784400990] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823820.831540204] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823821.808616131] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823821.816878124] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823821.816947205] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823821.861662527] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823821.869448364] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823821.869491746] [nav2_rviz_selector_node]: Trying to load plugins...
+[rviz_visualizer-15] [INFO] [1759823822.827342961] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823822.876627150] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823823.846071486] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823823.894314510] [nav2_rviz_selector_node]: planner_server service not available
+[rviz_visualizer-15] [INFO] [1759823824.861452670] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823824.912630147] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823825.879859855] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823825.931805092] [nav2_rviz_selector_node]: smoother_server service not available
+[rviz_visualizer-15] [INFO] [1759823826.905493143] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823826.916630622] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[rviz_visualizer-15] [INFO] [1759823826.964963442] [nav2_rviz_selector_node]: controller_server service not available
+[rviz_visualizer-15] [INFO] [1759823826.976485040] [nav2_rviz_selector_node]: Failed to load plugins. Retrying...
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[lifecycle_manager-16] [INFO] [1759823829.900024519] [rclcpp]: signal_handler(signum=2)
+[rviz_visualizer-15] [INFO] [1759823829.900033136] [rclcpp]: signal_handler(signum=2)
+[lifecycle_manager-14] [INFO] [1759823829.900089949] [rclcpp]: signal_handler(signum=2)
+[lifecycle_manager-14] [INFO] [1759823829.900273353] [map_lifecycle_manager]: Running Nav2 LifecycleManager rcl preshutdown (map_lifecycle_manager)
+[waypoint_follower-12] [INFO] [1759823829.900106079] [rclcpp]: signal_handler(signum=2)
+[waypoint_follower-12] [INFO] [1759823829.900315760] [robot1.waypoint_follower]: Running Nav2 LifecycleNode rcl preshutdown (waypoint_follower)
+[bt_navigator-11] [INFO] [1759823829.900088546] [rclcpp]: signal_handler(signum=2)
+[bt_navigator-11] [INFO] [1759823829.900230241] [robot1.bt_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_navigator)
+[map_server-13] [INFO] [1759823829.900119642] [rclcpp]: signal_handler(signum=2)
+[map_server-13] [INFO] [1759823829.900232016] [map_server]: Running Nav2 LifecycleNode rcl preshutdown (map_server)
+[behavior_server-8] [INFO] [1759823829.900129948] [rclcpp]: signal_handler(signum=2)
+[behavior_server-8] [INFO] [1759823829.900232841] [robot1.behavior_server]: Running Nav2 LifecycleNode rcl preshutdown (behavior_server)
+[velocity_smoother-10] [INFO] [1759823829.900135333] [rclcpp]: signal_handler(signum=2)
+[smoother_server-9] [INFO] [1759823829.900144084] [rclcpp]: signal_handler(signum=2)
+[smoother_server-9] [INFO] [1759823829.900255469] [robot1.smoother_server]: Running Nav2 LifecycleNode rcl preshutdown (smoother_server)
+[controller_server-7] [INFO] [1759823829.900148314] [rclcpp]: signal_handler(signum=2)
+[planner_server-6] [INFO] [1759823829.900156271] [rclcpp]: signal_handler(signum=2)
+[amcl-5] [INFO] [1759823829.900171344] [rclcpp]: signal_handler(signum=2)
+[amcl-5] [INFO] [1759823829.900313805] [robot1.amcl]: Running Nav2 LifecycleNode rcl preshutdown (amcl)
+[lifecycle_manager-16] [INFO] [1759823829.900175380] [robot1.lifecycle_manager1]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager1)
+[lifecycle_manager-16] [INFO] [1759823829.900235443] [robot1.lifecycle_manager1]: [34m[1mTerminating bond timer...[0m[0m
+[robot_state_publisher-4] [INFO] [1759823829.900210305] [rclcpp]: signal_handler(signum=2)
+[lifecycle_manager-14] [INFO] [1759823829.900362196] [map_lifecycle_manager]: [34m[1mTerminating bond timer...[0m[0m
+[waypoint_follower-12] [INFO] [1759823829.900481692] [robot1.waypoint_follower]: Deactivating
+[waypoint_follower-12] [INFO] [1759823829.900511068] [robot1.waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[bt_navigator-11] [INFO] [1759823829.900337502] [robot1.bt_navigator]: Deactivating
+[bt_navigator-11] [INFO] [1759823829.900391901] [robot1.bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[map_server-13] [INFO] [1759823829.900437498] [map_server]: Deactivating
+[map_server-13] [INFO] [1759823829.900472531] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[behavior_server-8] [INFO] [1759823829.900357103] [robot1.behavior_server]: Deactivating
+[behavior_server-8] [INFO] [1759823829.900417708] [robot1.behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[smoother_server-9] [INFO] [1759823829.900464535] [robot1.smoother_server]: Deactivating
+[smoother_server-9] [INFO] [1759823829.900491680] [robot1.smoother_server]: Deactivating smoother: SmoothPath of type nav2_constrained_smoother::ConstrainedSmoother
+[smoother_server-9] [INFO] [1759823829.900504801] [robot1.smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[controller_server-7] [INFO] [1759823829.900374874] [robot1.controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[controller_server-7] [INFO] [1759823829.900535450] [robot1.controller_server]: Deactivating
+[controller_server-7] [INFO] [1759823829.900679317] [robot1.local_costmap.local_costmap]: Deactivating
+[planner_server-6] [INFO] [1759823829.900770109] [robot1.planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[planner_server-6] [INFO] [1759823829.900876780] [robot1.planner_server]: Deactivating
+[planner_server-6] [INFO] [1759823829.900909017] [robot1.global_costmap.global_costmap]: Deactivating
+[amcl-5] [INFO] [1759823829.900476179] [robot1.amcl]: Deactivating
+[amcl-5] [INFO] [1759823829.900496681] [robot1.amcl]: Destroying bond (amcl) to lifecycle manager.
+[parameter_bridge-3] [INFO] [1759823829.900965675] [rclcpp]: signal_handler(signum=2)
+[velocity_smoother-10] [INFO] [1759823829.901064678] [robot1.velocity_smoother]: Running Nav2 LifecycleNode rcl preshutdown (velocity_smoother)
+[velocity_smoother-10] [INFO] [1759823829.901212470] [robot1.velocity_smoother]: Deactivating
+[velocity_smoother-10] [INFO] [1759823829.901252678] [robot1.velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[parameter_bridge-3] Failed to delete datawriter, at ./src/publisher.cpp:45 during '__function__'
+[bt_navigator-11] [INFO] [1759823829.910910983] [robot1.bt_navigator]: Cleaning up
+[waypoint_follower-12] [INFO] [1759823829.911463220] [robot1.waypoint_follower]: Cleaning up
+[waypoint_follower-12] [INFO] [1759823829.941902653] [robot1.waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[waypoint_follower-12] [INFO] [1759823829.957811428] [robot1.waypoint_follower]: Destroying
+[map_server-13] [INFO] [1759823829.911533475] [map_server]: Cleaning up
+[map_server-13] [INFO] [1759823829.913011599] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[map_server-13] [INFO] [1759823829.932093598] [map_server]: Destroying
+[velocity_smoother-10] [INFO] [1759823829.912079091] [robot1.velocity_smoother]: Cleaning up
+[velocity_smoother-10] [INFO] [1759823829.912123035] [robot1.velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[velocity_smoother-10] [INFO] [1759823829.920822577] [robot1.velocity_smoother]: Destroying
+[behavior_server-8] [INFO] [1759823829.912415560] [robot1.behavior_server]: Cleaning up
+[behavior_server-8] [INFO] [1759823829.922670197] [robot1.behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[amcl-5] [INFO] [1759823829.912515021] [robot1.amcl]: Cleaning up
+[amcl-5] [INFO] [1759823829.923575412] [robot1.amcl]: Destroying bond (amcl) to lifecycle manager.
+[amcl-5] [INFO] [1759823829.942642658] [robot1.amcl]: Destroying
+[smoother_server-9] [INFO] [1759823829.913999088] [robot1.smoother_server]: Cleaning up
+[smoother_server-9] [INFO] [1759823829.914032231] [robot1.smoother_server]: Cleaning up smoother: SmoothPath of type nav2_constrained_smoother::ConstrainedSmoother
+[smoother_server-9] [INFO] [1759823829.943265558] [robot1.smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[smoother_server-9] [INFO] [1759823829.947131258] [robot1.smoother_server]: Destroying
+[lifecycle_manager-14] [INFO] [1759823829.930639369] [map_lifecycle_manager]: Destroying map_lifecycle_manager
+[planner_server-6] [INFO] [1759823829.937677195] [robot1.planner_server]: Deactivating plugin GridBased of type NavfnPlanner
+[planner_server-6] [INFO] [1759823829.937732409] [robot1.planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[planner_server-6] [INFO] [1759823829.954358080] [robot1.planner_server]: Cleaning up
+[controller_server-7] [INFO] [1759823829.949527988] [robot1.controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[controller_server-7] [INFO] [1759823829.962855166] [robot1.controller_server]: Cleaning up
+[controller_server-7] [INFO] [1759823829.963228311] [robot1.local_costmap.local_costmap]: Cleaning up
+[planner_server-6] [INFO] [1759823829.982179404] [robot1.global_costmap.global_costmap]: Cleaning up
+[behavior_server-8] [INFO] [1759823829.983486245] [robot1.behavior_server]: Destroying
+[planner_server-6] [INFO] [1759823829.993073641] [robot1.planner_server]: Cleaning up plugin GridBased of type NavfnPlanner
+[planner_server-6] [INFO] [1759823829.993372944] [robot1.planner_server]: Destroying plugin GridBased of type NavfnPlanner
+[planner_server-6] [INFO] [1759823830.017305192] [robot1.planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1759823830.023532792] [robot1.lifecycle_manager1]: Destroying lifecycle_manager1
+[controller_server-7] [INFO] [1759823830.024184415] [robot1.controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[planner_server-6] [INFO] [1759823830.025120797] [robot1.global_costmap.global_costmap]: Destroying
+[controller_server-7] [INFO] [1759823830.028253060] [robot1.local_costmap.local_costmap]: Destroying
+[planner_server-6] [INFO] [1759823830.040470634] [robot1.planner_server]: Destroying
+[controller_server-7] [INFO] [1759823830.044787853] [robot1.controller_server]: Destroying
+[INFO] [parameter_bridge-3]: process has finished cleanly [pid 921]
+[INFO] [robot_state_publisher-4]: process has finished cleanly [pid 922]
+[bt_navigator-11] [INFO] [1759823830.063917602] [robot1.bt_navigator]: Completed Cleaning up
+[bt_navigator-11] [INFO] [1759823830.063985705] [robot1.bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[INFO] [velocity_smoother-10]: process has finished cleanly [pid 1012]
+[bt_navigator-11] [INFO] [1759823830.069467352] [robot1.bt_navigator]: Destroying
+[INFO] [map_server-13]: process has finished cleanly [pid 1024]
+[INFO] [amcl-5]: process has finished cleanly [pid 923]
+[INFO] [lifecycle_manager-14]: process has finished cleanly [pid 1027]
+[INFO] [smoother_server-9]: process has finished cleanly [pid 1008]
+[INFO] [waypoint_follower-12]: process has finished cleanly [pid 1019]
+[INFO] [behavior_server-8]: process has finished cleanly [pid 928]
+[INFO] [lifecycle_manager-16]: process has finished cleanly [pid 1362]
+[INFO] [planner_server-6]: process has finished cleanly [pid 924]
+[INFO] [controller_server-7]: process has finished cleanly [pid 925]
+[INFO] [bt_navigator-11]: process has finished cleanly [pid 1016]
+[ERROR] [gazebo-1]: process has died [pid 918, exit code -2, cmd 'ruby /opt/ros/jazzy/opt/gz_tools_vendor/bin/gz sim -r /root/ros_ws/src/tb3_multi_nav/utils/maze_world.world --force-version 8'].
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+[ERROR] [rviz_visualizer-15]: process[rviz_visualizer-15] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[INFO] [rviz_visualizer-15]: sending signal 'SIGTERM' to process[rviz_visualizer-15]
+[ERROR] [rviz_visualizer-15]: process[rviz_visualizer-15] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[INFO] [rviz_visualizer-15]: sending signal 'SIGKILL' to process[rviz_visualizer-15]
+[ERROR] [rviz_visualizer-15]: process has died [pid 1028, exit code -9, cmd 'rviz2 -d /root/ros_ws/src/tb3_multi_nav/config/rviz_namespaced_singleBot.rviz --ros-args -p use_sim_time:=True --remap /navigate_to_pose:=/robot1/navigate_to_pose --remap /follow_path:=/robot1/follow_path --remap /compute_path_to_pose:=/robot1/compute_path_to_pose --remap /follow_path_local:=/robot1/follow_path_local --remap /docking:=/robot1/docking --remap /undo_last_command:=/robot1/undo_last_command --remap /initialpose:=/robot1/initialpose'].
