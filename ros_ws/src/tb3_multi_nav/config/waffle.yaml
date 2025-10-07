@@ -37,7 +37,7 @@ robot1:
       z_max: 0.05
       z_rand: 0.5
       z_short: 0.05
-      scan_topic: /scan
+      scan_topic: /robot1/scan
       map_topic: /map
       set_initial_pose: true # set. maybe not needed for now by yaml. Set by command in launcher.
       always_reset_initial_pose: false
@@ -54,8 +54,8 @@ robot1:
       robot_base_frame: robot1/base_footprint
       transform_tolerance: 0.5
       filter_duration: 0.3
-      default_nav_to_pose_bt_xml: "/opt/ros/jazzy/share/nav2_bt_navigator/behavior_trees/navigate_to_pose_w_replanning_and_recovery.xml" # behavior trees location.
-      default_nav_through_poses_bt_xml: "/opt/ros/jazzy/share/nav2_bt_navigator/behavior_trees/navigate_to_pose_w_replanning_and_recovery.xml"
+      default_nav_to_pose_bt_xml: "/root/ros_ws/src/tb3_multi_nav/config/navigate_to_pose_w_replanning_and_recovery.xml" #"/opt/ros/jazzy/share/nav2_bt_navigator/behavior_trees/navigate_to_pose_w_replanning_and_recovery.xml" # DEFAULT behavior trees location.
+      default_nav_through_poses_bt_xml: "/root/ros_ws/src/tb3_multi_nav/config/navigate_to_pose_w_replanning_and_recovery.xml" #"/opt/ros/jazzy/share/nav2_bt_navigator/behavior_trees/navigate_to_pose_w_replanning_and_recovery.xml" # DEFAULT 
       always_reload_bt_xml: false
       goal_blackboard_id: robot1/goal
       goals_blackboard_id: robot1/goals
