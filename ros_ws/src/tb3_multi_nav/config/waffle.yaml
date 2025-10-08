@@ -124,7 +124,7 @@ controller_server:
       min_vel_y: 0.0
       max_vel_x: 0.3
       max_vel_y: 0.0
-      max_vel_theta: 0.07  #1.0 too strong for mapping
+      max_vel_theta: 1.0  #1.0 too strong for mapping. Suggesting 0.5 for mapping, 1.0 for navigation
       min_speed_xy: 0.0
       max_speed_xy: 0.3
       min_speed_theta: 0.0
