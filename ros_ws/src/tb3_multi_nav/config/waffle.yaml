@@ -101,20 +101,21 @@ robot1:
 
   controller_server:
     ros__parameters:
-      controller_frequency: 20.0      #10.0 default. Maybe too low for curves
+      min_obstacle_dist: 0.8                          # new line
+      controller_frequency: 20.0                      # 10.0 default. Maybe too low for curves
       min_x_velocity_threshold: 0.001
       min_y_velocity_threshold: 0.001
       min_theta_velocity_threshold: 0.001
-      failure_tolerance: 0.3                          #0.3 default. might be too low
+      failure_tolerance: 0.3                          # 0.3 default. might be too low
       progress_checker_plugins: ["progress_checker"]
       goal_checker_plugins: ["goal_checker"]
       controller_plugins: ["FollowPath"]
-      current_progress_checker: "nav2_controller::SimpleProgressChecker"
-      current_goal_checker: "nav2_controller::SimpleGoalChecke"
-      current_controller_checker: "dwb_core::DWBLocalPlanner"
+      current_progress_checker: "progress_checker"
+      current_goal_checker: "goal_checker"
+      current_controller_checker: "FollowPath"
       progress_checker:
         plugin: "nav2_controller::SimpleProgressChecker"
-        required_movement_radius: 0.1 #!!!!!!!!!
+        required_movement_radius: 0.5 # 0.5 seems ok. default 0.1 distance from obstacles not affected by this.
         movement_time_allowance: 10.0
       goal_checker:
         stateful: true
@@ -124,18 +125,18 @@ robot1:
       FollowPath:
         plugin: "dwb_core::DWBLocalPlanner"
         debug_trajectory_details: true
-        min_vel_x: 0.0
-        min_vel_y: 0.0
+        min_vel_x: 0.1                  # 0.0 default -- x and y 0.1 passes after obs but problems
+        min_vel_y: 0.08                  # 0.0 default
         max_vel_x: 0.3
-        max_vel_y: 0.0
-        max_vel_theta: 1.0 #1.0 maybe too much 
+        max_vel_y: 0.3                  # 0.0 default
+        max_vel_theta: 1.0              # 1.0 maybe too much 
         min_speed_xy: 0.0
         max_speed_xy: 0.3
         min_speed_theta: 0.0
         # Add high threshold velocity for turtlebot 3 issue.
         # https://github.com/ROBOTIS-GIT/turtlebot3_simulations/issues/75
         acc_lim_x: 3.0
-        acc_lim_y: 0.0
+        acc_lim_y: 3.0                  # 0.0 default.      
         acc_lim_theta: 3.2
         decel_lim_x: -2.5
         decel_lim_y: 0.0
@@ -179,8 +180,8 @@ robot1:
         plugins: ["obstacle_layer", "voxel_layer", "inflation_layer"]
         inflation_layer:
           plugin: "nav2_costmap_2d::InflationLayer"
-          inflation_radius: 0.3       # 0.5 default. might be too much for maze 
-          cost_scaling_factor: 5.0    # 5.0 default. might be too much for maze
+          inflation_radius: 0.5       # 0.5 default. might be too much for maze 
+          cost_scaling_factor: 1.0    # 5.0 default. might be too much for maze
         obstacle_layer:
           plugin: "nav2_costmap_2d::ObstacleLayer"
           enabled: true
@@ -188,6 +189,7 @@ robot1:
           scan:
             topic: /robot1/scan
             max_obstacle_height: 2.0
+            #obstacle_min_range: 1.5   # new line. OBJ: increase path distance from obstacles
             clearing: true
             marking: true
             data_type: "LaserScan"
@@ -267,8 +269,8 @@ robot1:
           transform_tolerance: 0.1
         inflation_layer:
           plugin: "nav2_costmap_2d::InflationLayer"
-          inflation_radius: 0.43                      #0.5 default. Might be too much for maze.
-          cost_scaling_factor: 5.0                    #5.0 default. might be too much for maze
+          inflation_radius: 0.5                      #0.5 default. Might be too much for maze.
+          cost_scaling_factor: 1.0                    #5.0 default. Exponential decay factor across inflation radius. might be too much for maze
         always_send_full_costmap: true
 
   map_server:
@@ -289,7 +291,7 @@ robot1:
 
   planner_server:
     ros__parameters:
-      expected_planner_frequency: 10.0
+      expected_planner_frequency: 20.0    # 10 default in TB3 yaml
       global_frame: map                   # new line.
       transform_tolerance: 1.0            # new line.
 
@@ -299,9 +301,15 @@ robot1:
       GridBased:
         plugin: "nav2_navfn_planner::NavfnPlanner"
         tolerance: 0.5
-        use_astar: false
+        use_astar: false                   # false default
         allow_unknown: true
 
+  # Doc: https://docs.nav2.org/configuration/packages/configuring-behavior-server.html
+  # Particular note on key enable_stamped_cmd_vel
+  # Whether to use geometry_msgs::msg::Twist or geometry_msgs::msg::TwistStamped velocity data. 
+  # True uses TwistStamped, false uses Twist. 
+  # Note: This parameter is default false in Jazzy or older! Kilted or newer uses TwistStamped by default. 
+  # However, set "true" in waffle.yaml by ROBOTIS.
   behavior_server:
     ros__parameters:
       local_costmap_topic: /local_costmap/costmap_raw
@@ -324,11 +332,11 @@ robot1:
       global_frame: map
       robot_base_frame: robot1/base_footprint
       transform_timeout: 0.1
-      simulate_ahead_time: 2.0
+      simulate_ahead_time: 2.0                      # 2.0 default. Increase ahead window for testing, no effect
       max_rotational_vel: 1.0
-      min_rotational_vel: 0.4
+      min_rotational_vel: 0.4                       # 0.4 default. Decrease value for testing, no effect
       rotational_acc_lim: 3.2
-      enable_stamped_cmd_vel: true
+      enable_stamped_cmd_vel: true                  # was true in waffle.yaml from ROBOTIS. This parameter is default false in Jazzy or older (from Doc)
 
   waypoint_follower:
     ros__parameters:
@@ -469,19 +477,19 @@ robot1:
       SmoothPath:
         plugin: "nav2_constrained_smoother/ConstrainedSmoother"
         reversing_enabled: true       # whether to detect forward/reverse direction and cusps. Should be set to false for paths without orientations assigned
-        path_downsampling_factor: 3   # every n-th node of the path is taken. Useful for speed-up
+        path_downsampling_factor: 1   # every n-th node of the path is taken. Useful for speed-up
         path_upsampling_factor: 1     # 0 - path remains downsampled, 1 - path is exupsampled back to original granularity using cubic bezier, 2... - more upsampling
         keep_start_orientation: true  # whether to prevent the start orientation from being smoothed
         keep_goal_orientation: true   # whether to prevent the gpal orientation from being smoothed
-        minimum_turning_radius: 0.4   # 0.40 default. # minimum turning radius the robot can perform. Can be set to 0.0 (or w_curve can be set to 0.0 with the same effect) for diff-drive/holonomic robots
+        minimum_turning_radius: 0.01   # 0.40 default. # minimum turning radius the robot can perform. Can be set to 0.0 (or w_curve can be set to 0.0 with the same effect) for diff-drive/holonomic robots
         w_curve: 30.0                 # weight to enforce minimum_turning_radius
         w_dist: 0.0                   # weight to bind path to original as optional replacement for cost weight
-        w_smooth: 2000000.0           # weight to maximize smoothness of path
+        w_smooth: 2.0           # 2000000.0 default. weight to maximize smoothness of path
         w_cost: 1.015                 # 0.015  default. weight to steer robot away from collision and cost
 
         # Parameters used to improve obstacle avoidance near cusps (forward/reverse movement changes)
-        w_cost_cusp_multiplier: 3.0   # option to use higher weight during forward/reverse direction change which is often accompanied with dangerous rotations
-        cusp_zone_length: 2.5         # length of the section around cusp in which nodes use w_cost_cusp_multiplier (w_cost rises gradually inside the zone towards the cusp point, whose costmap weight eqals w_cost*w_cost_cusp_multiplier)
+        w_cost_cusp_multiplier: 30.0   # 3.0 default. option to use higher weight during forward/reverse direction change which is often accompanied with dangerous rotations
+        cusp_zone_length: 25.5         # 2.5 default. length of the section around cusp in which nodes use w_cost_cusp_multiplier (w_cost rises gradually inside the zone towards the cusp point, whose costmap weight eqals w_cost*w_cost_cusp_multiplier)
 
         # Points in robot frame to grab costmap values from. Format: [x1, y1, weight1, x2, y2, weight2, ...]
         # IMPORTANT: Requires much higher number of iterations to actually improve the path. Uncomment only if you really need it (highly elongated/asymmetric robots)
