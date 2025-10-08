@@ -10,7 +10,7 @@ Panels:
         - /Global Planner1/Polygon1
         - /MarkerArray1
       Splitter Ratio: 0.7117646932601929
-    Tree Height: 236
+    Tree Height: 249
   - Class: rviz_common/Selection
     Name: Selection
   - Class: rviz_common/Tool Properties
@@ -135,7 +135,92 @@ Visualization Manager:
       Mass Properties:
         Inertia: false
         Mass: false
-      Name: RobotModel
+      Name: RobotModel_2(Main)
+      TF Prefix: ""
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
+    - Alpha: 1
+      Class: rviz_default_plugins/RobotModel
+      Collision Enabled: false
+      Description File: ""
+      Description Source: Topic
+      Description Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /robot1/robot_description
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        robot1/base_footprint:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        robot1/base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        robot1/base_scan:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        robot1/camera_depth_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        robot1/camera_depth_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        robot1/camera_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        robot1/camera_rgb_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        robot1/camera_rgb_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        robot1/caster_back_left_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        robot1/caster_back_right_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        robot1/imu_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        robot1/wheel_left_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        robot1/wheel_right_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+      Mass Properties:
+        Inertia: false
+        Mass: false
+      Name: RobotModel_1
       TF Prefix: ""
       Update Interval: 0
       Value: true
@@ -148,6 +233,34 @@ Visualization Manager:
       Frames:
         All Enabled: false
         map:
+          Value: true
+        robot1/base_footprint:
+          Value: true
+        robot1/base_link:
+          Value: true
+        robot1/base_scan:
+          Value: true
+        robot1/camera_depth_frame:
+          Value: true
+        robot1/camera_depth_optical_frame:
+          Value: true
+        robot1/camera_link:
+          Value: true
+        robot1/camera_rgb_frame:
+          Value: true
+        robot1/camera_rgb_optical_frame:
+          Value: true
+        robot1/caster_back_left_link:
+          Value: true
+        robot1/caster_back_right_link:
+          Value: true
+        robot1/imu_link:
+          Value: true
+        robot1/odom:
+          Value: true
+        robot1/wheel_left_link:
+          Value: true
+        robot1/wheel_right_link:
           Value: true
         robot2/base_footprint:
           Value: true
@@ -184,6 +297,28 @@ Visualization Manager:
       Show Names: false
       Tree:
         map:
+          robot1/odom:
+            robot1/base_footprint:
+              robot1/base_link:
+                robot1/base_scan:
+                  {}
+                robot1/camera_link:
+                  robot1/camera_depth_frame:
+                    robot1/camera_depth_optical_frame:
+                      {}
+                  robot1/camera_rgb_frame:
+                    robot1/camera_rgb_optical_frame:
+                      {}
+                robot1/caster_back_left_link:
+                  {}
+                robot1/caster_back_right_link:
+                  {}
+                robot1/imu_link:
+                  {}
+                robot1/wheel_left_link:
+                  {}
+                robot1/wheel_right_link:
+                  {}
           robot2/odom:
             robot2/base_footprint:
               robot2/base_link:
@@ -713,7 +848,7 @@ Visualization Manager:
   Value: true
   Views:
     Current:
-      Angle: -0.015800777822732925
+      Angle: -0.040800780057907104
       Class: rviz_default_plugins/TopDownOrtho
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
@@ -723,11 +858,11 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Scale: 87.33283233642578
+      Scale: 112.1043930053711
       Target Frame: <Fixed Frame>
       Value: TopDownOrtho (rviz_default_plugins)
-      X: -1.7339541912078857
-      Y: -0.29079538583755493
+      X: -0.6170942783355713
+      Y: -0.6907861828804016
     Saved: ~
 Window Geometry:
   Displays:
@@ -739,7 +874,7 @@ Window Geometry:
   Hide Right Dock: false
   Navigation 2:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd00000004000000000000015600000270fc020000000dfb0000001200530065006c0065006300740069006f006e000000003b0000007e0000005c00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb000000100044006900730070006c006100790073010000003b00000127000000c700fffffffb00000018004e0061007600690067006100740069006f006e002000320000000108000001c7000001c700fffffffb0000001e005200650061006c00730065006e0073006500430061006d00650072006100000002c6000000c10000001600fffffffb0000001000530065006c006500630074006f0072010000020d000000f80000000000000000fb0000001e00530065006c006500630074006f0072005f0052006f0062006f007400310100000168000000d4000000ba00fffffffb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000242000000690000005c00ffffff000000010000014700000385fc0200000004fb0000000a00560069006500770073000000003b00000385000000a000fffffffb0000000e0044006f0063006b0069006e006700000001f4000001cc0000013900fffffffb0000001000530065006c006500630074006f007200000002a8000000ba0000000000000000fb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000004420000003efc0100000002fb0000000800540069006d00650100000000000004420000000000000000fb0000000800540069006d00650100000000000004500000000000000000000003950000027000000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd00000004000000000000015600000270fc020000000efb0000001200530065006c0065006300740069006f006e000000003b0000007e0000005c00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb000000100044006900730070006c006100790073010000003b00000134000000c700fffffffb00000018004e0061007600690067006100740069006f006e002000320000000108000001c7000001c700fffffffb0000001e005200650061006c00730065006e0073006500430061006d00650072006100000002c6000000c10000001600fffffffb0000001000530065006c006500630074006f0072010000020d000000f80000000000000000fb0000001e00530065006c006500630074006f0072005f0052006f0062006f007400310100000168000000d40000000000000000fb0000001e0054006f006f006c002000500072006f007000650072007400690065007301000001750000006e0000005c00fffffffb0000001e00530065006c006500630074006f0072005f0072006f0062006f0074003201000001e9000000c2000000ba00ffffff000000010000014700000385fc0200000004fb0000000a00560069006500770073000000003b00000385000000a000fffffffb0000000e0044006f0063006b0069006e006700000001f4000001cc0000013900fffffffb0000001000530065006c006500630074006f007200000002a8000000ba0000000000000000fb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000004420000003efc0100000002fb0000000800540069006d00650100000000000004420000000000000000fb0000000800540069006d00650100000000000004500000000000000000000003950000027000000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   RealsenseCamera:
     collapsed: false
   Selection:
@@ -751,5 +886,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1265
-  X: 185
-  Y: 137
+  X: 682
+  Y: 132
