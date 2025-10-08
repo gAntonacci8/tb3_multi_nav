@@ -97,7 +97,7 @@ def generate_launch_description():
                 parameters=[{
                     'use_sim_time': True,
                     'robot_description': Command([
-                        'xacro ',urdf_file_path
+                        'xacro ',urdf_file_path,
                         ' namespace:=robot1/'       #space BEFORE "namespace" is needed. "/" after is needed.
                     ])
                 }]
@@ -111,7 +111,7 @@ def generate_launch_description():
                 parameters=[{
                     'use_sim_time': True,
                     'robot_description': Command([
-                        'xacro ',urdf_file_path
+                        'xacro ',urdf_file_path,
                         ' namespace:=robot2/'        #space BEFORE "namespace" is needed. "/" after is needed.
                     ])
                 }]
