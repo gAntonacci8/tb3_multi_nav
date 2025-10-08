@@ -1,9 +1,11 @@
 digraph G {
-"robot1/odom" -> "robot1/base_footprint"[label=" Broadcaster: default_authority\nAverage rate: 50.362\nBuffer length: 2.76\nMost recent transform: 110.42\nOldest transform: 107.66\n"];
-"map" -> "robot1/odom"[label=" Broadcaster: default_authority\nAverage rate: 10.37\nBuffer length: 2.7\nMost recent transform: 110.9\nOldest transform: 108.2\n"];
-"robot1/base_link" -> "robot1/wheel_left_link"[label=" Broadcaster: default_authority\nAverage rate: 20.37\nBuffer length: 2.7\nMost recent transform: 110.4\nOldest transform: 107.7\n"];
+"map" -> "robot2/odom"[label=" Broadcaster: default_authority\nAverage rate: 8.333\nBuffer length: 1.2\nMost recent transform: 4.5\nOldest transform: 3.3\n"];
+"robot1/odom" -> "robot1/base_footprint"[label=" Broadcaster: default_authority\nAverage rate: 50.794\nBuffer length: 1.26\nMost recent transform: 4.02\nOldest transform: 2.76\n"];
+"map" -> "robot1/odom"[label=" Broadcaster: default_authority\nAverage rate: 9.091\nBuffer length: 1.1\nMost recent transform: 4.3\nOldest transform: 3.2\n"];
+"robot2/odom" -> "robot2/base_footprint"[label=" Broadcaster: default_authority\nAverage rate: 50.794\nBuffer length: 1.26\nMost recent transform: 4.02\nOldest transform: 2.76\n"];
+"robot1/base_link" -> "robot1/wheel_left_link"[label=" Broadcaster: default_authority\nAverage rate: 25.518\nBuffer length: 1.254\nMost recent transform: 3.977\nOldest transform: 2.723\n"];
 "robot1/base_footprint" -> "robot1/base_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
-"robot1/base_link" -> "robot1/wheel_right_link"[label=" Broadcaster: default_authority\nAverage rate: 20.37\nBuffer length: 2.7\nMost recent transform: 110.4\nOldest transform: 107.7\n"];
+"robot1/base_link" -> "robot1/wheel_right_link"[label=" Broadcaster: default_authority\nAverage rate: 25.518\nBuffer length: 1.254\nMost recent transform: 3.977\nOldest transform: 2.723\n"];
 "robot1/camera_link" -> "robot1/camera_depth_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
 "robot1/base_link" -> "robot1/camera_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
 "robot1/camera_depth_frame" -> "robot1/camera_depth_optical_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
@@ -13,8 +15,20 @@ digraph G {
 "robot1/base_link" -> "robot1/caster_back_right_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
 "robot1/base_link" -> "robot1/imu_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
 "robot1/base_link" -> "robot1/base_scan"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"robot2/base_link" -> "robot2/wheel_left_link"[label=" Broadcaster: default_authority\nAverage rate: 24.316\nBuffer length: 1.316\nMost recent transform: 4.025\nOldest transform: 2.709\n"];
+"robot2/base_footprint" -> "robot2/base_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"robot2/base_link" -> "robot2/wheel_right_link"[label=" Broadcaster: default_authority\nAverage rate: 24.316\nBuffer length: 1.316\nMost recent transform: 4.025\nOldest transform: 2.709\n"];
+"robot2/camera_link" -> "robot2/camera_depth_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"robot2/base_link" -> "robot2/camera_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"robot2/camera_depth_frame" -> "robot2/camera_depth_optical_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"robot2/camera_link" -> "robot2/camera_rgb_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"robot2/camera_rgb_frame" -> "robot2/camera_rgb_optical_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"robot2/base_link" -> "robot2/caster_back_left_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"robot2/base_link" -> "robot2/caster_back_right_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"robot2/base_link" -> "robot2/imu_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"robot2/base_link" -> "robot2/base_scan"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
 edge [style=invis];
  subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
-"Recorded at time: 1759785136.597716"[ shape=plaintext ] ;
+"Recorded at time: 1759956235.066136"[ shape=plaintext ] ;
 }->"map";
 }
