@@ -1,0 +1,477 @@
+[0.487s] Invoking command in '/root/ros_ws/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /root/ros_ws/src/turtlebot3_gazebo -DCMAKE_INSTALL_PREFIX=/root/ros_ws/install/turtlebot3_gazebo
+[0.545s] -- The C compiler identification is GNU 13.3.0
+[0.599s] -- The CXX compiler identification is GNU 13.3.0
+[0.612s] -- Detecting C compiler ABI info
+[0.701s] -- Detecting C compiler ABI info - done
+[0.710s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.710s] -- Detecting C compile features
+[0.711s] -- Detecting C compile features - done
+[0.719s] -- Detecting CXX compiler ABI info
+[0.819s] -- Detecting CXX compiler ABI info - done
+[0.827s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.827s] -- Detecting CXX compile features
+[0.828s] -- Detecting CXX compile features - done
+[0.833s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.967s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.092s] -- Found ros_gz_sim: 1.0.16 (/opt/ros/jazzy/share/ros_gz_sim/cmake)
+[1.154s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.171s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.194s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.215s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.313s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.320s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.451s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.472s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.492s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.816s] -- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[1.837s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.858s] -- Found gz_math_vendor: 0.0.8 (/opt/ros/jazzy/share/gz_math_vendor/cmake)
+[1.874s] -- Looking for gz-math7 -- found version 7.5.2
+[1.892s] -- Searching for dependencies of gz-math7
+[1.894s] -- Looking for gz-utils2 -- found version 2.2.1
+[1.894s] -- Searching for dependencies of gz-utils2
+[1.900s] -- Found gz_sim_vendor: 0.0.8 (/opt/ros/jazzy/share/gz_sim_vendor/cmake)
+[1.978s] -- Looking for gz-sim8 -- found version 8.9.0
+[1.979s] -- Searching for dependencies of gz-sim8
+[1.981s] -- Looking for sdformat14 -- found version 14.8.0
+[1.981s] -- Searching for dependencies of sdformat14
+[1.986s] -- Checking for module 'tinyxml2'
+[2.003s] --   Found tinyxml2, version 10.0.0
+[2.047s] -- Looking for gz-math7 -- found version 7.5.2
+[2.048s] -- Looking for gz-utils2 -- found version 2.2.1
+[2.048s] -- Searching for dependencies of gz-utils2
+[2.048s] -- Searching for <gz-utils2> component [cli]
+[2.054s] -- Looking for gz-utils2-cli -- found version 2.2.1
+[2.054s] -- Searching for dependencies of gz-utils2-cli
+[2.061s] -- Looking for gz-plugin2 -- found version 2.0.4
+[2.061s] -- Searching for dependencies of gz-plugin2
+[2.062s] -- Looking for gz-utils2 -- found version 2.2.1
+[2.064s] -- Searching for <gz-plugin2> component [loader]
+[2.070s] -- Looking for gz-plugin2-loader -- found version 2.0.4
+[2.071s] -- Searching for dependencies of gz-plugin2-loader
+[2.072s] -- Searching for <gz-plugin2> component [register]
+[2.077s] -- Looking for gz-plugin2-register -- found version 2.0.4
+[2.077s] -- Searching for dependencies of gz-plugin2-register
+[2.085s] -- Looking for gz-transport13 -- found version 13.4.1
+[2.085s] -- Searching for dependencies of gz-transport13
+[2.289s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.21.12") 
+[2.309s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[2.315s] -- Checking for module 'libzmq >= 4'
+[2.335s] --   Found libzmq, version 4.3.5
+[2.398s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[2.408s] -- Checking for module 'uuid'
+[2.430s] --   Found uuid, version 2.39.3
+[2.483s] -- Found UUID: TRUE  
+[2.483s] -- Looking for gz-utils2 -- found version 2.2.1
+[2.489s] -- Looking for gz-msgs10 -- found version 10.3.2
+[2.489s] -- Searching for dependencies of gz-msgs10
+[2.518s] -- Looking for gz-utils2 -- found version 2.2.1
+[2.518s] -- Looking for gz-math7 -- found version 7.5.2
+[2.531s] -- Searching for <gz-transport13> component [log]
+[2.534s] -- Looking for gz-transport13-log -- found version 13.4.1
+[2.534s] -- Searching for dependencies of gz-transport13-log
+[2.535s] -- Searching for <gz-transport13> component [parameters]
+[2.539s] -- Looking for gz-transport13-parameters -- found version 13.4.1
+[2.539s] -- Searching for dependencies of gz-transport13-parameters
+[2.541s] -- Looking for gz-msgs10 -- found version 10.3.2
+[2.545s] -- Looking for gz-common5 -- found version 5.7.1
+[2.545s] -- Searching for dependencies of gz-common5
+[2.546s] -- Looking for gz-utils2 -- found version 2.2.1
+[2.547s] -- Looking for dlfcn.h - found
+[2.548s] -- Looking for libdl - found
+[2.549s] -- Found DL: TRUE  
+[2.556s] -- Searching for <gz-common5> component [av]
+[2.559s] -- Looking for gz-common5-av -- found version 5.7.1
+[2.559s] -- Searching for dependencies of gz-common5-av
+[2.566s] -- Checking for module 'libswscale'
+[2.586s] --   Found libswscale, version 7.5.100
+[2.625s] -- Found SWSCALE: TRUE  
+[2.632s] -- Checking for module 'libavdevice >= 56.4.100'
+[2.657s] --   Found libavdevice, version 60.3.100
+[2.727s] -- Found AVDEVICE: TRUE (Required is at least version "56.4.100") 
+[2.734s] -- Checking for module 'libavformat'
+[2.756s] --   Found libavformat, version 60.16.100
+[2.810s] -- Found AVFORMAT: TRUE  
+[2.818s] -- Checking for module 'libavcodec'
+[2.840s] --   Found libavcodec, version 60.31.102
+[2.897s] -- Found AVCODEC: TRUE  
+[2.903s] -- Checking for module 'libavutil'
+[2.926s] --   Found libavutil, version 58.29.100
+[2.978s] -- Found AVUTIL: TRUE  
+[2.981s] -- Searching for <gz-common5> component [events]
+[2.987s] -- Looking for gz-common5-events -- found version 5.7.1
+[2.987s] -- Searching for dependencies of gz-common5-events
+[2.988s] -- Looking for gz-math7 -- found version 7.5.2
+[2.990s] -- Searching for <gz-common5> component [graphics]
+[2.996s] -- Looking for gz-common5-graphics -- found version 5.7.1
+[2.996s] -- Searching for dependencies of gz-common5-graphics
+[2.996s] -- Looking for gz-math7 -- found version 7.5.2
+[3.005s] -- Found GzAssimp: TRUE (found version "5.3.0") 
+[3.007s] -- Searching for <gz-common5> component [io]
+[3.010s] -- Looking for gz-common5-io -- found version 5.7.1
+[3.010s] -- Searching for dependencies of gz-common5-io
+[3.012s] -- Searching for <gz-common5> component [profiler]
+[3.018s] -- Looking for gz-common5-profiler -- found version 5.7.1
+[3.018s] -- Searching for dependencies of gz-common5-profiler
+[3.024s] -- Looking for gz-fuel_tools9 -- found version 9.1.1
+[3.024s] -- Searching for dependencies of gz-fuel_tools9
+[3.152s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "8.5.0")  
+[3.173s] -- Checking for module 'jsoncpp'
+[3.200s] --   Found jsoncpp, version 1.9.5
+[3.256s] -- Found JSONCPP: TRUE  
+[3.283s] -- Checking for module 'yaml-0.1'
+[3.309s] --   Found yaml-0.1, version 0.2.5
+[3.360s] -- Found YAML: TRUE  
+[3.370s] -- Checking for module 'libzip'
+[3.396s] --   Found libzip, version 1.7.3
+[3.450s] -- Found ZIP: TRUE  
+[3.450s] -- Looking for gz-utils2 -- found version 2.2.1
+[3.451s] -- Looking for gz-common5 -- found version 5.7.1
+[3.451s] -- Searching for dependencies of gz-common5
+[3.452s] -- Looking for gz-utils2 -- found version 2.2.1
+[3.452s] -- Looking for dlfcn.h - found
+[3.452s] -- Looking for libdl - found
+[3.463s] -- Searching for <gz-common5> component [testing]
+[3.469s] -- Looking for gz-common5-testing -- found version 5.7.1
+[3.469s] -- Searching for dependencies of gz-common5-testing
+[3.472s] -- Looking for gz-math7 -- found version 7.5.2
+[3.473s] -- Looking for gz-msgs10 -- found version 10.3.2
+[3.480s] -- Looking for gz-gui8 -- found version 8.4.0
+[3.480s] -- Searching for dependencies of gz-gui8
+[3.519s] -- Looking for gz-utils2 -- found version 2.2.1
+[3.519s] -- Looking for gz-math7 -- found version 7.5.2
+[3.520s] -- Looking for gz-common5 -- found version 5.7.1
+[3.520s] -- Looking for gz-plugin2 -- found version 2.0.4
+[3.521s] -- Looking for gz-transport13 -- found version 13.4.1
+[3.525s] -- Looking for gz-rendering8 -- found version 8.2.2
+[3.525s] -- Searching for dependencies of gz-rendering8
+[3.526s] -- Looking for gz-math7 -- found version 7.5.2
+[3.526s] -- Searching for dependencies of gz-math7
+[3.527s] -- Looking for gz-utils2 -- found version 2.2.1
+[3.527s] -- Searching for <gz-math7> component [eigen3]
+[3.532s] -- Looking for gz-math7-eigen3 -- found version 7.5.2
+[3.532s] -- Searching for dependencies of gz-math7-eigen3
+[3.551s] -- Looking for gz-common5 -- found version 5.7.1
+[3.551s] -- Searching for dependencies of gz-common5
+[3.551s] -- Looking for gz-utils2 -- found version 2.2.1
+[3.552s] -- Looking for dlfcn.h - found
+[3.552s] -- Looking for libdl - found
+[3.563s] -- Searching for <gz-common5> component [graphics]
+[3.563s] -- Searching for <gz-common5> component [events]
+[3.563s] -- Searching for <gz-common5> component [geospatial]
+[3.567s] -- Looking for gz-common5-geospatial -- found version 5.7.1
+[3.568s] -- Searching for dependencies of gz-common5-geospatial
+[3.568s] -- Looking for gz-math7 -- found version 7.5.2
+[3.569s] -- Looking for gz-common5 -- found version 5.7.1
+[3.572s] -- Looking for gz-plugin2 -- found version 2.0.4
+[3.572s] -- Searching for dependencies of gz-plugin2
+[3.573s] -- Looking for gz-utils2 -- found version 2.2.1
+[3.573s] -- Searching for <gz-plugin2> component [all]
+[3.578s] -- Looking for all libraries of gz-plugin2 -- found version 2.0.4
+[3.579s] -- Looking for gz-plugin2 -- found version 2.0.4
+[3.581s] -- Looking for gz-utils2 -- found version 2.2.1
+[3.601s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL 
+[3.604s] -- Looking for gz-msgs10 -- found version 10.3.2
+[3.669s] -- Looking for gz-physics7 -- found version 7.5.0
+[3.669s] -- Searching for dependencies of gz-physics7
+[3.670s] -- Looking for gz-common5 -- found version 5.7.1
+[3.670s] -- Looking for gz-math7 -- found version 7.5.2
+[3.671s] -- Looking for gz-plugin2 -- found version 2.0.4
+[3.672s] -- Looking for gz-utils2 -- found version 2.2.1
+[3.675s] -- Searching for <gz-physics7> component [heightmap]
+[3.680s] -- Looking for gz-physics7-heightmap -- found version 7.5.0
+[3.680s] -- Searching for dependencies of gz-physics7-heightmap
+[3.681s] -- Looking for gz-common5 -- found version 5.7.1
+[3.682s] -- Searching for <gz-physics7> component [mesh]
+[3.687s] -- Looking for gz-physics7-mesh -- found version 7.5.0
+[3.687s] -- Searching for dependencies of gz-physics7-mesh
+[3.688s] -- Looking for gz-common5 -- found version 5.7.1
+[3.689s] -- Searching for <gz-physics7> component [sdf]
+[3.694s] -- Looking for gz-physics7-sdf -- found version 7.5.0
+[3.694s] -- Searching for dependencies of gz-physics7-sdf
+[3.695s] -- Looking for sdformat14 -- found version 14.8.0
+[3.703s] -- Looking for gz-sensors8 -- found version 8.2.2
+[3.703s] -- Searching for dependencies of gz-sensors8
+[3.735s] -- Looking for gz-math7 -- found version 7.5.2
+[3.736s] -- Looking for gz-common5 -- found version 5.7.1
+[3.736s] -- Looking for gz-transport13 -- found version 13.4.1
+[3.737s] -- Looking for gz-rendering8 -- found version 8.2.2
+[3.738s] -- Looking for gz-msgs10 -- found version 10.3.2
+[3.738s] -- Looking for sdformat14 -- found version 14.8.0
+[3.741s] -- Searching for <gz-sensors8> component [air_pressure]
+[3.744s] -- Looking for gz-sensors8-air_pressure -- found version 8.2.2
+[3.745s] -- Searching for dependencies of gz-sensors8-air_pressure
+[3.747s] -- Searching for <gz-sensors8> component [air_speed]
+[3.751s] -- Looking for gz-sensors8-air_speed -- found version 8.2.2
+[3.751s] -- Searching for dependencies of gz-sensors8-air_speed
+[3.752s] -- Searching for <gz-sensors8> component [altimeter]
+[3.755s] -- Looking for gz-sensors8-altimeter -- found version 8.2.2
+[3.755s] -- Searching for dependencies of gz-sensors8-altimeter
+[3.757s] -- Searching for <gz-sensors8> component [imu]
+[3.760s] -- Looking for gz-sensors8-imu -- found version 8.2.2
+[3.760s] -- Searching for dependencies of gz-sensors8-imu
+[3.762s] -- Searching for <gz-sensors8> component [force_torque]
+[3.767s] -- Looking for gz-sensors8-force_torque -- found version 8.2.2
+[3.767s] -- Searching for dependencies of gz-sensors8-force_torque
+[3.769s] -- Searching for <gz-sensors8> component [logical_camera]
+[3.773s] -- Looking for gz-sensors8-logical_camera -- found version 8.2.2
+[3.774s] -- Searching for dependencies of gz-sensors8-logical_camera
+[3.776s] -- Searching for <gz-sensors8> component [magnetometer]
+[3.780s] -- Looking for gz-sensors8-magnetometer -- found version 8.2.2
+[3.780s] -- Searching for dependencies of gz-sensors8-magnetometer
+[3.782s] -- Searching for <gz-sensors8> component [navsat]
+[3.788s] -- Looking for gz-sensors8-navsat -- found version 8.2.2
+[3.788s] -- Searching for dependencies of gz-sensors8-navsat
+[3.788s] -- Searching for <gz-sensors8> component [dvl]
+[3.790s] -- Looking for gz-sensors8-dvl -- found version 8.2.2
+[3.791s] -- Searching for dependencies of gz-sensors8-dvl
+[3.792s] -- Looking for gz-sensors8 -- found version 8.2.2
+[3.792s] -- Searching for dependencies of gz-sensors8
+[3.829s] -- Looking for gz-math7 -- found version 7.5.2
+[3.830s] -- Looking for gz-common5 -- found version 5.7.1
+[3.830s] -- Looking for gz-transport13 -- found version 13.4.1
+[3.831s] -- Looking for gz-rendering8 -- found version 8.2.2
+[3.831s] -- Looking for gz-msgs10 -- found version 10.3.2
+[3.832s] -- Looking for sdformat14 -- found version 14.8.0
+[3.832s] -- Searching for <gz-sensors8> component [rendering]
+[3.837s] -- Looking for gz-sensors8-rendering -- found version 8.2.2
+[3.838s] -- Searching for dependencies of gz-sensors8-rendering
+[3.842s] -- Searching for <gz-sensors8> component [rendering]
+[3.843s] -- Searching for <gz-sensors8> component [lidar]
+[3.845s] -- Looking for gz-sensors8-lidar -- found version 8.2.2
+[3.846s] -- Searching for dependencies of gz-sensors8-lidar
+[3.846s] -- Looking for gz-sensors8 -- found version 8.2.2
+[3.849s] -- Searching for <gz-sensors8> component [gpu_lidar]
+[3.854s] -- Looking for gz-sensors8-gpu_lidar -- found version 8.2.2
+[3.854s] -- Searching for dependencies of gz-sensors8-gpu_lidar
+[3.855s] -- Looking for gz-sensors8 -- found version 8.2.2
+[3.857s] -- Searching for <gz-sensors8> component [camera]
+[3.861s] -- Looking for gz-sensors8-camera -- found version 8.2.2
+[3.862s] -- Searching for dependencies of gz-sensors8-camera
+[3.863s] -- Looking for gz-sensors8 -- found version 8.2.2
+[3.865s] -- Searching for <gz-sensors8> component [boundingbox_camera]
+[3.869s] -- Looking for gz-sensors8-boundingbox_camera -- found version 8.2.2
+[3.870s] -- Searching for dependencies of gz-sensors8-boundingbox_camera
+[3.872s] -- Searching for <gz-sensors8> component [segmentation_camera]
+[3.876s] -- Looking for gz-sensors8-segmentation_camera -- found version 8.2.2
+[3.876s] -- Searching for dependencies of gz-sensors8-segmentation_camera
+[3.879s] -- Searching for <gz-sensors8> component [depth_camera]
+[3.883s] -- Looking for gz-sensors8-depth_camera -- found version 8.2.2
+[3.883s] -- Searching for dependencies of gz-sensors8-depth_camera
+[3.884s] -- Looking for gz-sensors8 -- found version 8.2.2
+[3.887s] -- Searching for <gz-sensors8> component [rgbd_camera]
+[3.891s] -- Looking for gz-sensors8-rgbd_camera -- found version 8.2.2
+[3.891s] -- Searching for dependencies of gz-sensors8-rgbd_camera
+[3.892s] -- Looking for gz-sensors8 -- found version 8.2.2
+[3.894s] -- Searching for <gz-sensors8> component [thermal_camera]
+[3.898s] -- Looking for gz-sensors8-thermal_camera -- found version 8.2.2
+[3.899s] -- Searching for dependencies of gz-sensors8-thermal_camera
+[3.899s] -- Looking for gz-sensors8 -- found version 8.2.2
+[3.902s] -- Searching for <gz-sensors8> component [wide_angle_camera]
+[3.907s] -- Looking for gz-sensors8-wide_angle_camera -- found version 8.2.2
+[3.907s] -- Searching for dependencies of gz-sensors8-wide_angle_camera
+[3.910s] -- Looking for gz-rendering8 -- found version 8.2.2
+[3.911s] -- Looking for gz-math7 -- found version 7.5.2
+[3.911s] -- Looking for gz-utils2 -- found version 2.2.1
+[3.953s] -- Looking for gz-plugin2 -- found version 2.0.4
+[4.084s] -- Configuring done (3.6s)
+[4.154s] -- Generating done (0.1s)
+[4.168s] -- Build files have been written to: /root/ros_ws/build/turtlebot3_gazebo
+[4.191s] Invoked command in '/root/ros_ws/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /root/ros_ws/src/turtlebot3_gazebo -DCMAKE_INSTALL_PREFIX=/root/ros_ws/install/turtlebot3_gazebo
+[4.193s] Invoking command in '/root/ros_ws/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /root/ros_ws/build/turtlebot3_gazebo -- -j16 -l16
+[4.290s] [ 12%] [32mBuilding CXX object CMakeFiles/obstacle1.dir/src/obstacle1.cpp.o[0m
+[4.290s] [ 25%] [32mBuilding CXX object CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o[0m
+[4.291s] [ 37%] [32mBuilding CXX object CMakeFiles/obstacles.dir/src/obstacles.cpp.o[0m
+[4.292s] [ 50%] [32mBuilding CXX object CMakeFiles/obstacle2.dir/src/obstacle2.cpp.o[0m
+[7.759s] [ 62%] [32m[1mLinking CXX shared library libobstacle1.so[0m
+[7.816s] [ 75%] [32m[1mLinking CXX shared library libobstacle2.so[0m
+[8.085s] [ 75%] Built target obstacle1
+[8.086s] [ 75%] Built target obstacle2
+[8.209s] [ 87%] [32m[1mLinking CXX shared library libobstacles.so[0m
+[8.408s] [ 87%] Built target obstacles
+[14.123s] [100%] [32m[1mLinking CXX executable turtlebot3_drive[0m
+[14.592s] [100%] Built target turtlebot3_drive
+[14.602s] Invoked command in '/root/ros_ws/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /root/ros_ws/build/turtlebot3_gazebo -- -j16 -l16
+[14.604s] Invoking command in '/root/ros_ws/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /root/ros_ws/build/turtlebot3_gazebo
+[14.611s] -- Install configuration: ""
+[14.612s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/turtlebot3_drive
+[14.617s] -- Set non-toolchain portion of runtime path of "/root/ros_ws/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/turtlebot3_drive" to ""
+[14.617s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/libobstacles.so
+[14.618s] -- Set non-toolchain portion of runtime path of "/root/ros_ws/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/libobstacles.so" to ""
+[14.618s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/libobstacle1.so
+[14.619s] -- Set non-toolchain portion of runtime path of "/root/ros_ws/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/libobstacle1.so" to ""
+[14.619s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/libobstacle2.so
+[14.619s] -- Set non-toolchain portion of runtime path of "/root/ros_ws/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/libobstacle2.so" to ""
+[14.620s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch
+[14.621s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage2.launch.py
+[14.621s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage1.launch.py
+[14.621s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_house.launch.py
+[14.621s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_world.launch.py
+[14.621s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/robot_state_publisher.launch.py
+[14.621s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/spawn_turtlebot3.launch.py
+[14.621s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage3.launch.py
+[14.622s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/empty_world.launch.py
+[14.622s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage4.launch.py
+[14.622s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models
+[14.622s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world
+[14.622s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes
+[14.622s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes/wall.dae
+[14.622s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes/hexagon.dae
+[14.622s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model.config
+[14.622s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model-1_4.sdf
+[14.622s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model.sdf
+[14.622s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle
+[14.623s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.config
+[14.623s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model-1_4.sdf
+[14.623s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.sdf
+[14.623s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi
+[14.623s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model.config
+[14.623s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model-1_4_.sdf
+[14.624s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model.sdf
+[14.624s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common
+[14.624s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes
+[14.624s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/waffle_pi_base.dae
+[14.624s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/bases
+[14.624s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/bases/waffle_pi_base.stl
+[14.629s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/bases/waffle_base.stl
+[14.638s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/bases/burger_base.stl
+[14.641s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/burger_base.dae
+[14.641s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/r200.dae
+[14.642s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/waffle_base.dae
+[14.642s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/sensors
+[14.642s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/sensors/r200.jpg
+[14.642s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/sensors/r200.dae
+[14.642s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/sensors/lds.stl
+[14.643s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/sensors/astra.jpg
+[14.643s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/sensors/astra.dae
+[14.648s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/wheels
+[14.649s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/wheels/right_tire.stl
+[14.649s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/wheels/left_tire.stl
+[14.650s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/lds.dae
+[14.651s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/tire.dae
+[14.651s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/model.config
+[14.651s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house
+[14.651s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/mailbox
+[14.651s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/mailbox/model-1_3.sdf
+[14.651s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/mailbox/meshes
+[14.651s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/mailbox/meshes/mailbox.dae
+[14.651s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/mailbox/model.config
+[14.652s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/mailbox/model-1_4.sdf
+[14.652s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/mailbox/model.sdf
+[14.652s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/mailbox/materials
+[14.653s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/mailbox/materials/scripts
+[14.654s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/mailbox/materials/scripts/mailbox.material
+[14.654s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/mailbox/materials/textures
+[14.654s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/mailbox/materials/textures/Mailbox_Diffuse.png
+[14.654s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/mailbox/materials/textures/Mailbox_Diffuse.tga.orig
+[14.655s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/mailbox/materials/textures/Mailbox_Spec.png
+[14.655s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.config
+[14.655s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/textures
+[14.656s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/textures/wood.png
+[14.656s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/textures/bricks.png
+[14.658s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/first_2015_trash_can
+[14.658s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/first_2015_trash_can/meshes
+[14.658s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/first_2015_trash_can/meshes/trash_can.dae
+[14.659s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/first_2015_trash_can/model.config
+[14.659s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/first_2015_trash_can/model.sdf
+[14.659s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.sdf
+[14.659s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/table_marble
+[14.659s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/table_marble/meshes
+[14.660s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/table_marble/meshes/table_lightmap.dae
+[14.660s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/table_marble/model.config
+[14.660s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/table_marble/model-1_4.sdf
+[14.660s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/table_marble/model.sdf
+[14.660s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/table_marble/materials
+[14.660s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/table_marble/materials/scripts
+[14.661s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/table_marble/materials/scripts/table_lightmap.material
+[14.661s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/table_marble/materials/textures
+[14.661s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/table_marble/materials/textures/table_lightmap.png
+[14.661s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/table_marble/materials/textures/marble.png
+[14.661s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/cafe_table
+[14.662s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/cafe_table/meshes
+[14.662s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/cafe_table/meshes/cafe_table.dae
+[14.662s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/cafe_table/model.config
+[14.662s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/cafe_table/model-1_4.sdf
+[14.662s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/cafe_table/model.sdf
+[14.662s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/cafe_table/materials
+[14.662s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/cafe_table/materials/textures
+[14.663s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/cafe_table/materials/textures/Wood_Floor_Dark.jpg
+[14.663s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/cafe_table/materials/textures/Maple.jpg
+[14.663s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_cam
+[14.663s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_cam/model.config
+[14.663s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_cam/model-1_4.sdf
+[14.663s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_cam/model.sdf
+[14.663s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world
+[14.663s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles
+[14.664s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles/model.config
+[14.664s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles/model.sdf
+[14.664s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls
+[14.664s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/model.config
+[14.664s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/textures
+[14.664s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/textures/wood.png
+[14.664s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/model.sdf
+[14.664s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2
+[14.664s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2/model.config
+[14.664s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2/model.sdf
+[14.665s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/model.config
+[14.665s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/textures
+[14.665s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/textures/wood.png
+[14.665s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1
+[14.665s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1/model.config
+[14.665s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1/model.sdf
+[14.665s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/model.sdf
+[14.665s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box
+[14.665s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box/model.config
+[14.666s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box/model.sdf
+[14.666s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger
+[14.666s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model.config
+[14.666s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model-1_4.sdf
+[14.666s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model.sdf
+[14.666s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//params
+[14.666s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//params/turtlebot3_waffle_pi_bridge.yaml
+[14.666s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//params/turtlebot3_burger_bridge.yaml
+[14.666s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//params/turtlebot3_waffle_bridge.yaml
+[14.666s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//params/turtlebot3_burger_cam_bridge.yaml
+[14.666s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz
+[14.667s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz/tb3_gazebo.rviz
+[14.667s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf
+[14.667s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_waffle.urdf
+[14.667s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_burger.urdf
+[14.667s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_waffle_pi.urdf
+[14.667s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/common_properties.urdf
+[14.667s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_burger_cam.urdf
+[14.667s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds
+[14.667s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/empty_world.world
+[14.668s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage2.world
+[14.668s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_house.world
+[14.668s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_world.world
+[14.668s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage4.world
+[14.668s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_autorace_2020.world
+[14.668s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage3.world
+[14.668s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage1.world
+[14.668s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/include/
+[14.668s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/include//turtlebot3_gazebo
+[14.668s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/include//turtlebot3_gazebo/turtlebot3_drive.hpp
+[14.668s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/include//turtlebot3_gazebo/traffic_light_plugin.hpp
+[14.668s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/include//turtlebot3_gazebo/traffic_bar_plugin.hpp
+[14.669s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/include//turtlebot3_gazebo/obstacles.hpp
+[14.669s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/include//turtlebot3_gazebo/obstacle2.hpp
+[14.669s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/include//turtlebot3_gazebo/obstacle1.hpp
+[14.669s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/ament_index/resource_index/package_run_dependencies/turtlebot3_gazebo
+[14.669s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/ament_index/resource_index/parent_prefix_path/turtlebot3_gazebo
+[14.670s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.sh
+[14.670s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.dsv
+[14.670s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.sh
+[14.670s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.dsv
+[14.671s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.bash
+[14.671s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.sh
+[14.671s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.zsh
+[14.671s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.dsv
+[14.671s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.dsv
+[14.671s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/ament_index/resource_index/packages/turtlebot3_gazebo
+[14.671s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_include_directories-extras.cmake
+[14.672s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_dependencies-extras.cmake
+[14.672s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig.cmake
+[14.672s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig-version.cmake
+[14.672s] -- Installing: /root/ros_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.xml
+[14.673s] Invoked command in '/root/ros_ws/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /root/ros_ws/build/turtlebot3_gazebo
