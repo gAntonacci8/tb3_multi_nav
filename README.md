@@ -7,13 +7,14 @@ For not namespaced single robot simulation, refer to <branch_name TBD>
 This branch will be left as a single robot operational simulation, once completed. \
 Multi-robot branch TBD.
 
-STATUS: SINGLE ROBOT SHOWING, WORKING ONLY WITH KEYBOARD CONTROLS.
+STATUS: SINGLE ROBOT SHOWING, WORKING WITH KEYBOARD CONTROLS (remapped) AND BASIC PLANNING (more tests needed). 
 
-- Navigation2 Stack  ONLINE but not responsive.
+- Navigation2 Stack  ONLINE and responsive.
+- Bt_navigator XML file customized with namespace. Evaluating xacro like sintax to dynamically include namespace where needed.
 - Robot can be controlled by teleop keyboard, remapping /cmd_vel to /robot1/cmd_vel. Other controllers not working atm.
 - Map saving and loading tested: saving .yaml and .pgm correctly, loads and publish to /map correctly.
 - Rviz accepts map and map frame. Correct behavior when reloading custom map from map_server. Initial pose by Rviz accepted correctly.
-- Rviz recognizes Nav2 servers if it's launched with <namespace: "robot1">. Even with that, still not working.
+- Rviz recognizes Nav2 servers if it's launched with <namespace: "robot1">.
 - Autonomous navigation: Nav2goal navigates robot to goal pose. Some issues in rotation, no fix on the agenda atm.
 - Navigation and Localization in Rviz2 Navigation Plugin still "Unknown".
 - !! Multi-Robot: NOT TESTED YET. Will be tested in a separate branch
