@@ -2,12 +2,12 @@ Tb3 multi nav tag-game \
 
 JAZZY_ROBOT1_NAMESPACED BRANCH -- Single robot simulation, with namespace "robot1". New branch created as it differs too much from other version. 
 
-For not namespaced single robot simulation, refer to <branch_name TBD>
+For not namespaced single robot simulation, refer to <proto_scratch> branch
 
 This branch will be left as a single robot operational simulation, once completed. \
 Multi-robot branch TBD.
 
-STATUS: SINGLE ROBOT SHOWING, WORKING WITH KEYBOARD CONTROLS (remapped) AND BASIC PLANNING (more tests needed). 
+STATUS: SINGLE ROBOT SHOWING, WORKING WITH KEYBOARD CONTROLS (remapped) AND NAV2 PLANNING. 
 
 - Navigation2 Stack  ONLINE and responsive.
 - Bt_navigator XML file customized with namespace. Evaluating xacro like sintax to dynamically include namespace where needed.

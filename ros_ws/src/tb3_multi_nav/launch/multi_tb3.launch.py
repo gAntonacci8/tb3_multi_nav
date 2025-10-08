@@ -176,7 +176,12 @@ def generate_launch_description():
         name='bt_navigator',
         namespace="robot1",   
         output='screen',
-        parameters=[{ 'use_sim_time': True},nav2_params_file1],
+        parameters=[
+            { 'use_sim_time': True},
+            nav2_params_file1,
+           # {'global_frame': 'map'},
+           # {'robot_base_frame': ['robot1', '/base_link']} # Forzato con la sintassi di concatenazione]
+        ], 
         remappings=[
             ("/robot1/map", "/map"), ("/robot1/map_updates","/map_updates")
         ]
@@ -198,11 +203,11 @@ def generate_launch_description():
     )
     #explorer node (from AniArka repo) 
     #NB repo does ros2 run custom_explorer explorer, no arguments. Set output screen to get it
-    explorer_node=Node(
-        package="custom_explorer",
-        executable="explorer",
-        output="screen"
-    )
+    # explorer_node=Node(
+    #     package="custom_explorer",
+    #     executable="explorer",
+    #     output="screen"
+    # )
     #map selector, overrid the "yaml_filename" parameter in "waffle.yaml". Just for simplicity.
     map_yaml_selector=[ 
         '/root/ros_ws/src/tb3_multi_nav/utils/newmaze.yaml',
@@ -228,7 +233,7 @@ def generate_launch_description():
             {'node_names': [        #nodes list
                 'map_server'      
             ]}
-            ]
+        ]
     )
     smoother_server1=LifecycleNode(
         package='nav2_smoother',
@@ -253,11 +258,12 @@ def generate_launch_description():
         ],
         remappings=[
             ("/robot1/map", "/map"), ("/robot1/map_updates","/map_updates")
+            #,('cmd_vel', 'cmd_vel_smoothed')
         ]
         # Questo nodo riceve i comandi dal controller e li reindirizza al robot.
         # Assicurati che il tuo controller pubblichi su /cmd_vel_nav e il tuo robot ascolti su /cmd_vel.
         # Se il tuo controller e il tuo robot usano /cmd_vel di default, potresti aver bisogno di remapping:
-        # remappings=[
+        # ,remappings=[
         #     ('cmd_vel', 'cmd_vel_smoothed')
         # ]
     )
@@ -312,7 +318,7 @@ def generate_launch_description():
     #---------------- Rviz2 and configuration ----------------------------
     # Sets pose for robot1 in Rviz automatically. Single publish, no node
     init_pose_robot1 =TimerAction( 
-        period=4.0,
+        period=6.0,
         actions=[
         ExecuteProcess(
 			cmd=[
@@ -353,10 +359,15 @@ def generate_launch_description():
         package='rviz2',
         executable='rviz2',
         #name='rviz',         # BAD BEHAVIOR, multi nodes with same name. Issue: https://github.com/ros2/rviz/issues/671 
-        #namespace="robot1",  #fixes nav2 selector issue, still BAD BEHAVIOR.
+        namespace="robot1",  #fixes nav2 selector issue, still BAD BEHAVIOR.
         output='screen',
         arguments=['-d', rviz_config_path],
         parameters=[{'use_sim_time': True}]
+        ,
+        remappings=[            
+              
+            
+        ]
     ) 
     
     #Launches nodes in the exact order. for Lifecycles nodes, order not important here, but in the Manager
@@ -384,5 +395,5 @@ def generate_launch_description():
         #explorer_node,         # autonomous mapping external node. Not properly working or missing nav2 stuff.
         lifecycle_manager,
         rviz_node,
-        init_pose_robot1,      # incoherent behavior. Rviz seems already configured to proper position. Do not use for now.
+        #init_pose_robot1        # Set by waffle.yaml, AMCL section. Not needed.  
     ])

@@ -130,7 +130,7 @@ robot1:
         max_vel_x: 0.3
         max_vel_y: 0.3                  # 0.0 default
         max_vel_theta: 1.0              # 1.0 maybe too much 
-        min_speed_xy: 0.0
+        min_speed_xy: 0.0             
         max_speed_xy: 0.3
         min_speed_theta: 0.0
         # Add high threshold velocity for turtlebot 3 issue.
@@ -484,7 +484,7 @@ robot1:
         minimum_turning_radius: 0.01   # 0.40 default. # minimum turning radius the robot can perform. Can be set to 0.0 (or w_curve can be set to 0.0 with the same effect) for diff-drive/holonomic robots
         w_curve: 30.0                 # weight to enforce minimum_turning_radius
         w_dist: 0.0                   # weight to bind path to original as optional replacement for cost weight
-        w_smooth: 2.0           # 2000000.0 default. weight to maximize smoothness of path
+        w_smooth: 2000000.0           # 2000000.0 default. weight to maximize smoothness of path
         w_cost: 1.015                 # 0.015  default. weight to steer robot away from collision and cost
 
         # Parameters used to improve obstacle avoidance near cusps (forward/reverse movement changes)

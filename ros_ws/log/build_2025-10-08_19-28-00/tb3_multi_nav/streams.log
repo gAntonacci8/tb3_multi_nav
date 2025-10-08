@@ -1,0 +1,34 @@
+[0.912s] Invoking command in '/root/ros_ws/src/tb3_multi_nav': PYTHONPATH=/root/ros_ws/build/tb3_multi_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros_ws/install/tb3_multi_nav/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tb3_multi_nav build --build-base /root/ros_ws/build/tb3_multi_nav/build install --record /root/ros_ws/build/tb3_multi_nav/install.log --single-version-externally-managed install_data
+[1.093s] running egg_info
+[1.093s] creating ../../build/tb3_multi_nav/tb3_multi_nav.egg-info
+[1.103s] writing ../../build/tb3_multi_nav/tb3_multi_nav.egg-info/PKG-INFO
+[1.104s] writing dependency_links to ../../build/tb3_multi_nav/tb3_multi_nav.egg-info/dependency_links.txt
+[1.104s] writing requirements to ../../build/tb3_multi_nav/tb3_multi_nav.egg-info/requires.txt
+[1.104s] writing top-level names to ../../build/tb3_multi_nav/tb3_multi_nav.egg-info/top_level.txt
+[1.104s] writing manifest file '../../build/tb3_multi_nav/tb3_multi_nav.egg-info/SOURCES.txt'
+[1.125s] reading manifest file '../../build/tb3_multi_nav/tb3_multi_nav.egg-info/SOURCES.txt'
+[1.125s] writing manifest file '../../build/tb3_multi_nav/tb3_multi_nav.egg-info/SOURCES.txt'
+[1.126s] running build
+[1.126s] running build_py
+[1.126s] creating /root/ros_ws/build/tb3_multi_nav/build
+[1.126s] creating /root/ros_ws/build/tb3_multi_nav/build/lib
+[1.127s] creating /root/ros_ws/build/tb3_multi_nav/build/lib/tb3_multi_nav
+[1.127s] copying tb3_multi_nav/__init__.py -> /root/ros_ws/build/tb3_multi_nav/build/lib/tb3_multi_nav
+[1.127s] running install
+[1.131s] running install_lib
+[1.144s] creating /root/ros_ws/install/tb3_multi_nav/lib/python3.12/site-packages/tb3_multi_nav
+[1.144s] copying /root/ros_ws/build/tb3_multi_nav/build/lib/tb3_multi_nav/__init__.py -> /root/ros_ws/install/tb3_multi_nav/lib/python3.12/site-packages/tb3_multi_nav
+[1.145s] byte-compiling /root/ros_ws/install/tb3_multi_nav/lib/python3.12/site-packages/tb3_multi_nav/__init__.py to __init__.cpython-312.pyc
+[1.146s] running install_data
+[1.146s] creating /root/ros_ws/install/tb3_multi_nav/share/ament_index
+[1.146s] creating /root/ros_ws/install/tb3_multi_nav/share/ament_index/resource_index
+[1.146s] creating /root/ros_ws/install/tb3_multi_nav/share/ament_index/resource_index/packages
+[1.147s] copying resource/tb3_multi_nav -> /root/ros_ws/install/tb3_multi_nav/share/ament_index/resource_index/packages
+[1.147s] copying package.xml -> /root/ros_ws/install/tb3_multi_nav/share/tb3_multi_nav
+[1.147s] creating /root/ros_ws/install/tb3_multi_nav/share/tb3_multi_nav/launch
+[1.148s] copying launch/multi_tb3.launch.py -> /root/ros_ws/install/tb3_multi_nav/share/tb3_multi_nav/launch
+[1.148s] running install_egg_info
+[1.167s] Copying ../../build/tb3_multi_nav/tb3_multi_nav.egg-info to /root/ros_ws/install/tb3_multi_nav/lib/python3.12/site-packages/tb3_multi_nav-0.0.0-py3.12.egg-info
+[1.167s] running install_scripts
+[1.240s] writing list of installed files to '/root/ros_ws/build/tb3_multi_nav/install.log'
+[1.263s] Invoked command in '/root/ros_ws/src/tb3_multi_nav' returned '0': PYTHONPATH=/root/ros_ws/build/tb3_multi_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros_ws/install/tb3_multi_nav/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tb3_multi_nav build --build-base /root/ros_ws/build/tb3_multi_nav/build install --record /root/ros_ws/build/tb3_multi_nav/install.log --single-version-externally-managed install_data
