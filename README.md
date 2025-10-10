@@ -1,12 +1,12 @@
-Tb3 multi nav tag-game \
+Tb3 multi nav tag-game 
 
 PROTO_MULTI_ROBOT BRANCH -- Multi robot simulation, with namespaces "robot1","robot2".
 
 Planning tag-game with 2 robots. 
 
-For not namespaced single robot simulation, refer to <proto_scratch> branch
+For not namespaced single robot simulation, refer to [proto_scratch](https://github.com/gAntonacci8/tb3_multi_nav/tree/proto_scratch) branch. Beware that parts of this branch might be outdated  compared the others.
 
-For single robot namespaced simulation, refer to <jazzy_robot1_namespaced> branch. Said branch will be "cloned" and adapted for multi-robot purposes.
+For single robot namespaced simulation, refer to [jazzy_robot1_namespaced](https://github.com/gAntonacci8/tb3_multi_nav/tree/jazzy_robot1_namespaced) branch. Said branch will be "cloned" and adapted for multi-robot purposes.
 
 Config/ file namespaced to "robotX" where needed. 
 
@@ -27,7 +27,7 @@ Using Nav2 stack, Gazebo bridged to ROS2 and Rviz for sensor monitoring.
 Setup: 
 - ROS2 Distro - Jazzy 
 - Gazebo Version - Harmonic, v. 8.9.0
-- Rviz2, v. 14.1.14 (Compiled againt QT version 5.15.13, OGRE version 1.12.10)
+- Rviz2, v. 14.1.14 (Compiled against QT version 5.15.13, OGRE version 1.12.10)
 
 External Repositories (used partially or entirely):
 
