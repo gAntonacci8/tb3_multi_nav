@@ -14,22 +14,21 @@ STATUS: EARLY PROTOTYPE.
 
 [LIST NOT RELIABLE. LEFT AS COMPARISON TO ]
 - Navigation2 Stack  ONLINE and responsive.
-- Bt_navigator XML file customized with namespace. Evaluating xacro like sintax to dynamically include namespace where needed.
-- Robot can be controlled by teleop keyboard, remapping /cmd_vel to /robot1/cmd_vel. Other controllers not working atm.
+- Bt_navigator XML fileS customized with namespaces for both robots.
+- Robot1 can be controlled by teleop keyboard, remapping /cmd_vel to /robot1/cmd_vel. Both robots controllable by Rviz or by publishing goal_pose to specific namespaced topic.
 - Map saving and loading tested: saving .yaml and .pgm correctly, loads and publish to /map correctly.
-- Rviz accepts map and map frame. Correct behavior when reloading custom map from map_server. Initial pose by Rviz accepted correctly.
-- Rviz recognizes Nav2 servers if it's launched with <namespace: "robot1">.
-- Autonomous navigation: Nav2goal navigates robot to goal pose. Some issues in rotation, no fix on the agenda atm.
-- Navigation and Localization in Rviz2 Navigation Plugin still "Unknown".
-- !! Multi-Robot: NOT TESTED YET. Will be tested in a separate branch
+- Rviz accepts map and map frame. Correct behavior when reloading custom map from map_server. Initial pose by Rviz accepted correctly and set for both robots.
+- Rviz recognizes Nav2 servers if it's launched with <namespace: "robot1"> and <namespace: "robot2">.
+- Autonomous navigation: Nav2goal navigates robot to goal pose. Some issues in rotation, light fix applied, still working on it.
+- Navigation and Localization in Rviz2 Navigation Plugin still "Unknown". No fix found atm.
 
 University project utilizing 2 turtlebot3 waffle robots for a simulated tag game. \
 Using Nav2 stack, Gazebo bridged to ROS2 and Rviz for sensor monitoring.
 
-Setup: \
+Setup: 
 - ROS2 Distro - Jazzy 
-- Gazebo Version - Harmonic 
-- Rviz2 
+- Gazebo Version - Harmonic, v. 8.9.0
+- Rviz2, v. 14.1.14 (Compiled againt QT version 5.15.13, OGRE version 1.12.10)
 
 External Repositories (used partially or entirely):
 
