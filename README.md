@@ -10,16 +10,15 @@ For single robot namespaced simulation, refer to <jazzy_robot1_namespaced> branc
 
 Config/ file namespaced to "robotX" where needed. 
 
-STATUS: EARLY PROTOTYPE. 
+STATUS: PROTOTYPE, BASIC BRINGUP ONLINE, NAV2 ONLINE. 
 
-[LIST NOT RELIABLE. LEFT AS COMPARISON TO ]
 - Navigation2 Stack  ONLINE and responsive.
 - Bt_navigator XML fileS customized with namespaces for both robots.
 - Robot1 can be controlled by teleop keyboard, remapping /cmd_vel to /robot1/cmd_vel. Both robots controllable by Rviz or by publishing goal_pose to specific namespaced topic.
 - Map saving and loading tested: saving .yaml and .pgm correctly, loads and publish to /map correctly.
 - Rviz accepts map and map frame. Correct behavior when reloading custom map from map_server. Initial pose by Rviz accepted correctly and set for both robots.
 - Rviz recognizes Nav2 servers if it's launched with <namespace: "robot1"> and <namespace: "robot2">.
-- Autonomous navigation: Nav2goal navigates robot to goal pose. Some issues in rotation, light fix applied, still working on it.
+- Autonomous navigation: Nav2goal navigates robots to goal pose. Some issues in rotation, light fix applied, still working on it.
 - Navigation and Localization in Rviz2 Navigation Plugin still "Unknown". No fix found atm.
 
 University project utilizing 2 turtlebot3 waffle robots for a simulated tag game. \
@@ -38,10 +37,10 @@ External Repositories (used partially or entirely):
 
 Currently working on:
 
-Modular launcher for multi robot nav2 stack (SINGLE BOT MODULAR NODE LAUNCHER DONE) \
+Modular launcher for multi robot nav2 stack (BASIC BRINGUP DONE) \
 Mapping an uknown map for .yaml and .pgm map file to Rviz2 (DONE) \
-Gazebo <--> ROS <--> Rviz2 integration (SINGLE BOT OK FAR) \
-Rviz2 multi robot configuration \
-Data categorization with namespaces (SINGLE BOT WORKING) \
-Bringup setup for multi robot 
+Gazebo <--> ROS <--> Rviz2 integration (OK FOR BASIC SIM) \
+Rviz2 multi robot configuration (DONE WITH 2 RVIZ INSTANCES) \
+Data categorization with namespaces (DONE) \
+Bringup setup for multi robot (DONE)
 
