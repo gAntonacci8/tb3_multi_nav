@@ -23,7 +23,6 @@ docker run -it --rm \
   -e QT_X11_NO_MITSHM=1 \
   -e TURTLEBOT3_MODEL=waffle \
   -v "$PWD/ros_ws":/root/ros_ws \
-  -v "$PWD/launch":/root/launch \
   -e GZ_RENDER_ENGINE=ogre2 \
   -e GZ_SIM_MSAA=0 \
   -e GZ_SIM_RESOURCE_PATH="/root/ros_ws/src" \

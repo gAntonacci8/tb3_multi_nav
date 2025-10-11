@@ -13,6 +13,5 @@ docker run -it --rm \
   -e TURTLEBOT3_MODEL=waffle \
   -v /tmp/.X11-unix:/tmp/.X11-unix \
   -v "$PWD/ros_ws":/root/ros_ws \
-  -v "$PWD/launch":/root/launch \
   --name tag_game \
   ros:tag_game bash
