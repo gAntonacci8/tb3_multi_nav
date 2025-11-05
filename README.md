@@ -39,10 +39,10 @@ External Repositories (used partially or entirely):
 
 Roadmap:
 
-- Modular launcher for multi robot nav2 stack (DONE) \
-- Mapping an uknown map for .yaml and .pgm map file to Rviz2 (DONE) \
-- Gazebo <--> ROS <--> Rviz2 integration (DONE) \
-- Rviz2 multi robot configuration (DONE WITH 2 RVIZ INSTANCES) \
-- Data categorization with namespaces (DONE) \
+- Modular launcher for multi robot nav2 stack (DONE) 
+- Mapping an uknown map for .yaml and .pgm map file to Rviz2 (DONE) 
+- Gazebo <--> ROS <--> Rviz2 integration (DONE) 
+- Rviz2 multi robot configuration (DONE WITH 2 RVIZ INSTANCES) 
+- Data categorization with namespaces (DONE) 
 - Bringup setup for multi robot (DONE)
 
