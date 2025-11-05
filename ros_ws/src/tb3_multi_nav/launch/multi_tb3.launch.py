@@ -537,6 +537,41 @@ def generate_launch_description():
                   
         ]
     ) 
+
+    #------------  Tag-Game Logic -------------------
+    #Republisher nodes for the two robots.
+    #Orchestrator node for game logic, launched separately atm (debug enhance, possible configuration)
+    location_publisher1=Node(
+        package="tb3_multi_nav",
+        executable="robot1_publisher_node",
+        name="robot1_location_publisher",
+        parameters=[{'use_sim_time':True}],
+        namespace="",
+        output="screen"    
+    )
+    location_publisher2=Node(
+        package="tb3_multi_nav",
+        executable="robot2_publisher_node",
+        name="robot2_location_publisher",
+        parameters=[{'use_sim_time':True}],
+        namespace="",
+        output="screen"    
+    )
+
+    #Orchestrator Node. Delayed by 8 seconds so that both Gazebo and Rviz are ready
+    orchestrator=TimerAction(
+        period=10.0,                                 # delay time (sec)
+        actions=[
+            Node(
+                package="tb3_multi_nav",
+                executable="orchestrator_node",
+                name="orchestrator_node",
+                namespace="",                       # global namespace
+                parameters=[{'use_sim_time':True}],
+                output="screen",
+            )
+        ]
+    )
     
     #Launches nodes in the exact order. for Lifecycles nodes, order not important here, but in the Manager
     return LaunchDescription([          
@@ -577,12 +612,22 @@ def generate_launch_description():
         waypoint_follower_node1,
         waypoint_follower_node2,
 
-        map_server_node,        # conflict when using cartographer. Uncomment when migrating to AMCL and .yaml done.
-        map_server_manager,     #separate manager to launch global node (only map)
+        map_server_node,            # conflict when using cartographer. Uncomment when migrating to AMCL and .yaml done.
+        map_server_manager,         # separate manager to launch global node (only map)
         
         lifecycle_manager1,
         lifecycle_manager2,
 
+        #---- TEST GAME LOGIC
+        location_publisher1,
+        location_publisher2,
+        #---- END TEST
+
         rviz_node1,
-        rviz_node2
+        rviz_node2,
+
+        #---- TEST GAME LOGIC
+        orchestrator
+        #---- END TEST
+
     ])
