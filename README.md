@@ -2,6 +2,8 @@ Tb3 multi nav tag-game
 
 PROTO_MULTI_ROBOT BRANCH -- Multi robot simulation, with namespaces "robot1","robot2".
 
+============================= REFERENCE BRANCH FOR MAIN =============================
+
 Planning tag-game with 2 robots. 
 
 For not namespaced single robot simulation, refer to [proto_scratch](https://github.com/gAntonacci8/tb3_multi_nav/tree/proto_scratch) branch. Beware that parts of this branch might be outdated  compared the others.
@@ -10,7 +12,7 @@ For single robot namespaced simulation, refer to [jazzy_robot1_namespaced](https
 
 Config/ file namespaced to "robotX" where needed. 
 
-STATUS: PROTOTYPE, BASIC BRINGUP ONLINE, NAV2 ONLINE. 
+STATUS: PROTOTYPE FINISHED. BASIC BRINGUP ONLINE, NAV2 ONLINE. 
 
 - Navigation2 Stack  ONLINE and responsive.
 - Bt_navigator XML fileS customized with namespaces for both robots.
@@ -35,12 +37,12 @@ External Repositories (used partially or entirely):
 - turtlebot3-jazzy  (ROBOTIS): https://github.com/ROBOTIS-GIT/turtlebot3/tree/jazzy 
 
 
-Currently working on:
+Roadmap:
 
-Modular launcher for multi robot nav2 stack (BASIC BRINGUP DONE) \
-Mapping an uknown map for .yaml and .pgm map file to Rviz2 (DONE) \
-Gazebo <--> ROS <--> Rviz2 integration (OK FOR BASIC SIM) \
-Rviz2 multi robot configuration (DONE WITH 2 RVIZ INSTANCES) \
-Data categorization with namespaces (DONE) \
-Bringup setup for multi robot (DONE)
+- Modular launcher for multi robot nav2 stack (DONE) \
+- Mapping an uknown map for .yaml and .pgm map file to Rviz2 (DONE) \
+- Gazebo <--> ROS <--> Rviz2 integration (DONE) \
+- Rviz2 multi robot configuration (DONE WITH 2 RVIZ INSTANCES) \
+- Data categorization with namespaces (DONE) \
+- Bringup setup for multi robot (DONE)
 
