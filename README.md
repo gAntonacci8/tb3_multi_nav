@@ -12,7 +12,7 @@ For single robot namespaced simulation, refer to [jazzy_robot1_namespaced](https
 
 Config/ file namespaced to "robotX" where needed. 
 
-STATUS: PROTOTYPE FINISHED. BASIC BRINGUP ONLINE, NAV2 ONLINE. 
+STATUS: PROTOTYPE FINISHED. BASIC BRINGUP ONLINE, NAV2 ONLINE. TAG GAME IMPLEMENTED. 
 
 - Navigation2 Stack  ONLINE and responsive.
 - Bt_navigator XML fileS customized with namespaces for both robots.
