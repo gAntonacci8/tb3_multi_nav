@@ -2,7 +2,7 @@ Tb3 multi nav tag-game
 
 PROTO_MULTI_ROBOT BRANCH -- Multi robot simulation, with namespaces "robot1","robot2".
 
-============================= REFERENCE BRANCH FOR MAIN =============================
+============= REFERENCE BRANCH FOR MAIN =============
 
 Planning tag-game with 2 robots. 
 
