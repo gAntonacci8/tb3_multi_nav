@@ -75,7 +75,7 @@ def generate_launch_description():
         arguments=['--ros-args', '-p', f'config_file:={robot1_bridge_yaml}'],
         output='screen'
     )
-
+    # --- Bridge robot2 ---
     bridge_robot2 = Node(
         package='ros_gz_bridge',
         executable='parameter_bridge',
@@ -515,12 +515,12 @@ def generate_launch_description():
     rviz_node1=Node(
         package='rviz2',
         executable='rviz2',
-        #name='rviz',         # BAD BEHAVIOR, multi nodes with same name. Issue: https://github.com/ros2/rviz/issues/671 
-        namespace="robot1",  #fixes nav2 selector issue. Nav2 online.
+        #name='rviz',                       # BAD BEHAVIOR, multi nodes with same name. Issue: https://github.com/ros2/rviz/issues/671 
+        namespace="robot1",                 # fixes nav2 selector issue. Nav2 online.
         output='screen',
         arguments=['-d', rviz_config_path1],
         parameters=[{'use_sim_time': True}],
-        remappings=[   #no remapping needed so far. Kept as it doesn't cause issues.         
+        remappings=[                        # no remapping needed so far. Kept as it doesn't cause issues.         
                   
         ]
     )
@@ -528,13 +528,12 @@ def generate_launch_description():
     rviz_node2=Node(
         package='rviz2',
         executable='rviz2',
-        #name='rviz',         # BAD BEHAVIOR, multi nodes with same name. Issue: https://github.com/ros2/rviz/issues/671 
-        namespace="robot2",  #fixes nav2 selector issue. Nav2 online.
+        #name='rviz',                       # BAD BEHAVIOR, multi nodes with same name. Issue: https://github.com/ros2/rviz/issues/671 
+        namespace="robot2",                 # fixes nav2 selector issue. Nav2 online.
         output='screen',
         arguments=['-d', rviz_config_path2],
         parameters=[{'use_sim_time': True}],
-        remappings=[   #no remapping needed so far. Kept as it doesn't cause issues.         
-                  
+        remappings=[                        # no remapping needed so far. Kept as it doesn't cause issues.                    
         ]
     ) 
 
@@ -586,10 +585,10 @@ def generate_launch_description():
         robot2_state_publisher,
 
         #cartographer_node1,     # comment when migrating to AMCL
-        #occupancy_grid1,        # comment when migrating to AMCL (maybe?)
+        #occupancy_grid1,        # comment when migrating to AMCL 
         
-        amcl_node1,             # comment when using cartographer
-        amcl_node2,
+        amcl_node1,              # comment when using cartographer
+        amcl_node2,              # comment when using cartographer
 
         planner_server_node1,
         planner_server_node2,
@@ -621,13 +620,12 @@ def generate_launch_description():
         #---- TEST GAME LOGIC
         location_publisher1,
         location_publisher2,
-        #---- END TEST
 
+        #---- END TEST
         rviz_node1,
         rviz_node2,
 
         #---- TEST GAME LOGIC
         orchestrator
         #---- END TEST
-
     ])
