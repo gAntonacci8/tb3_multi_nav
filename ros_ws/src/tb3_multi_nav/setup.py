@@ -23,7 +23,9 @@ setup(
         'console_scripts': [                                                        # nodes available in the package   
             #"orchestrator_node = tb3_multi_nav.orchestrator_node_1:main",          # [OLD] tag game logic
             #"orchestrator_node = tb3_multi_nav.orchestrator_node_3:main",          # [OLD] tag game logic
-            "orchestrator_node = tb3_multi_nav.orchestrator_node_4:main",           # [CURRENT] tag game logic
+            #"orchestrator_node = tb3_multi_nav.orchestrator_node_4:main",          # [OLD] tag game logic
+            "orchestrator_node = tb3_multi_nav.orchestrator_node_5:main",           # [CURRENT] tag game logic
+
             "robot1_publisher_node = tb3_multi_nav.robot1_publisher_node:main",     # robot1 position publisher
             "robot2_publisher_node = tb3_multi_nav.robot2_publisher_node:main"      # robot2 position publisher
         ],
