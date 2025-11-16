@@ -1,0 +1,9 @@
+t_s,evader,chaser,safe_x,safe_y,dist_evader_to_safe,path_remaining_evader,dist_chaser_to_evader,path_remaining_chaser,goal_active_evader,goal_active_chaser,event,winner,score_robot1,score_robot2,tags_robot1,tags_robot2,safes_robot1,safes_robot2
+0.72,robot1,robot2,-3.500,-3.700,2.945,3.488,1.751,0.241,1,0,,,12,11,4,3,8,8
+2.64,robot1,robot2,-3.500,-3.700,2.836,3.488,1.823,2.012,1,1,,,12,11,4,3,8,8
+4.77,robot1,robot2,-3.500,-3.700,2.474,3.127,1.912,1.603,1,1,,,12,11,4,3,8,8
+6.33,robot1,robot2,-3.500,-3.700,2.039,2.525,1.982,1.598,1,0,,,12,11,4,3,8,8
+7.98,robot1,robot2,-3.500,-3.700,1.698,2.148,2.010,2.184,1,0,,,12,11,4,3,8,8
+9.72,robot1,robot2,-3.500,-3.700,1.376,1.567,2.180,2.265,1,0,,,12,11,4,3,8,8
+11.28,robot1,robot2,-3.500,-3.700,0.941,0.890,2.368,2.247,1,0,,,12,11,4,3,8,8
+11.44,robot1,robot2,-3.500,-3.700,0.884,0.890,2.374,2.247,1,0,safe_zone,robot1,13,11,4,3,9,8

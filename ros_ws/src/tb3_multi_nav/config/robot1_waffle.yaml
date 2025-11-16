@@ -115,7 +115,7 @@ robot1:
       current_controller_checker: "FollowPath"
       progress_checker:
         plugin: "nav2_controller::SimpleProgressChecker"
-        required_movement_radius: 0.5 # 0.5 seems ok. default 0.1 distance from obstacles not affected by this.
+        required_movement_radius: 0.05 # 0.5 seems ok. default 0.1 distance from obstacles not affected by this.
         movement_time_allowance: 10.0
       goal_checker:
         stateful: true
@@ -123,46 +123,75 @@ robot1:
         xy_goal_tolerance: 0.25
         yaw_goal_tolerance: 0.25
       FollowPath:
-        plugin: "dwb_core::DWBLocalPlanner"
-        debug_trajectory_details: true
-        min_vel_x: 0.1                  # 0.0 default -- x and y 0.1 passes after obs but problems
-        min_vel_y: 0.08                  # 0.0 default
-        max_vel_x: 0.3
-        max_vel_y: 0.3                  # 0.0 default
-        max_vel_theta: 1.0              # 1.0 maybe too much 
-        min_speed_xy: 0.0             
-        max_speed_xy: 0.3
-        min_speed_theta: 0.0
-        # Add high threshold velocity for turtlebot 3 issue.
-        # https://github.com/ROBOTIS-GIT/turtlebot3_simulations/issues/75
-        acc_lim_x: 3.0
-        acc_lim_y: 3.0                  # 0.0 default.      
-        acc_lim_theta: 3.2
-        decel_lim_x: -2.5
-        decel_lim_y: 0.0
-        decel_lim_theta: -3.2
-        vx_samples: 20
-        vy_samples: 0
-        vtheta_samples: 40
-        sim_time: 1.5
-        linear_granularity: 0.05
-        angular_granularity: 0.025
-        transform_tolerance: 0.5
-        xy_goal_tolerance: 0.05
-        trans_stopped_velocity: 0.25
-        short_circuit_trajectory_evaluation: true
+        plugin: "nav2_regulated_pure_pursuit_controller::RegulatedPurePursuitController"
+        desired_linear_vel: 0.5
+        lookahead_dist: 0.6
+        min_lookahead_dist: 0.3
+        max_lookahead_dist: 0.9
+        lookahead_time: 1.5
+        rotate_to_heading_angular_vel: 1.8
+        transform_tolerance: 0.1
+        use_velocity_scaled_lookahead_dist: false
+        min_approach_linear_velocity: 0.05
+        approach_velocity_scaling_dist: 0.6
+        use_collision_detection: true
+        max_allowed_time_to_collision_up_to_carrot: 1.0
+        use_regulated_linear_velocity_scaling: true
+        use_fixed_curvature_lookahead: false
+        curvature_lookahead_dist: 0.25
+        use_cost_regulated_linear_velocity_scaling: false
+        cost_scaling_dist: 0.3
+        cost_scaling_gain: 1.0
+        regulated_linear_scaling_min_radius: 0.9
+        regulated_linear_scaling_min_speed: 0.25
+        use_rotate_to_heading: true
+        allow_reversing: false
+        rotate_to_heading_min_angle: 0.785
+        max_angular_accel: 3.2
+        max_robot_pose_search_dist: 10.0
+        min_distance_to_obstacle: 0.1
         stateful: true
-        critics: ["RotateToGoal", "Oscillation", "BaseObstacle", "GoalAlign", "PathAlign", "PathDist", "GoalDist"]
-        BaseObstacle.scale: 0.02
-        PathAlign.scale: 32.0
-        PathAlign.forward_point_distance: 0.1
-        GoalAlign.scale: 24.0
-        GoalAlign.forward_point_distance: 0.1
-        PathDist.scale: 32.0
-        GoalDist.scale: 24.0
-        RotateToGoal.scale: 32.0
-        RotateToGoal.slowing_factor: 5.0
-        RotateToGoal.lookahead_time: -1.0
+      # FollowPath:
+      #   plugin: "dwb_core::DWBLocalPlanner"
+      #   debug_trajectory_details: true
+      #   min_vel_x: 0.1                  # 0.0 default -- x and y 0.1 passes after obs but problems
+      #   min_vel_y: 0.0                  # 0.08 TEST, 0.0 default
+      #   max_vel_x: 0.3
+      #   max_vel_y: 0.0                  # 0.3 TEST, 0.0 default
+      #   max_vel_theta: 1.0              # 1.0 maybe too much 
+      #   min_speed_xy: 0.0             
+      #   max_speed_xy: 0.3
+      #   min_speed_theta: 0.0
+      #   # Add high threshold velocity for turtlebot 3 issue.
+      #   # https://github.com/ROBOTIS-GIT/turtlebot3_simulations/issues/75
+      #   acc_lim_x: 3.0
+      #   acc_lim_y: 0.0                  # 3.0 TEST, 0.0 default.      
+      #   acc_lim_theta: 3.2
+      #   decel_lim_x: -2.5
+      #   decel_lim_y: 0.0
+      #   decel_lim_theta: -3.2
+      #   vx_samples: 20
+      #   vy_samples: 0
+      #   vtheta_samples: 40
+      #   sim_time: 1.5
+      #   linear_granularity: 0.05
+      #   angular_granularity: 0.025
+      #   transform_tolerance: 0.5
+      #   xy_goal_tolerance: 0.05
+      #   trans_stopped_velocity: 0.25
+      #   short_circuit_trajectory_evaluation: true
+      #   stateful: true
+      #   critics: ["RotateToGoal", "Oscillation", "BaseObstacle", "GoalAlign", "PathAlign", "PathDist", "GoalDist"]
+      #   BaseObstacle.scale: 0.02
+      #   PathAlign.scale: 32.0
+      #   PathAlign.forward_point_distance: 0.1
+      #   GoalAlign.scale: 24.0
+      #   GoalAlign.forward_point_distance: 0.1
+      #   PathDist.scale: 32.0
+      #   GoalDist.scale: 24.0
+      #   RotateToGoal.scale: 32.0
+      #   RotateToGoal.slowing_factor: 5.0
+      #   RotateToGoal.lookahead_time: -1.0
       enable_stamped_cmd_vel: true
 
   local_costmap:
@@ -189,7 +218,7 @@ robot1:
           scan:
             topic: /robot1/scan
             max_obstacle_height: 2.0
-            #obstacle_min_range: 1.5   # new line. OBJ: increase path distance from obstacles
+            observation_persistence: 0.01  
             clearing: true
             marking: true
             data_type: "LaserScan"
@@ -236,6 +265,7 @@ robot1:
           scan:
             topic: /robot1/scan
             max_obstacle_height: 2.0
+            observation_persistence: 0.01   
             clearing: true
             marking: true
             data_type: "LaserScan"
@@ -269,7 +299,7 @@ robot1:
           transform_tolerance: 0.1
         inflation_layer:
           plugin: "nav2_costmap_2d::InflationLayer"
-          inflation_radius: 0.5                      #0.5 default. Might be too much for maze.
+          inflation_radius: 0.5                       #0.5 default. Might be too much for maze.
           cost_scaling_factor: 1.0                    #5.0 default. Exponential decay factor across inflation radius. might be too much for maze
         always_send_full_costmap: true
 
@@ -485,7 +515,7 @@ robot1:
         w_curve: 30.0                 # weight to enforce minimum_turning_radius
         w_dist: 0.0                   # weight to bind path to original as optional replacement for cost weight
         w_smooth: 2000000.0           # 2000000.0 default. weight to maximize smoothness of path
-        w_cost: 1.015                 # 0.015  default. weight to steer robot away from collision and cost
+        w_cost: 0.015                 # 0.015  default. weight to steer robot away from collision and cost
 
         # Parameters used to improve obstacle avoidance near cusps (forward/reverse movement changes)
         w_cost_cusp_multiplier: 30.0   # 3.0 default. option to use higher weight during forward/reverse direction change which is often accompanied with dangerous rotations

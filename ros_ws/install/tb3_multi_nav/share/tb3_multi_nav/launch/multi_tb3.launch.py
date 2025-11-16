@@ -75,7 +75,7 @@ def generate_launch_description():
         arguments=['--ros-args', '-p', f'config_file:={robot1_bridge_yaml}'],
         output='screen'
     )
-
+    # --- Bridge robot2 ---
     bridge_robot2 = Node(
         package='ros_gz_bridge',
         executable='parameter_bridge',
@@ -92,12 +92,12 @@ def generate_launch_description():
 	        	package='robot_state_publisher',
 	        	executable='robot_state_publisher',
                 name="robot1_state_publisher",
-	        	namespace='robot1',                 #maybe not needed, but not a problem.
+	        	namespace='robot1',                 
 	        	output='screen',
                 parameters=[{
                     'use_sim_time': True,
                     'robot_description': Command([
-                        'xacro ',urdf_file_path
+                        'xacro ',urdf_file_path,
                         ' namespace:=robot1/'       #space BEFORE "namespace" is needed. "/" after is needed.
                     ])
                 }]
@@ -106,12 +106,12 @@ def generate_launch_description():
 	        	package='robot_state_publisher',
 	        	executable='robot_state_publisher',
                 name="robot2_state_publisher",
-	        	namespace='robot2',                  #maybe not needed, but not a problem.
+	        	namespace='robot2',                  
 	        	output='screen',
                 parameters=[{
                     'use_sim_time': True,
                     'robot_description': Command([
-                        'xacro ',urdf_file_path
+                        'xacro ',urdf_file_path,
                         ' namespace:=robot2/'        #space BEFORE "namespace" is needed. "/" after is needed.
                     ])
                 }]
@@ -435,13 +435,13 @@ def generate_launch_description():
         ]
     )
     lifecycle_nodes = [             #Nav2. For check. NOT IN ORDER.
-        'controller_server', #ok
-        'smoother_server',  #ok
-        'planner_server', #ok
-        'behavior_server', #ok
-        'bt_navigator', #ok
-        'waypoint_follower', #ok
-        'velocity_smoother' #ok
+        'controller_server',        #ok
+        'smoother_server',          #ok
+        'planner_server',           #ok
+        'behavior_server',          #ok
+        'bt_navigator',             #ok
+        'waypoint_follower',        #ok
+        'velocity_smoother'         #ok
     ]
     # Lifecycle Manager-- activates all lifecycle nodes -- needed for all nav2 nodes
     # Cloned istances. Same data, execpt for namespace.
@@ -515,12 +515,12 @@ def generate_launch_description():
     rviz_node1=Node(
         package='rviz2',
         executable='rviz2',
-        #name='rviz',         # BAD BEHAVIOR, multi nodes with same name. Issue: https://github.com/ros2/rviz/issues/671 
-        namespace="robot1",  #fixes nav2 selector issue. Nav2 online.
+        #name='rviz',                       # BAD BEHAVIOR, multi nodes with same name. Issue: https://github.com/ros2/rviz/issues/671 
+        namespace="robot1",                 # fixes nav2 selector issue. Nav2 online.
         output='screen',
         arguments=['-d', rviz_config_path1],
         parameters=[{'use_sim_time': True}],
-        remappings=[   #no remapping needed so far. Kept as it doesn't cause issues.         
+        remappings=[                        # no remapping needed so far. Kept as it doesn't cause issues.         
                   
         ]
     )
@@ -528,15 +528,51 @@ def generate_launch_description():
     rviz_node2=Node(
         package='rviz2',
         executable='rviz2',
-        #name='rviz',         # BAD BEHAVIOR, multi nodes with same name. Issue: https://github.com/ros2/rviz/issues/671 
-        namespace="robot2",  #fixes nav2 selector issue. Nav2 online.
+        #name='rviz',                       # BAD BEHAVIOR, multi nodes with same name. Issue: https://github.com/ros2/rviz/issues/671 
+        namespace="robot2",                 # fixes nav2 selector issue. Nav2 online.
         output='screen',
         arguments=['-d', rviz_config_path2],
         parameters=[{'use_sim_time': True}],
-        remappings=[   #no remapping needed so far. Kept as it doesn't cause issues.         
-                  
+        remappings=[                        # no remapping needed so far. Kept as it doesn't cause issues.                    
         ]
     ) 
+
+    #------------  Tag-Game Logic -------------------
+    #Republisher nodes for the two robots.
+    #Orchestrator node for game logic, launched separately atm (debug enhance, possible configuration)
+    location_publisher1=Node(
+        package="tb3_multi_nav",
+        executable="robot1_publisher_node",
+        name="robot1_location_publisher",
+        parameters=[{'use_sim_time':True}],
+        namespace="",
+        output="screen"    
+    )
+    location_publisher2=Node(
+        package="tb3_multi_nav",
+        executable="robot2_publisher_node",
+        name="robot2_location_publisher",
+        parameters=[{'use_sim_time':True}],
+        namespace="",
+        output="screen"    
+    )
+
+    #Orchestrator Node. Delayed by 8 seconds so that both Gazebo and Rviz are ready
+    orchestrator=TimerAction(
+        period=10.0,                                 # delay time (sec)
+        actions=[
+            Node(
+                package="tb3_multi_nav",
+                executable="orchestrator_node",
+                name="orchestrator_node",
+                namespace="",                       # global namespace
+                parameters=[{'use_sim_time':True}],
+                output="screen",
+                prefix=['xterm -hold -geometry 120x30+520+610 -e']           # open new terminal 
+
+            )
+        ]
+    )
     
     #Launches nodes in the exact order. for Lifecycles nodes, order not important here, but in the Manager
     return LaunchDescription([          
@@ -551,10 +587,10 @@ def generate_launch_description():
         robot2_state_publisher,
 
         #cartographer_node1,     # comment when migrating to AMCL
-        #occupancy_grid1,        # comment when migrating to AMCL (maybe?)
+        #occupancy_grid1,        # comment when migrating to AMCL 
         
-        amcl_node1,             # comment when using cartographer
-        amcl_node2,
+        amcl_node1,              # comment when using cartographer
+        amcl_node2,              # comment when using cartographer
 
         planner_server_node1,
         planner_server_node2,
@@ -577,13 +613,21 @@ def generate_launch_description():
         waypoint_follower_node1,
         waypoint_follower_node2,
 
-        map_server_node,        # conflict when using cartographer. Uncomment when migrating to AMCL and .yaml done.
-        map_server_manager,     #separate manager to launch global node (only map)
-        #explorer_node,         # autonomous mapping external node. Not properly working or missing nav2 stuff.
+        map_server_node,            # conflict when using cartographer. Uncomment when migrating to AMCL and .yaml done.
+        map_server_manager,         # separate manager to launch global node (only map)
         
         lifecycle_manager1,
         lifecycle_manager2,
 
+        #---- TEST GAME LOGIC
+        location_publisher1,
+        location_publisher2,
+
+        #---- END TEST
         rviz_node1,
-        rviz_node2
+        rviz_node2,
+
+        #---- TEST GAME LOGIC
+        orchestrator
+        #---- END TEST
     ])

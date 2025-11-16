@@ -92,7 +92,7 @@ def generate_launch_description():
 	        	package='robot_state_publisher',
 	        	executable='robot_state_publisher',
                 name="robot1_state_publisher",
-	        	namespace='robot1',                 #maybe not needed, but not a problem.
+	        	namespace='robot1',                 
 	        	output='screen',
                 parameters=[{
                     'use_sim_time': True,
@@ -106,7 +106,7 @@ def generate_launch_description():
 	        	package='robot_state_publisher',
 	        	executable='robot_state_publisher',
                 name="robot2_state_publisher",
-	        	namespace='robot2',                  #maybe not needed, but not a problem.
+	        	namespace='robot2',                  
 	        	output='screen',
                 parameters=[{
                     'use_sim_time': True,
@@ -435,13 +435,13 @@ def generate_launch_description():
         ]
     )
     lifecycle_nodes = [             #Nav2. For check. NOT IN ORDER.
-        'controller_server', #ok
-        'smoother_server',  #ok
-        'planner_server', #ok
-        'behavior_server', #ok
-        'bt_navigator', #ok
-        'waypoint_follower', #ok
-        'velocity_smoother' #ok
+        'controller_server',        #ok
+        'smoother_server',          #ok
+        'planner_server',           #ok
+        'behavior_server',          #ok
+        'bt_navigator',             #ok
+        'waypoint_follower',        #ok
+        'velocity_smoother'         #ok
     ]
     # Lifecycle Manager-- activates all lifecycle nodes -- needed for all nav2 nodes
     # Cloned istances. Same data, execpt for namespace.
@@ -568,6 +568,8 @@ def generate_launch_description():
                 namespace="",                       # global namespace
                 parameters=[{'use_sim_time':True}],
                 output="screen",
+                prefix=['xterm -hold -geometry 120x30+530+610 -e']           # open new terminal 
+
             )
         ]
     )
