@@ -1,4 +1,5 @@
 ros_ws/build
 ros_ws/log
 ros_ws/install
-
+ros_ws/ma_sim_start.sh
+ros_ws/save_map.sh
