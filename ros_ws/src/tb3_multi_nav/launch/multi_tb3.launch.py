@@ -126,37 +126,7 @@ def generate_launch_description():
     nav2_params_file1='/root/ros_ws/src/tb3_multi_nav/config/robot1_waffle.yaml'    #for robot1
     nav2_params_file2='/root/ros_ws/src/tb3_multi_nav/config/robot2_waffle.yaml'    #for robot2
 
-    # Cartographer Node (SLAM: map -> odom) + occupancy_grid node 
-    # !!!!!!!!!! WARNING: Nodes NOT namespaced. Not tested in namespaced scenario. Left here for convenience.
-    # DO NOT USE THESE NODES "AS IS". Check namespaces and their correlations before use.
-    # IMP: These nodes are mutually exclusive with AMCL node. Cartographer also overwrites map_server in /map topic, so 
-    # preloaded map is overrun and useless. 
-    # Doc: https://ros2-industrial-workshop.readthedocs.io/en/latest/_source/navigation/ROS2-Cartographer.html 
-    # package dir: '/opt/ros/jazzy/share/cartographer_ros/, config folder: configuration_files/
-    cartographer_node1 = Node(
-        package='cartographer_ros', # O turtlebot3_cartographer se usi il loro wrapper
-        executable='cartographer_node',
-        name='cartographer_node1',
-        output='screen',
-        parameters=[{'use_sim_time': True}],
-        # Additional ags for ".lua" config file.
-        arguments=[
-            '-configuration_directory', '/root/ros_ws/src/turtlebot3-jazzy/turtlebot3_cartographer/config',
-            '-configuration_basename', 'turtlebot3_lds_2d.lua'
-        ]
-    )
-    occupancy_grid1=Node(
-        package='cartographer_ros',
-        executable='cartographer_occupancy_grid_node',
-        name='cartographer_occupancy_grid_node',
-        output='screen',
-        parameters=[{'use_sim_time': True}],
-        arguments=['-resolution', '0.05', '-publish_period_sec', '1.0'] #values from documentation
-    )
-
     # AMCL (Adaptive Monte Carlo Localization) nodes (Lifecycle). 
-    # Same function (TF map -> odom frames) as cartographer. Mutually exclusive with it.
-
     #AMCL robot1
     amcl_node1=LifecycleNode(
         package='nav2_amcl',
@@ -181,7 +151,7 @@ def generate_launch_description():
         package='nav2_amcl',
         executable='amcl',
         name='amcl',
-        namespace='robot2', #robot1 for multi-robot scenario
+        namespace='robot2', 
         output='screen',
         parameters=[
             {'use_sim_time':True},
@@ -312,7 +282,7 @@ def generate_launch_description():
     #map selector, overrid the "yaml_filename" parameter in "waffle.yaml". Just for simplicity.
     map_yaml_selector=[ 
         '/root/ros_ws/src/tb3_multi_nav/utils/newmaze.yaml',
-        '/root/ros_ws/src/tb3_multi_nav/utils/2ndattempt_newmaze.yaml'  #actually using this one. Better mapping.
+        '/root/ros_ws/src/tb3_multi_nav/utils/2ndattempt_newmaze.yaml'  #actually using this one.
     ]
     # IMP: Map server is GLOBAL. Even in multi robot, single map provider.
     map_server_node = LifecycleNode(
@@ -353,14 +323,13 @@ def generate_launch_description():
         executable='smoother_server',
         name='smoother_server',
         output='screen',
-        namespace="robot2", #robot1 for multi
+        namespace="robot2", 
         parameters=[nav2_params_file2, {'use_sim_time': True}],
         remappings=[
             ("/robot2/map", "/map"), ("/robot2/map_updates","/map_updates")
         ]
     )
     #Velocity Smoothers (Lifecycle)
-    # ------> Still evaluating if cmd_vel should be remapped.
     velocity_smoother_node1 = LifecycleNode(
         package='nav2_velocity_smoother',
         executable='velocity_smoother',
@@ -373,14 +342,7 @@ def generate_launch_description():
         ],
         remappings=[
             ("/robot1/map", "/map"), ("/robot1/map_updates","/map_updates")
-            #,('cmd_vel', 'cmd_vel_smoothed')
         ]
-        # Questo nodo riceve i comandi dal controller e li reindirizza al robot.
-        # Assicurati che il tuo controller pubblichi su /cmd_vel_nav e il tuo robot ascolti su /cmd_vel.
-        # Se il tuo controller e il tuo robot usano /cmd_vel di default, potresti aver bisogno di remapping:
-        # ,remappings=[
-        #     ('cmd_vel', 'cmd_vel_smoothed')
-        # ]
     )
         #Velocity Smoothers (Lifecycle)
     velocity_smoother_node2 = LifecycleNode(
@@ -395,14 +357,7 @@ def generate_launch_description():
         ],
         remappings=[
             ("/robot2/map", "/map"), ("/robot2/map_updates","/map_updates")
-            #,('cmd_vel', 'cmd_vel_smoothed')
         ]
-        # Questo nodo riceve i comandi dal controller e li reindirizza al robot.
-        # Assicurati che il tuo controller pubblichi su /cmd_vel_nav e il tuo robot ascolti su /cmd_vel.
-        # Se il tuo controller e il tuo robot usano /cmd_vel di default, potresti aver bisogno di remapping:
-        # ,remappings=[
-        #     ('cmd_vel', 'cmd_vel_smoothed')
-        # ]
     )
 
     #Waypoint Follower (Lifecycle)
@@ -434,15 +389,7 @@ def generate_launch_description():
             ("/robot2/map", "/map"), ("/robot2/map_updates","/map_updates")
         ]
     )
-    lifecycle_nodes = [             #Nav2. For check. NOT IN ORDER.
-        'controller_server',        #ok
-        'smoother_server',          #ok
-        'planner_server',           #ok
-        'behavior_server',          #ok
-        'bt_navigator',             #ok
-        'waypoint_follower',        #ok
-        'velocity_smoother'         #ok
-    ]
+
     # Lifecycle Manager-- activates all lifecycle nodes -- needed for all nav2 nodes
     # Cloned istances. Same data, execpt for namespace.
     # Activation order is CRUCIAL.
@@ -497,11 +444,7 @@ def generate_launch_description():
     )
 
     #---------------- Rviz2 and configuration ----------------------------
-    # Since Nav2 stack is namespaced, going with 2 Rviz2 windows route.
-    # Each windows should be able to monitor both robots, but (IDEALLY) robot1 can be 
-    # controlled only by Rviz2 window1, the other only by Rviz2 window2, as Nav2 stacks etc are bounder
-    # by namespaces. 
-
+  
     # Two configs file, one per Rviz view.
     default_rviz_config_path = os.path.join(                #default config path for backup
         get_package_share_directory('nav2_bringup'), 
@@ -559,16 +502,16 @@ def generate_launch_description():
 
     #Orchestrator Node. Delayed by 8 seconds so that both Gazebo and Rviz are ready
     orchestrator=TimerAction(
-        period=10.0,                                 # delay time (sec)
+        period=10.0,                                                        # delay time (sec)
         actions=[
             Node(
                 package="tb3_multi_nav",
                 executable="orchestrator_node",
                 name="orchestrator_node",
-                namespace="",                       # global namespace
+                namespace="",                                               # global namespace
                 parameters=[{'use_sim_time':True}],
                 output="screen",
-                prefix=['xterm -hold -geometry 120x30+530+610 -e']           # open new terminal 
+                prefix=['xterm -hold -geometry 120x30+530+610 -e']          # open new terminal 
 
             )
         ]
@@ -585,12 +528,9 @@ def generate_launch_description():
         
         robot1_state_publisher,
         robot2_state_publisher,
-
-        #cartographer_node1,     # comment when migrating to AMCL
-        #occupancy_grid1,        # comment when migrating to AMCL 
         
-        amcl_node1,              # comment when using cartographer
-        amcl_node2,              # comment when using cartographer
+        amcl_node1,              
+        amcl_node2,              
 
         planner_server_node1,
         planner_server_node2,
@@ -613,21 +553,17 @@ def generate_launch_description():
         waypoint_follower_node1,
         waypoint_follower_node2,
 
-        map_server_node,            # conflict when using cartographer. Uncomment when migrating to AMCL and .yaml done.
+        map_server_node,            
         map_server_manager,         # separate manager to launch global node (only map)
         
         lifecycle_manager1,
         lifecycle_manager2,
 
-        #---- TEST GAME LOGIC
         location_publisher1,
         location_publisher2,
 
-        #---- END TEST
         rviz_node1,
         rviz_node2,
 
-        #---- TEST GAME LOGIC
         orchestrator
-        #---- END TEST
     ])

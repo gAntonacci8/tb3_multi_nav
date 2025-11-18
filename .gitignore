@@ -3,3 +3,6 @@ ros_ws/log
 ros_ws/install
 ros_ws/ma_sim_start.sh
 ros_ws/save_map.sh
+ros_ws/src/tb3_multi_nav/tb3_multi_nav/orchestrator_node_1.py
+ros_ws/src/tb3_multi_nav/tb3_multi_nav/orchestrator_node_3.py
+ros_ws/src/tb3_multi_nav/tb3_multi_nav/orchestrator_node_4.py

@@ -321,7 +321,7 @@ class Orchestrator(Node):
             "path_remaining_chaser",
             "goal_active_evader", "goal_active_chaser",
             "event",            # "", "tag", "safe_zone"
-            "winner",           # robot id ili ""
+            "winner",           
             "score_robot1", "score_robot2",
             "tags_robot1", "tags_robot2",
             "safes_robot1", "safes_robot2"
@@ -363,7 +363,7 @@ class Orchestrator(Node):
             f"{pr_c:.3f}"        if pr_c is not None        else "",
             1 if self.gh[ev] is not None else 0,
             1 if self.gh[ch] is not None else 0,
-            "",                  # event (samo na round_end)
+            "",                  # event 
             "",                  # winner
             self.score['robot1'], self.score['robot2'],
             self.tags['robot1'],  self.tags['robot2'],
