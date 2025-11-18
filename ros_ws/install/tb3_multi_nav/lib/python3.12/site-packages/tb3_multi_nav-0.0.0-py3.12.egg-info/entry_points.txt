@@ -1,4 +1,0 @@
-[console_scripts]
-orchestrator_node = tb3_multi_nav.orchestrator_node_5:main
-robot1_publisher_node = tb3_multi_nav.robot1_publisher_node:main
-robot2_publisher_node = tb3_multi_nav.robot2_publisher_node:main
