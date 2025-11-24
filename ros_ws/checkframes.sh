@@ -1,0 +1,1 @@
+ros2 run tf2_tools view_frames -o ./frames_view/TF_global_view
